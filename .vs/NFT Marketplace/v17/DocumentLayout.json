@@ -1,0 +1,1219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\creators\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\creators\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\controllers\\creatorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\controllers\\creatorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\creators\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\creators\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\creators\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\creators\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\creators\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\creators\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\models\\stables\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\stables\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetbyidquery\\creatorgetbyidrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\queries\\creatorgetallquery\\creatorgetallrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatoraddcommand\\creatoraddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatorremovecommand\\creatorremoverequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatorremovecommand\\creatorremoverequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatorremovecommand\\creatorremoverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatorremovecommand\\creatorremoverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatoreditcommand\\creatoreditrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatoreditcommand\\creatoreditrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\modules\\creatorsmodule\\commands\\creatoreditcommand\\creatoreditrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\modules\\creatorsmodule\\commands\\creatoreditcommand\\creatoreditrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\configurations\\nftentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configurations\\nftentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\models\\entities\\nft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\nft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\models\\entities\\creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\repository\\nftrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|solutionrelative:repository\\nftrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\repository\\creatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|solutionrelative:repository\\creatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\repository\\irepositoryreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6161B8A-4618-45EF-96EF-915197846DAA}|Repository\\Repository.csproj|solutionrelative:repository\\irepositoryreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\repositories\\inftrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\repositories\\inftrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\configurations\\creatorentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configurations\\creatorentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\applicationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\applicationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\iapplicationreferance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\iapplicationreferance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\appcode\\pipeline\\headerbinderbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appcode\\pipeline\\headerbinderbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\repositories\\icreatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\repositories\\icreatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\validatorinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\validatorinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\appcode\\di\\nftmarketplacemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appcode\\di\\nftmarketplacemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\fakeidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\fakeidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\application\\services\\cryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF6129E-9044-4D0E-B4FF-7C11FBEB829F}|Application\\Application.csproj|solutionrelative:application\\services\\cryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\icryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\icryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\idataaccesslayerreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\idataaccesslayerreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\dataaccessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\datacontexts\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datacontexts\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\configurations\\typeconfigurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configurations\\typeconfigurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\presentation\\appcode\\di\\nftmarketplaceserviceproviderfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535CFDCD-928F-4E98-887D-D98B27283919}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appcode\\di\\nftmarketplaceserviceproviderfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\models\\dtos\\relatedcategoryids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\dtos\\relatedcategoryids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\domain\\models\\dtos\\categoryhierarcialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07CEAA3-AB5D-4D43-873C-F7129ABFD99A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\dtos\\categoryhierarcialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\exceptions\\circlereferenceexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\exceptions\\circlereferenceexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\configurations\\jwtconfigurationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\jwtconfigurationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\configurations\\emailserviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\emailserviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\configurations\\cryptoserviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\cryptoserviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\iidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\iidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\iasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\iasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\extensions\\dapperextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\extensions\\dapperextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\abstracts\\iauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\abstracts\\iauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\concrates\\asyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\concrates\\asyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\concrates\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\concrates\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\extensions\\pagingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\extensions\\pagingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF55E5B2-19AA-4DA4-9F91-844A39294321}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\source\\repos\\nft marketplace\\dataaccesslayer\\migrations\\20240915101923_confs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5EF2-A11E-4B52-8797-22900EDB1274}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20240915101923_confs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1818,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\Creators\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\Creators\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T14:02:28.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\Creators\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Edit.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\Creators\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T14:02:15.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\Creators\\Details.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\Creators\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T13:59:46.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\Creators\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\Creators\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\Creators\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T13:59:10.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreatorsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Controllers\\CreatorsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\CreatorsController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Controllers\\CreatorsController.cs",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\CreatorsController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvyoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:57:10.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T13:56:44.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T13:48:09.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreatorGetByIdRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestHandler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestHandler.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:39:19.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreatorGetByIdRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestDto.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestDto.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:38:18.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatorGetByIdRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequest.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetByIdQuery\\CreatorGetByIdRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:37:53.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreatorGetAllRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestHandler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestHandler.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestHandler.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:29:02.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryType.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Stables\\CategoryType.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Stables\\CategoryType.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Stables\\CategoryType.cs",
+              "RelativeToolTip": "Domain\\Models\\Stables\\CategoryType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:05:43.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreatorGetAllRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestDto.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestDto.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequestDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:28:09.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreatorGetAllRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequest.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Queries\\CreatorGetAllQuery\\CreatorGetAllRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:26:49.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreatorAddRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequest.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:46:20.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreatorAddRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestHandler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestHandler.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestHandler.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:56:05.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreatorRemoveRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequestHandler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequestHandler.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequestHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:39:17.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreatorAddRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestDto.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestDto.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorAddCommand\\CreatorAddRequestDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:48:09.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreatorRemoveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequest.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorRemoveCommand\\CreatorRemoveRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:34:19.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreatorEditRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequestHandler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequestHandler.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequestHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvyMAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:24:45.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreatorEditRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequest.cs",
+              "RelativeToolTip": "Application\\Modules\\CreatorsModule\\Commands\\CreatorEditCommand\\CreatorEditRequest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:16:46.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NFTRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\NFTRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\NFTRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\NFTRepository.cs",
+              "RelativeToolTip": "Repository\\NFTRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:32:55.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NFT.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Entities\\NFT.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\NFT.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Entities\\NFT.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\NFT.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:10:16.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Creator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Entities\\Creator.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\Creator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Entities\\Creator.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\Creator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:12:20.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NFTEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\NFTEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configurations\\NFTEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\NFTEntityTypeConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configurations\\NFTEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:34:06.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreatorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\CreatorRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CreatorRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\CreatorRepository.cs",
+              "RelativeToolTip": "Repository\\CreatorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:20:01.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "INFTRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Repositories\\INFTRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Repositories\\INFTRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Repositories\\INFTRepository.cs",
+              "RelativeToolTip": "Application\\Repositories\\INFTRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:09:45.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IRepositoryReference.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\IRepositoryReference.cs",
+              "RelativeDocumentMoniker": "Repository\\IRepositoryReference.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Repository\\IRepositoryReference.cs",
+              "RelativeToolTip": "Repository\\IRepositoryReference.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:48:26.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreatorEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\CreatorEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configurations\\CreatorEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\CreatorEntityTypeConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configurations\\CreatorEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBIAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:32:26.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20240915101923_Confs.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Migrations\\20240915101923_Confs.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240915101923_Confs.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Migrations\\20240915101923_Confs.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240915101923_Confs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:19:23.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:48:50.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IApplicationReferance.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\IApplicationReferance.cs",
+              "RelativeDocumentMoniker": "Application\\IApplicationReferance.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\IApplicationReferance.cs",
+              "RelativeToolTip": "Application\\IApplicationReferance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:50:45.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HeaderBinderBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\Pipeline\\HeaderBinderBehaviour.cs",
+              "RelativeDocumentMoniker": "Presentation\\AppCode\\Pipeline\\HeaderBinderBehaviour.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\Pipeline\\HeaderBinderBehaviour.cs",
+              "RelativeToolTip": "Presentation\\AppCode\\Pipeline\\HeaderBinderBehaviour.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:12:32.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IFileService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IFileService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IFileService.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IFileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:57:47.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\FileService.cs",
+              "RelativeToolTip": "Application\\Services\\FileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:01:46.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApplicationModule.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\ApplicationModule.cs",
+              "RelativeDocumentMoniker": "Application\\ApplicationModule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\ApplicationModule.cs",
+              "RelativeToolTip": "Application\\ApplicationModule.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T09:56:16.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ICreatorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Repositories\\ICreatorRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Repositories\\ICreatorRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Repositories\\ICreatorRepository.cs",
+              "RelativeToolTip": "Application\\Repositories\\ICreatorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:08:57.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ValidatorInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\ValidatorInterceptor.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ValidatorInterceptor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\ValidatorInterceptor.cs",
+              "RelativeToolTip": "Application\\Services\\ValidatorInterceptor.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwAQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:06:11.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\JwtService.cs",
+              "RelativeToolTip": "Application\\Services\\JwtService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:04:47.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NFTMarketplaceModule.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\DI\\NFTMarketplaceModule.cs",
+              "RelativeDocumentMoniker": "Presentation\\AppCode\\DI\\NFTMarketplaceModule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\DI\\NFTMarketplaceModule.cs",
+              "RelativeToolTip": "Presentation\\AppCode\\DI\\NFTMarketplaceModule.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:46:30.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FakeIdentityService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\FakeIdentityService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\FakeIdentityService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\FakeIdentityService.cs",
+              "RelativeToolTip": "Application\\Services\\FakeIdentityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:01:19.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAoAAADFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-08T13:17:06.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\EmailService.cs",
+              "RelativeToolTip": "Application\\Services\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:00:53.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CryptoService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\CryptoService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\CryptoService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Services\\CryptoService.cs",
+              "RelativeToolTip": "Application\\Services\\CryptoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T09:59:22.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DataAccessModule.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataAccessModule.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessModule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataAccessModule.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessModule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:47:05.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataContexts\\DataContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataContexts\\DataContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataContexts\\DataContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataContexts\\DataContext.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:20:35.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IDataAccessLayerReference.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\IDataAccessLayerReference.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IDataAccessLayerReference.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\IDataAccessLayerReference.cs",
+              "RelativeToolTip": "DataAccessLayer\\IDataAccessLayerReference.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:47:35.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ICryptoService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\ICryptoService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\ICryptoService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\ICryptoService.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\ICryptoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:57:04.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "TypeConfigurationHelper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\TypeConfigurationHelper.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configurations\\TypeConfigurationHelper.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\Configurations\\TypeConfigurationHelper.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configurations\\TypeConfigurationHelper.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:28:51.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-08T13:29:35.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "NFTMarketplaceServiceProviderFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\DI\\NFTMarketplaceServiceProviderFactory.cs",
+              "RelativeDocumentMoniker": "Presentation\\AppCode\\DI\\NFTMarketplaceServiceProviderFactory.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\AppCode\\DI\\NFTMarketplaceServiceProviderFactory.cs",
+              "RelativeToolTip": "Presentation\\AppCode\\DI\\NFTMarketplaceServiceProviderFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:45:16.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Presentation.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Presentation.csproj",
+              "RelativeDocumentMoniker": "Presentation\\Presentation.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Presentation.csproj",
+              "RelativeToolTip": "Presentation\\Presentation.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-10T16:54:24.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-08T13:14:08.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RelatedCategoryIds.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Dtos\\RelatedCategoryIds.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Dtos\\RelatedCategoryIds.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Dtos\\RelatedCategoryIds.cs",
+              "RelativeToolTip": "Domain\\Models\\Dtos\\RelatedCategoryIds.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:06:51.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CategoryHierarcialDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Dtos\\CategoryHierarcialDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Dtos\\CategoryHierarcialDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Models\\Dtos\\CategoryHierarcialDto.cs",
+              "RelativeToolTip": "Domain\\Models\\Dtos\\CategoryHierarcialDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:06:30.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "Infrastructure\\Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:04:33.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Infrastructure\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:04:14.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CircleReferenceException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\CircleReferenceException.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Exceptions\\CircleReferenceException.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\CircleReferenceException.cs",
+              "RelativeToolTip": "Infrastructure\\Exceptions\\CircleReferenceException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:03:11.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "Infrastructure\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:02:34.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "JwtConfigurationOptions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\JwtConfigurationOptions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\JwtConfigurationOptions.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\JwtConfigurationOptions.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\JwtConfigurationOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:01:54.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "EmailServiceOptions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\EmailServiceOptions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\EmailServiceOptions.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\EmailServiceOptions.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\EmailServiceOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:01:33.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CryptoServiceOptions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\CryptoServiceOptions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\CryptoServiceOptions.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Configurations\\CryptoServiceOptions.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\CryptoServiceOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:00:36.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IJwtService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IJwtService.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IJwtService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:59:49.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IIdentityService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IIdentityService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IIdentityService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IIdentityService.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IIdentityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:58:08.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IEmailService.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:57:24.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IAsyncRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IAsyncRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IAsyncRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IAsyncRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IAsyncRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:23:46.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DapperExtension.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Extensions\\DapperExtension.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Extensions\\DapperExtension.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Extensions\\DapperExtension.cs",
+              "RelativeToolTip": "Infrastructure\\Extensions\\DapperExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:52:13.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "PagingExtension.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Extensions\\PagingExtension.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Extensions\\PagingExtension.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Extensions\\PagingExtension.cs",
+              "RelativeToolTip": "Infrastructure\\Extensions\\PagingExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:51:22.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "AuditableEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Concrates\\AuditableEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Concrates\\AuditableEntity.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Concrates\\AuditableEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Concrates\\AuditableEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:50:01.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-08T12:30:40.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AsyncRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Concrates\\AsyncRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Concrates\\AsyncRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Concrates\\AsyncRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Concrates\\AsyncRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:24:37.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "IAuditableEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IAuditableEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Abstracts\\IAuditableEntity.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Infrastructure\\Abstracts\\IAuditableEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Abstracts\\IAuditableEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:23:19.393Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
