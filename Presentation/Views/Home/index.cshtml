@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Frontend/sass/main.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+  <script defer
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="../Views/Home/index.js"></script>
+    <script defer src="~/Frontend/Common/functions/index.js"></script>
+</head>
+    
+  <body>
+
+    <nav class="Navigation">
+      <div class="Logo">
+        <img src="~/Frontend/assets/icons/MarketPlace-Logo.svg" />
+        <img id="MarketPlace-Name" src="~/Frontend/assets/icons/MarketPlace.svg" />
+      </div>
+      <div class="Navigation_Menu">
+        <div class="NavigationLinksAndButton">
+          <a id="MarketPlaceLink" href="#">Marketplace</a>
+          <a id="Rankings" href="#">Rankings</a>
+          <a id="ConnectAWallet" href="#">Connect a wallet</a>
+          <button class="SignUp-Btn">
+            <img src="~/Frontend/assets/icons/User.svg" />
+            <p>Sign Up</p>
+          </button>
+        </div>
+        <button class="Bars_Btn">
+          <img src="~/Frontend/assets/icons/Bars.svg" />
+        </button>
+      </div>
+    </nav>
+
+    <section id="Hero_Section">
+      <div class="Hero_Frame Container">
+        <div class="Frame_TextAndButtons">
+          <div class="HeadlineAndSubhead">
+            <h1>Discover digital art & Collect NFTs</h1>
+            <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+          </div>
+          <button class="GetStarted-Btn">
+            <img src="~/Frontend/assets/icons/RocketIcon.svg" />
+           <p>Get Started</p>
+          </button>
+          <div class="AdditionalInfo">
+            <div class="TotalSale">
+              <h1>240k+ </h1>
+              <p>Total Sale</p>
+            </div>
+            <div class="Auctions">
+              <h1>100k+ </h1>
+              <p>Auctions</p>
+            </div>
+            <div class="Artists">
+              <h1>240k+ </h1>
+              <p>Artists</p>
+            </div>
+          </div>
+        </div>
+        <div class="HighlightedNFT">
+          <div class="HighlightedNFT-Img">
+            <img src="~/Frontend/assets/images/HighlightedNFT.png" alt="Highlighted NFT Image" />
+          </div>
+          <div class="NFTFrame">
+            <p>Space Walking</p>
+            <div class="Artist-Card">
+              <img src="~/Frontend/assets/images/AvatarAnimaKid.png" />
+              <p>Animakid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="TrendingCollection_Section">
+      <div class="Section-Headline Container">
+        <div class="Heading">
+          <h1>Trending Collection</h1>
+        </div>
+        <div class="Subhead">
+          <p>Checkout our weekly updated trending collection.</p>
+        </div>
+      </div>
+      <div class="CardCollection-Row Container">
+        <div class="CollectionCard">
+          <div class="PhotosAndAdditional">
+            <img src="~/Frontend/assets/images/PrimaryPhoto-DSGN-Animals.png" />
+            <div class="AdditionalFrame">
+              <img src="~/Frontend/assets/images/SecondaryPhoto-Animal.png" />
+              <img src="~/Frontend/assets/images/SecondaryPhoto-MagicMashroom2.png" />
+              <button class="AdditionalNumber-Btn">
+                <p>1025+</p>
+              </button>
+            </div>
+          </div>
+          <div class="CollectionInfo">
+            <h1>DSGN Animals</h1>
+            <div id="MrFox" class="Artist-Card">
+              <img src="~/Frontend/assets/images/AvatarMrFox.png" />
+              <p>MrFox</p>
+            </div>
+          </div>
+        </div>
+        <div class="CollectionCard">
+          <div class="PhotosAndAdditional">
+            <img src="~/Frontend/assets/images/PrimaryPhoto-Mushroom.png" />
+            <div class="AdditionalFrame">
+              <img src="~/Frontend/assets/images/SecondaryPhoto-MagicMashroom.png" />
+              <img src="~/Frontend/assets/images/SecondaryPhoto-MagicMashroom2.png" />
+              <button class="AdditionalNumber-Btn">
+                <p>1025+</p>
+              </button>
+          </div>
+          <div class="CollectionInfo">
+            <h1>Magic Mushrooms</h1>
+            <div id="Shroomie" class="Artist-Card">
+              <img src="~/Frontend/assets/images/AvatarShroomie.png" />
+              <p>Shroomie</p>
+            </div>
+          </div>
+        </div>
+        <div class="CollectionCard Third">
+          <div class="PhotosAndAdditional">
+            <img src="~/Frontend/assets/images/PrimaryPhoto-DiscoMachine.png" />
+            <div class="AdditionalFrame">
+              <img src="~/Frontend/assets/images/SecondaryPhoto-DiscoMachines.png" />
+              <img src="~/Frontend/assets/images/SecondaryPhoto-DiscoMachines-2.png" />
+              <button class="AdditionalNumber-Btn">
+                <p>1025+</p>
+              </button>
+          </div>
+          <div class="CollectionInfo">
+            <h1>Disco Machines</h1>
+            <div id="BeKind2Robots" class="Artist-Card">
+              <img src="~/Frontend/assets/images/AvatarBeKind2Robots.png" />
+              <p>BeKind2Robots</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="TopRatedArtists_Section">
+      <div class="Section_Headline_And_Button Container">
+        <div class="Section_Headline">
+          <div class="Heading">
+            <h1>Top creators</h1>
+          </div>
+          <div class="Subhead">
+            <p>Checkout Top Rated Creators on the
+NFT Marketplace</p>
+          </div>
+        </div>
+        <button class="ViewRankings-Btn">
+          <img src="~/Frontend/assets/icons/RankingsRocket.svg" />
+          <p>View Rankings</p> 
+        </button>
+      </div>
+      
+      <div class="Artist-Cards Container"></div>
+
+      <div class="Loader">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+        <p id="Loading-Info">Loading Creators</p>
+      </div>
+      
+    </section>
+
+    <section id="BrowseCategories_Section">
+      <div class="Section-Headline Container">
+        <h1>Browse Categories</h1>
+      </div>
+      <div class="CategoryCards">
+        <div class="CategoryCards-Row">
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Art.png" />
+            <div class="Collection-Name">Art</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Collectibles.png" />
+            <div class="Collection-Name">Collectibles</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Music.png" />
+            <div class="Collection-Name">Music</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Photography.png" />
+            <div class="Collection-Name">Photography</div>
+          </div>
+        </div>
+        <div class="CategoryCards-Row">
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Video.png" />
+            <div class="Collection-Name">Video</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Utility.png" />
+            <div class="Collection-Name">Utility</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-Sport.png" />
+            <div class="Collection-Name">Sport</div>
+          </div>
+          <div class="CategoryCard">
+            <img src="~/Frontend/assets/images/Category-VirtualWorlds.png" />
+            <div class="Collection-Name"><p>Virtual Worlds</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="DiscoverNFTs_Section">
+      <div class="Section-HeadlineAndButton Container">
+        <div class="Section-Headline Container">
+          <h1>Discover More NFTs</h1>
+          <p>Explore new trending NFTs</p>
+        </div>
+        <button class="SeeAll-Btn">
+          <img src="~/Frontend/assets/icons/EyeIcon.svg" />
+          <p>See All</p>
+        </button>
+      </div>
+      <div class="NFTCards-Row Cotainer">
+        <div class="NFTCard">
+          <div class="Image">
+            <img src="~/Frontend/assets/images/NftCard-DistantGalaxy.png" />
+          </div>
+          <div class="NFT-Info">
+            <div class="Artist-Info">
+              <h1>Distant Galaxy</h1>
+              <div id="MoonDancer" class="Artist-AvatarAndName">
+                <img src="~/Frontend/assets/images/AvatarMoonDancer.svg" />
+                <p>MoonDancer</p>
+              </div>
+            </div>
+            <div class="Additional-Info">
+              <div class="Price">
+                <h1>Price</h1>
+                <p>1.63 ETH</p>
+              </div>
+              <div class="Highest-Bid">
+                <h1>Highest Bid</h1>
+                <p>0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="NFTCard">
+          <div class="Image">
+            <img src="~/Frontend/assets/images/NFTCard-LifeOnEdena.png" />
+          </div>
+          <div class="NFT-Info">
+            <div class="Artist-Info">
+              <h1>Life On Edena</h1>
+              <div id="NebulaKid" class="Artist-AvatarAndName">
+                <img src="~/Frontend/assets/images/AvatarNebulaKid.svg" />
+                <p>NebulaKid</p>
+              </div>
+            </div>
+            <div class="Additional-Info">
+              <div class="Price">
+                <h1>Price</h1>
+                <p>1.63 ETH</p>
+              </div>
+              <div class="Highest-Bid">
+                <h1>Highest Bid</h1>
+                <p>0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="NFTCard">
+          <div class="Image">
+            <img src="~/Frontend/assets/images/NFTCard-AstroFiction.png" />
+          </div>
+          <div class="NFT-Info">
+            <div class="Artist-Info">
+              <h1>AstroFiction</h1>
+              <div id="Spaceone" class="Artist-AvatarAndName">
+                <img src="~/Frontend/assets/images/AvatarSpaceOne.svg" />
+                <p>Spaceone</p>
+              </div>
+            </div>
+            <div class="Additional-Info">
+              <div class="Price">
+                <h1>Price</h1>
+                <p>1.63 ETH</p>
+              </div>
+              <div class="Highest-Bid">
+                <h1>Highest Bid</h1>
+                <p>0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="NFTHighlight_Section">
+      <img class="Background" src="~/Frontend/assets/images/NFT-BigHighlight.png" />
+        <div class="NFT-Info">
+        <div class="NFT-Frame Container">
+          <div class="NFT-Artist-Name-Button">
+            <div class="Artist-Card">
+              <div id="Shroomie" class="Avatar">
+                <img src="~/Frontend/assets/images/AvatarShroomie.svg" />
+              </div>
+              <p>Shroomie</p>
+            </div>
+            <h1>Magic Mashrooms</h1>
+            <button class="SeeNFT-Btn">
+              <img src="~/Frontend/assets/icons/LightEyeIcon.svg" />
+              <p>See NFT</p>
+            </button>
+          </div>
+          <div class="Auction-Timer">
+            <h1>Auction ends in:</h1>
+            <div class="Timer">
+              <div class="Hours">
+                <h1>59</h1>
+                <p>Hours</p>
+              </div>
+              <h2>:</h2>
+              <div class="Minutes">
+                <h1>59</h1>
+                <p>Minutes</p>
+              </div>
+              <h3>:</h3>
+              <div class="Seconds">
+                <h1>59</h1>
+                <p>Seconds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="HowItWorks_Section">
+      <div class="Section-Headline Container">
+        <h1>How it works</h1>
+        <p>Find out how to get started</p>
+      </div>
+      <div class="Cards-Row">
+        <div class="Info-Card">
+          <div class="Icon">
+            <img src="~/Frontend/assets/images/SetUpYourWallet.png" />
+          </div>
+          <div class="Card-Details">
+            <h1>Setup Your wallet</h1>
+            <p>Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+          </div>
+        </div>
+        <div class="Info-Card">
+          <div class="Icon">
+            <img src="~/Frontend/assets/images/CreateCollection.png" />
+          </div>
+          <div class="Card-Details">
+            <h1>Create Collection</h1>
+            <p>Upload your work and setup your collection. Add a description, social links and floor price.</p>
+          </div>
+        </div>
+        <div class="Info-Card">
+          <div class="Icon">
+            <img src="~/Frontend/assets/images/StartEarning.png" />
+          </div>
+          <div class="Card-Details">
+            <h1>Start Earning</h1>
+            <p>Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="SubscribeWidget_Section">
+      <div class="Subscribe-Widget Container">
+        <img src="~/Frontend/assets/images/Astronout.png" />
+        <div class="Widget-Frame">
+          <div class="HeadlineAndSubhead">
+            <h1>Join our weekly digest</h1>
+            <p>Get exclusive promotions & updates straight to your inbox.</p>
+          </div>
+          <form class="Subscribe-Form">
+            <input class="Subscribe-Input" type="email" placeholder="Enter your email here" />
+            <p class="Error-Message"></p>
+            <button type="button" class="Subscribe-Btn">
+              <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
+              <p>Subscribe</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="Footer">
+      <div class="Footer-Info Container">
+        <div class="NFT-Marketplace-Info">
+          <div class="Logo">
+            <img src="~/Frontend/assets/icons/MarketPlace-Logo.svg" />
+            <img id="MarketPlace-Name" src="~/Frontend/assets/icons/MarketPlace.svg" />
+          </div>
+          <div class="Additional-Info">
+            <p>NFT marketplace UI created with Anima for Figma.</p>
+            <div class="Community-Info">
+              <p>Join our community</p>
+              <img src="~/Frontend/assets/icons/Icons-SocialMedia.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="Explore">
+          <h1>Explore</h1>
+          <div class="Pages">
+            <a href="#">Marketplace</a>
+            <a href="#">Rankings</a>
+            <a href="#">Connect a wallet</a>
+          </div>
+        </div>
+        <div class="Subscribe">
+          <h1>Join our weekly digest</h1>
+          <div class="Subscribe-FormAndInfo">
+            <p>Get exclusive promotions & updates <br/> straight to your inbox.</p>
+            <form class="Subscribe-Form">
+              <input class="Subscribe-Input" type="email" placeholder="Enter your email here" />
+              <p class="Error-Message"></p>
+              <button type="button" class="Subscribe-Btn">
+                <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
+                <p>Subscribe</p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="Footer-Frame Container">
+        <div class="Divider Container"></div>
+        <p>Ⓒ NFT Market. You cant freely use this template , I made it myself , if you want to use it then PAY!!!.</p>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const Rankings = document.querySelector("#Rankings");
+        const ConnectAWallet = document.querySelector("#ConnectAWallet");
+        const loaderElement = document.querySelector(".Loader");
+
+        const GetStarted_Btn = document.querySelector(".GetStarted-Btn");
+        GetStarted_Btn.addEventListener("click", () => {
+            window.open("CreateAccount", "_self");
+        });
+
+        const HomeNFT = document.querySelector(".HighlightedNFT-Img");
+        HomeNFT.addEventListener("click", () => {
+            window.open("Marketplace", "_self");
+        });
+
+
+        const HomeNFT = document.querySelector(".HighlightedNFT-Img");
+        HomeNFT.addEventListener("click", () => {
+            window.open("Marketplace", "_self");
+        });
+
+        const CollectionCards = document.querySelectorAll(".CollectionCard");
+        CollectionCards.forEach((CollectionCard) => {
+            CollectionCard.addEventListener("click", () => {
+                window.open("Marketplace", "_self");
+            });
+        });
+
+        const MrFox = document.querySelector("#MrFox");
+        const BeKind2Robots = document.querySelector("#BeKind2Robots");
+
+        MrFox.addEventListener("click", (e) => {
+            e.stopPropagation();
+            window.open("../Artist-Detail/index.html?id=6", "_self");
+        });
+
+        BeKind2Robots.addEventListener("click", (e) => {
+            e.stopPropagation();
+            window.open("../Artist-Detail/index.html?id=8", "_self");
+        });
+
+        const ViewRankings_Btn = document.querySelector(".ViewRankings-Btn");
+        ViewRankings_Btn.addEventListener("click", () => {
+            window.open("Rankings", "_self");
+        });
+
+        const ViewRankings_Btn = document.querySelector(".ViewRankings-Btn");
+        ViewRankings_Btn.addEventListener("click", () => {
+            window.open("Rankings", "_self");
+        });
+
+        const SeeAll_Btn = document.querySelector(".SeeAll-Btn");
+        SeeAll_Btn.addEventListener("click", () => {
+            window.open("../Marketplace/index.html", "_self");
+        });
+
+        const NFTCards = document.querySelectorAll(".NFTCard");
+        NFTCards.forEach((NFTCard) => {
+            NFTCard.addEventListener("click", () => {
+                window.open("../Marketplace/index.html", "_self");
+            });
+        });
+
+        const MoonDancer = document.querySelector("#MoonDancer");
+        MoonDancer.addEventListener("click", (e) => {
+            e.stopPropagation();
+            window.open("../Artist-Detail/index.html?id=10", "_self");
+        });
+
+        const NebulaKid = document.querySelector("#NebulaKid");
+        NebulaKid.addEventListener("click", (e) => {
+            e.stopPropagation();
+            window.open("../Artist-Detail/index.html?id=10", "_self");
+        });
+
+        const Spaceone = document.querySelector("#Spaceone");
+        Spaceone.addEventListener("click", (e) => {
+            e.stopPropagation();
+            window.open("../Artist-Detail/index.html?id=10", "_self");
+        });
+
+        const Shroomies = document.querySelectorAll("#Shroomie");
+        Shroomies.forEach((Shroomie) => {
+            Shroomie.addEventListener("click", (e) => {
+                e.stopPropagation();
+                window.open(`../Artist-Detail/index.html?id=7`, "_self");
+            });
+        });
+
+        const SeeNFT_Btn = document.querySelector(".SeeNFT-Btn");
+        SeeNFT_Btn.addEventListener("click", () => {
+            window.open("../Marketplace/index.html", "_self");
+        });
+
+        getDataFromServer();
+
+        function getDataFromServer() {
+            showLoader(true);
+            fetch("http://localhost:3000/api/creators", {
+                method: "GET",
+            })
+                .then((res) => res.json())
+                .then((data) => fillArtistContainer(data));
+
+            showLoader(false);
+        }
+
+        function fillArtistContainer(data) {
+            if (!data) return;
+
+            data.forEach((creator) => addCreator(creator));
+        }
+
+        function addCreator(data) {
+            const Artist_Cards = document.querySelector(".Artist-Cards");
+
+            const ArtistCard = document.createElement("div");
+            ArtistCard.classList.add("Artist-Card");
+
+            const Artist_Avatar = document.createElement("div");
+            Artist_Avatar.className = "Artist-Avatar";
+
+            const Artist_Info = document.createElement("div");
+            Artist_Info.className = "Artist-Info";
+
+            const Artist_Ranking = document.createElement("div");
+            Artist_Ranking.className = "Ranking-Number";
+
+            const AvatarIcon = document.createElement("img");
+            AvatarIcon.src = "~/Frontend/../" + data.profileImgPath;
+            Artist_Avatar.append(AvatarIcon);
+
+            const CreatorName = document.createElement("h1");
+            CreatorName.textContent = data.name;
+
+            const Sales_Info = document.createElement("div");
+            Sales_Info.className = "Sales-Info";
+            const Sales_Info_Key = document.createElement("p");
+            Sales_Info_Key.className = "Sales-Info_Key";
+            Sales_Info_Key.textContent = "Total Sales:";
+            const Sales_Info_Value = document.createElement("p");
+            Sales_Info_Value.className = "Sales-Info_Value";
+            Sales_Info_Value.textContent = `${data.totalSale.value} ${data.totalSale.currency}`;
+            Sales_Info.append(Sales_Info_Key, Sales_Info_Value);
+
+            Artist_Info.append(CreatorName, Sales_Info);
+
+            if (data.id > 9) {
+                const RankingNumber = document.createElement("p");
+                RankingNumber.textContent = data.id;
+                RankingNumber.className = "position-left-change";
+                Artist_Ranking.append(RankingNumber);
+            } else {
+                const RankingNumber = document.createElement("p");
+                RankingNumber.textContent = data.id;
+                Artist_Ranking.append(RankingNumber);
+            }
+
+            ArtistCard.append(Artist_Avatar, Artist_Info, Artist_Ranking);
+            Artist_Cards.append(ArtistCard);
+
+            ArtistCard.addEventListener("click", () => {
+                window.open(`../Artist-Detail/index.html?id=${data.id}`, "_self");
+            });
+        }
+
+        function showLoader(show) {
+            loaderElement.style.display = show ? "grid" : "none";
+        }
+
+      });
+
+  </script>
+
+  <script>
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const Marketplace_Link = document.querySelector("#MarketPlaceLink");
+        const SignUpBtn = document.querySelector(".SignUp-Btn");
+
+        Marketplace_Link.addEventListener("click", () => {
+            window.open("Marketplace", "_self");
+        });
+
+        SignUpBtn.addEventListener("click", () => {
+            window.open("CreateAccount", "_self");
+        });
+
+      });
+
+  </script>
+
+
+</html>

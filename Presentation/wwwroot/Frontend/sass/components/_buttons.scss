@@ -1,0 +1,410 @@
+button {
+  cursor: pointer;
+}
+
+.SignUp-Btn {
+  display: flex !important;
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 0px);
+  background-color: var(--CallToAction);
+  position: relative;
+
+  @include for-size(tablet) {
+    @include Button(50px, 0px 40px, 0px);
+    display: none;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    transform: translateX(27px);
+  }
+
+  p {
+    color: var(--White);
+    text-align: center;
+    @include text-formatter(Work Sans, 16px, 600, 140%);
+    transform: translateX(10px);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  .Open {
+    display: "initial" !important;
+  }
+}
+
+.GetStarted-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 12px);
+  background-color: var(--CallToAction);
+
+  @include for-size(phone) {
+    width: 290px;
+  }
+
+  p {
+    color: var(--White);
+    text-align: center;
+    margin-left: 12px;
+    @include text-formatter(Work Sans, 16px, 600, 140%);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.AdditionalNumber-Btn {
+  @include Flexed(flex, center, center, column);
+  @include Button(100px, 32px 15px, 10px);
+  background-color: var(--CallToAction);
+
+  p {
+    color: var(--White);
+    @include text-formatter(Space Mono, 22px, 700, 160%, capitalize);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.ViewRankings-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 12px);
+  background-color: transparent !important;
+  border: 2px solid var(--CallToAction);
+  gap: 10px;
+
+  @include for-size(phone) {
+    width: 315px;
+    margin-top: 20px;
+    @include Flexed(flex, center, center);
+    gap: 50px;
+  }
+
+  p {
+    @include text-formatter(16px, 600, 200%);
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.SeeAll-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 12px);
+  background-color: transparent !important;
+  border: 2px solid var(--CallToAction);
+  gap: 10px;
+
+  @include for-size(phone) {
+    margin-top: 30px;
+  }
+
+  p {
+    @include text-formatter(Work Sans, 16px, 600, 140%);
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.SeeNFT-Btn {
+  @include Flexed(flex, center, center, row);
+  @include Button(60px, 22px 60px, 12px);
+  background-color: var(--White);
+
+  @include for-size(tablet) {
+    @include Button(60px, 22px 50px, 12px);
+  }
+
+  @include for-size(phone) {
+    width: 215px;
+    height: 16px;
+  }
+
+  img {
+    transform: translateX(-10px);
+  }
+
+  p {
+    @include text-formatter(Work Sans, 16px, 600, 140%);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.Subscribe-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 12px);
+  height: 61px !important;
+  background-color: var(--CallToAction);
+  position: absolute;
+  gap: 10px;
+  right: 0;
+
+  .LockIcon {
+    display: none;
+  }
+
+  @include for-size(tablet) {
+    @include Button(60px, 0px 50px, 12px);
+  }
+
+  @include for-size(phone) {
+    @include Button(47px, 0px 50px, 12px);
+    width: 315px;
+    height: 47px !important;
+    bottom: -50px;
+    right: 200px;
+  }
+
+  p {
+    @include text-formatter(Work Sans, 16px, 600, 140%);
+    text-align: center;
+    color: white !important;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.CreateAccount-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(46px, 0px 100px, 12px);
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  margin-right: 70px;
+  position: relative;
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  .Button-Loader {
+    display: none;
+    place-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
+
+    .lds-dual-ring {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+
+    .lds-dual-ring:after {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 8px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.Login-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(46px, 0px 100px, 12px);
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  position: relative;
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  .Button-Loader {
+    display: none;
+    place-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
+
+    .lds-dual-ring {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+
+    .lds-dual-ring:after {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 8px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.Chain-Id-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 50px, 12px);
+  width: 186px;
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  @include for-size(phone) {
+    width: 315px;
+  }
+}
+
+.Follow-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 30px, 12px);
+  background-color: transparent;
+  color: var(--White);
+  border: 2px solid var(--CallToAction);
+  white-space: nowrap;
+  position: relative;
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  .Plus {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 20px;
+  }
+
+  .Close {
+    display: none;
+  }
+
+  .Open {
+    display: initial;
+  }
+
+  .Follow {
+    display: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    bottom: 20px;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  @include for-size(phone) {
+    width: 315px;
+  }
+}
+
+.Delete-Btn {
+  @include Flexed(flex, center, center);
+  width: 90px;
+  transition: 0.3s;
+  position: absolute;
+  right: -10px;
+
+  @include for-size(tablet) {
+    right: -5px;
+    width: 60px;
+  }
+
+  @include for-size(phone) {
+    width: 50px;
+    right: -12px;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.SeeMore-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 30px, 12px);
+  width: 205px;
+  color: var(--White);
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid var(--CallToAction);
+  margin-bottom: 100px;
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  img {
+    transform: translateX(-10px);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.SortByName-Btn {
+  @include Flexed(flex, center, center);
+  @include Button(60px, 0px 30px, 12px);
+  width: 205px;
+  color: var(--White);
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid var(--CallToAction);
+  @include text-formatter(Work Sans, 16px, 600, 140%);
+
+  img {
+    color: white;
+    width: 20px !important;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}

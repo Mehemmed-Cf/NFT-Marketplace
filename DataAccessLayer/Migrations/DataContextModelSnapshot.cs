@@ -30,6 +30,16 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Bio")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
+                    b.Property<string>("ChainId")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime");
 
@@ -48,6 +58,9 @@ namespace DataAccessLayer.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar");
 
+                    b.Property<int>("Followers")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -63,6 +76,12 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar");
+
+                    b.Property<int>("SoldNFts")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Volume")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -84,11 +103,22 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<int>("CreatorId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime");
 
                     b.Property<int?>("DeletedBy")
                         .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
+                    b.Property<short>("HighestBid")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -99,12 +129,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<int?>("LastModifiedBy")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("PostedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PostedBy")
                         .HasColumnType("int");
 
                     b.Property<short>("Price")

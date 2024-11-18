@@ -17,3 +17,4 @@ C:\Users\user\source\repos\NFT Marketplace\DataAccessLayer\obj\Debug\net8.0\refi
 C:\Users\user\source\repos\NFT Marketplace\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\user\source\repos\NFT Marketplace\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\user\source\repos\NFT Marketplace\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\user\source\repos\NFT Marketplace\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

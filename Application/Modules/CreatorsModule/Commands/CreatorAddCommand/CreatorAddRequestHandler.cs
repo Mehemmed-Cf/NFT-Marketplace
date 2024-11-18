@@ -26,6 +26,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
             var entity = new Creator
             {
                 NickName = request.NickName,
+                ChainId = request.ChainId,
                 Email = request.Email,
                 Bio = request.Bio,
                 Volume = request.Volume,

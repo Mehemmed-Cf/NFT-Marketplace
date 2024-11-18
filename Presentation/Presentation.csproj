@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Views\Artist_Detail\index.js" />
+    <Content Include="Views\CreateAccount\index.js" />
+    <Content Include="Views\Home\index.js" />
+    <Content Include="Views\Login\index.js" />
+    <Content Include="Views\Marketplace\index.js" />
+    <Content Include="Views\Rankings\index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="8.1.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
@@ -25,6 +34,15 @@
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Frontend\" />
+    <Folder Include="wwwroot\uploads\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\index.cshtml" />
   </ItemGroup>
 
 </Project>

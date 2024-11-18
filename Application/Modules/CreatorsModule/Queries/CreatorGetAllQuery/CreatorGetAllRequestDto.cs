@@ -10,6 +10,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
     {
         public int Id { get; set; }
         public string NickName { get; set; }
+        public string ChainId { get; set; }
         public string Email { get; set; }
         public string Bio { get; set; }
         public int Followers { get; set; }

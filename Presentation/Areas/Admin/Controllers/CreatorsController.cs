@@ -22,9 +22,12 @@ namespace Presentation.Areas.Admin.Controllers
             this.mediator = mediator;
         }
 
-        public async Task<IActionResult> Index(CreatorGetAllRequest request)
+        public async Task<IActionResult> Index(bool OnlyAvailable)
         {
-            var response = await mediator.Send(request);
+            var response = await mediator.Send(new CreatorGetAllRequest
+            {
+                OnlyAvailable = OnlyAvailable
+            });
             return View(response);
         }
 

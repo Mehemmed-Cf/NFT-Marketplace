@@ -12,3 +12,4 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery
         public int Id { get; set; }
     }
 }
+    

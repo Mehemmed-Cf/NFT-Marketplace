@@ -1,12 +1,12 @@
 using DataAccessLayer.DataContexts;
 using MediatR;
 using Application;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Presentation.AppCode.DI;
 using Presentation.AppCode.Pipeline;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Application.Services;
 using Infrastructure.Abstracts;
 using Infrastructure.Configurations;
@@ -33,14 +33,14 @@ internal class Program
 
         });
 
-        builder.Services.AddControllers(cfg =>
-        {
-            var policy = new AuthorizationPolicyBuilder()
-                              .RequireAuthenticatedUser()
-                              .Build();
+        //builder.Services.AddControllers(cfg =>
+        //{
+        //    var policy = new AuthorizationPolicyBuilder()
+        //                      .RequireAuthenticatedUser()
+        //                      .Build();
 
-            cfg.Filters.Add(new AuthorizeFilter(policy));
-        });
+        //    cfg.Filters.Add(new AuthorizeFilter(policy));
+        //});
 
         builder.Services.AddDbContext<DbContext, DataContext>(cfg =>
         {
@@ -51,7 +51,8 @@ internal class Program
                 opt.MigrationsHistoryTable("MigrationHistory");
             });
         });
-        builder.Services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(HeaderBinderBehaviour<,>));
+
+        //builder.Services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(HeaderBinderBehaviour<,>));
 
         builder.Services.Configure<CryptoServiceOptions>(cfg => builder.Configuration.Bind(nameof(CryptoServiceOptions), cfg));
 
@@ -88,7 +89,9 @@ internal class Program
 
         app.UseCors("allowAll");
 
-        app.UseAuthorization();
+        //app.UseAuthorization();
+
+        //app.UseAuthentication();
 
         app.MapRazorPages();
 

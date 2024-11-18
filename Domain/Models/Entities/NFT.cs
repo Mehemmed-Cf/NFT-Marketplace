@@ -10,12 +10,11 @@ namespace Domain.Models.Entities
     public class NFT : AuditableEntity
     {
         public int Id { get; set; }
+        public int CreatorId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public short Price { get; set; }
+        public short HighestBid { get; set; }
         public string ImagePath { get; set; }
-        public int PostedBy { get; set; }
-        public DateTime PostedAt { get; set; }
-        public DateTime CreatedAt { get; set; }
     }
 }

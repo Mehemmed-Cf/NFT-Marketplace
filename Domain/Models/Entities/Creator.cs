@@ -10,6 +10,7 @@ namespace Domain.Models.Entities
     public class Creator : AuditableEntity
     {
         public int Id { get; set; }
+        public string ChainId { get; set; }
         public string NickName { get; set; }
         public string Email { get; set; }
         public string Bio { get; set; }

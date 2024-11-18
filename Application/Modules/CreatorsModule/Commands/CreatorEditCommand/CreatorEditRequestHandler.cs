@@ -25,6 +25,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorEditCommand
             var entity = await creatorRepository.GetAsync(m => m.Id == request.Id && m.DeletedAt == null, cancellationToken);
 
             entity.NickName = request.NickName;
+            entity.ChainId = request.ChainId;
             entity.Bio = request.Bio;
             entity.Followers = request.Followers;
             entity.Volume = request.Volume;

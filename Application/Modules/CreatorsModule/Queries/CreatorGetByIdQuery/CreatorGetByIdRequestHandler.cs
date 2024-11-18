@@ -30,6 +30,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery
             {
                 Id = entity.Id,
                 NickName = entity.NickName,
+                ChainId = entity.ChainId,
                 Bio = entity.Bio,
                 Followers = entity.Followers,
                 Volume = entity.Volume,

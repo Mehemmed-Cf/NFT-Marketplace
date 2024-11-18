@@ -1,0 +1,182 @@
+.Footer {
+  @include Flex-ItemsAndPosition(flex, center, column);
+  border: 2px solid var(--BackGround);
+  background-color: var(--BackGround-Secondary);
+  padding: 40px 195px;
+  gap: 30px;
+
+  @include for-size(tablet) {
+    gap: 30px;
+  }
+
+  @include for-size(phone) {
+    gap: 30px;
+  }
+
+  .Footer-Info {
+    @include Flexed(flex, center, flex-start);
+    gap: 30px;
+
+    @include for-size(tablet) {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      width: 690px;
+      gap: 30px;
+    }
+
+    @include for-size(phone) {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      gap: 30px;
+      width: 315px;
+    }
+
+    .NFT-Marketplace-Info {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      padding-right: 0px;
+      gap: 30px;
+
+      @include for-size(tablet) {
+        gap: 20px;
+      }
+
+      .Logo {
+        cursor: pointer;
+      }
+
+      .Additional-Info {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        @include text-formatter(Work Sans, 16px, 400, 140%);
+        color: var(--CaptionAndLabelText);
+        gap: 20px;
+
+        @include for-size(tablet) {
+          @include Flex-ItemsAndPosition(flex, flex-start, column);
+          gap: 20px;
+        }
+      }
+
+      .Community-Info {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        @include text-formatter(Work Sans, 16px, 400, 140%);
+        color: var(--CaptionAndLabelText);
+        gap: 15px;
+
+        @include for-size(tablet) {
+          @include Flex-ItemsAndPosition(flex, flex-start, column);
+          gap: 15px;
+        }
+
+        @include for-size(phone) {
+          gap: 15px;
+          @include Flex-ItemsAndPosition(flex, flex-start, column);
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .Explore {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      width: 240px;
+      gap: 25px;
+
+      @include for-size(tablet) {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        gap: 20px;
+      }
+
+      @include for-size(phone) {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        gap: 20px;
+      }
+
+      h1 {
+        @include text-formatter(Space Mono, 22px, 700, 160%);
+      }
+
+      .Pages {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        gap: 20px;
+
+        a {
+          @include text-formatter(Work Sans, 16px, 400, 140%);
+          text-decoration: none;
+          color: var(--CaptionAndLabelText);
+        }
+      }
+    }
+
+    .Subscribe {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      gap: 25px;
+
+      @include for-size(tablet) {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        gap: 20px;
+      }
+
+      h1 {
+        @include text-formatter(Space Mono, 22px, 700, 160%);
+      }
+
+      .Subscribe-FormAndInfo {
+        @include Flex-ItemsAndPosition(flex, flex-start, column);
+        gap: 20px;
+
+        p {
+          @include text-formatter(Space Mono, 16px, 400, 140%);
+          color: var(--CaptionAndLabelText);
+        }
+
+        .Error-Message {
+          @include for-size(phone) {
+            width: 315px;
+            height: auto;
+            transform: translateX(-70px);
+          }
+        }
+      }
+    }
+  }
+
+  .Footer-Frame {
+    @include Flex-ItemsAndPosition(flex, flex-start, column);
+    gap: 20px;
+
+    @include for-size(tablet) {
+      width: 690px;
+    }
+
+    @include for-size(phone) {
+      margin-top: 70px;
+      width: 315px;
+    }
+
+    .Divider {
+      height: 1px;
+      background-color: var(--CaptionAndLabelText);
+
+      @include for-size(tablet) {
+        width: 690px;
+      }
+
+      @include for-size(phone) {
+        width: 315px;
+      }
+    }
+
+    p {
+      @include text-formatter(Work Sans, 12px, 400, 110%);
+      color: #ccc;
+
+      @include for-size(tablet) {
+        width: 690px;
+      }
+
+      @include for-size(phone) {
+        width: 315px;
+      }
+    }
+  }
+}

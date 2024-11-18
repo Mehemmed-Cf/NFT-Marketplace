@@ -11,6 +11,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
     public class CreatorAddRequest : IRequest<CreatorAddRequestDto>
     {
         public string NickName { get; set; }
+        public string ChainId { get; set; }
         public IFormFile ProfileImage { get; set; }
         public string Email { get; set; }
         public string Bio { get; set; }

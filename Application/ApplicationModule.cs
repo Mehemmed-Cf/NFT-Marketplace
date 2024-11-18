@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
+using MediatR;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 
 namespace Application
 {
@@ -16,7 +18,7 @@ namespace Application
         {
             base.Load(builder);
 
-            builder.RegisterType<IJwtService>()
+            builder.RegisterType<JwtService>()
                 .As<IJwtService>()
                 .InstancePerLifetimeScope();
 

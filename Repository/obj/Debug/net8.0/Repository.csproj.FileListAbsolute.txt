@@ -17,3 +17,4 @@ C:\Users\user\source\repos\NFT Marketplace\Repository\bin\Debug\net8.0\Domain.pd
 C:\Users\user\source\repos\NFT Marketplace\Repository\bin\Debug\net8.0\Infrastructure.pdb
 C:\Users\user\source\repos\NFT Marketplace\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\NFT Marketplace\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\user\source\repos\NFT Marketplace\Repository\obj\Debug\net8.0\Repository.sourcelink.json

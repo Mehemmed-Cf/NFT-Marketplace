@@ -1,0 +1,5728 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+Ranking,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+Ranking {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --BackGround: #2b2b2b;
+  --BackGround-Secondary: #3b3b3b;
+  --CallToAction: #a259ff;
+  --CaptionAndLabelText: #858584;
+  --White: #ffffff;
+  --Green: #00ac4f;
+}
+
+body {
+  position: relative;
+}
+
+.Navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: normal;
+  padding: 20px 50px;
+}
+@media (max-width: 1050px) {
+  .Navigation {
+    padding: 15px 15px;
+  }
+}
+@media (max-width: 690px) {
+  .Navigation {
+    padding: 15px 50px;
+  }
+}
+.Navigation .Logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.Navigation .Logo #MarketPlace-Name {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.Navigation .Navigation_Menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: normal;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  .Navigation .Navigation_Menu {
+    gap: 20px;
+  }
+}
+.Navigation .Navigation_Menu .Navbar-Open {
+  display: flex !important;
+  top: 0;
+  right: 0 !important;
+}
+.Navigation .Navigation_Menu .NavigationLinksAndButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: normal;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  .Navigation .Navigation_Menu .NavigationLinksAndButton {
+    display: none;
+    padding: 130px 16px;
+    gap: 20px;
+    z-index: 10;
+    position: fixed;
+    flex-direction: column;
+    right: -410px;
+    border: 2px solid var(--CallToAction);
+    border-radius: 20px;
+    background-color: var(--BackGround);
+  }
+}
+.Navigation .Navigation_Menu .NavigationLinksAndButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 46px;
+  color: var(--White);
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.Navigation .Navigation_Menu .NavigationLinksAndButton a:hover {
+  transform: scale(0 0.95);
+}
+.Navigation .Navigation_Menu .Bars_Btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: normal;
+  display: none;
+  border: none;
+  gap: 20px;
+  rotate: 90deg;
+  background-color: var(--BackGround);
+}
+@media (max-width: 1050px) {
+  .Navigation .Navigation_Menu .Bars_Btn {
+    display: initial;
+  }
+}
+@media (max-width: 690px) {
+  .Navigation .Navigation_Menu .Bars_Btn {
+    margin-left: 30px;
+    display: initial;
+  }
+}
+.Navigation .Navigation_Menu .Rotate {
+  transition: 0.45s;
+  rotate: 180deg;
+}
+.Navigation .Navigation_Menu .Rotate-Back {
+  transition: 0.45s;
+  rotate: 0;
+}
+.Navigation .Navigation_Menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 46px;
+  color: var(--White);
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+@media (max-width: 1050px) {
+  .Navigation .Navigation_Menu a {
+    display: none;
+  }
+}
+.Navigation .Navigation_Menu a:hover {
+  transform: scale(0.95);
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--BackGround);
+  background-color: var(--BackGround-Secondary);
+  padding: 40px 195px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  .Footer {
+    gap: 30px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer {
+    gap: 30px;
+  }
+}
+.Footer .Footer-Info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: normal;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 690px;
+    gap: 30px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 315px;
+  }
+}
+.Footer .Footer-Info .NFT-Marketplace-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 0px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info .NFT-Marketplace-Info {
+    gap: 20px;
+  }
+}
+.Footer .Footer-Info .NFT-Marketplace-Info .Logo {
+  cursor: pointer;
+}
+.Footer .Footer-Info .NFT-Marketplace-Info .Additional-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info .NFT-Marketplace-Info .Additional-Info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.Footer .Footer-Info .NFT-Marketplace-Info .Community-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+  gap: 15px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info .NFT-Marketplace-Info .Community-Info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Info .NFT-Marketplace-Info .Community-Info {
+    gap: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.Footer .Footer-Info .NFT-Marketplace-Info .Community-Info img {
+  cursor: pointer;
+}
+.Footer .Footer-Info .Explore {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 240px;
+  gap: 25px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info .Explore {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Info .Explore {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.Footer .Footer-Info .Explore h1 {
+  font-family: Space Mono;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Footer .Footer-Info .Explore .Pages {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.Footer .Footer-Info .Explore .Pages a {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--CaptionAndLabelText);
+}
+.Footer .Footer-Info .Subscribe {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Info .Subscribe {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.Footer .Footer-Info .Subscribe h1 {
+  font-family: Space Mono;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Footer .Footer-Info .Subscribe .Subscribe-FormAndInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.Footer .Footer-Info .Subscribe .Subscribe-FormAndInfo p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Info .Subscribe .Subscribe-FormAndInfo .Error-Message {
+    width: 315px;
+    height: auto;
+    transform: translateX(-70px);
+  }
+}
+.Footer .Footer-Frame {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Frame {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Frame {
+    margin-top: 70px;
+    width: 315px;
+  }
+}
+.Footer .Footer-Frame .Divider {
+  height: 1px;
+  background-color: var(--CaptionAndLabelText);
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Frame .Divider {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Frame .Divider {
+    width: 315px;
+  }
+}
+.Footer .Footer-Frame p {
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: #ccc;
+}
+@media (max-width: 1050px) {
+  .Footer .Footer-Frame p {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  .Footer .Footer-Frame p {
+    width: 315px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.SignUp-Btn {
+  display: flex !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 0px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--CallToAction);
+  position: relative;
+}
+@media (max-width: 1050px) {
+  .SignUp-Btn {
+    height: 50px;
+    padding: 0px 40px;
+    background-color: 0px;
+    gap: normal;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    display: none;
+  }
+}
+.SignUp-Btn img {
+  position: absolute;
+  left: 0;
+  transform: translateX(27px);
+}
+.SignUp-Btn p {
+  color: var(--White);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  transform: translateX(10px);
+}
+.SignUp-Btn:hover {
+  transform: scale(0.95);
+}
+.SignUp-Btn .Open {
+  display: "initial" !important;
+}
+
+.GetStarted-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--CallToAction);
+}
+@media (max-width: 690px) {
+  .GetStarted-Btn {
+    width: 290px;
+  }
+}
+.GetStarted-Btn p {
+  color: var(--White);
+  text-align: center;
+  margin-left: 12px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.GetStarted-Btn:hover {
+  transform: scale(0.95);
+}
+
+.AdditionalNumber-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  padding: 32px 15px;
+  background-color: 10px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--CallToAction);
+}
+.AdditionalNumber-Btn p {
+  color: var(--White);
+  font-family: Space Mono;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: capitalize;
+  text-transform: capitalize;
+}
+.AdditionalNumber-Btn:hover {
+  transform: scale(0.95);
+}
+
+.ViewRankings-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: transparent !important;
+  border: 2px solid var(--CallToAction);
+  gap: 10px;
+}
+@media (max-width: 690px) {
+  .ViewRankings-Btn {
+    width: 315px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: normal;
+    gap: 50px;
+  }
+}
+.ViewRankings-Btn p {
+  font-family: 16px;
+  font-size: 600;
+  font-weight: 200%;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+}
+.ViewRankings-Btn:hover {
+  transform: scale(0.95);
+}
+
+.SeeAll-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: transparent !important;
+  border: 2px solid var(--CallToAction);
+  gap: 10px;
+}
+@media (max-width: 690px) {
+  .SeeAll-Btn {
+    margin-top: 30px;
+  }
+}
+.SeeAll-Btn p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+}
+.SeeAll-Btn:hover {
+  transform: scale(0.95);
+}
+
+.SeeNFT-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 22px 60px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--White);
+}
+@media (max-width: 1050px) {
+  .SeeNFT-Btn {
+    height: 60px;
+    padding: 22px 50px;
+    background-color: 12px;
+    gap: normal;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 690px) {
+  .SeeNFT-Btn {
+    width: 215px;
+    height: 16px;
+  }
+}
+.SeeNFT-Btn img {
+  transform: translateX(-10px);
+}
+.SeeNFT-Btn p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.SeeNFT-Btn:hover {
+  transform: scale(0.95);
+}
+
+.Subscribe-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  height: 61px !important;
+  background-color: var(--CallToAction);
+  position: absolute;
+  gap: 10px;
+  right: 0;
+}
+.Subscribe-Btn .LockIcon {
+  display: none;
+}
+@media (max-width: 1050px) {
+  .Subscribe-Btn {
+    height: 60px;
+    padding: 0px 50px;
+    background-color: 12px;
+    gap: normal;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 690px) {
+  .Subscribe-Btn {
+    height: 47px;
+    padding: 0px 50px;
+    background-color: 12px;
+    gap: normal;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    width: 315px;
+    height: 47px !important;
+    bottom: -50px;
+    right: 200px;
+  }
+}
+.Subscribe-Btn p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-align: center;
+  color: white !important;
+  margin-left: 10px;
+}
+.Subscribe-Btn:hover {
+  transform: scale(0.95);
+}
+
+.CreateAccount-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 46px;
+  padding: 0px 100px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  margin-right: 70px;
+  position: relative;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.CreateAccount-Btn:hover {
+  transform: scale(0.95);
+}
+.CreateAccount-Btn .Button-Loader {
+  display: none;
+  place-items: center;
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+}
+.CreateAccount-Btn .Button-Loader .lds-dual-ring {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.CreateAccount-Btn .Button-Loader .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Login-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 46px;
+  padding: 0px 100px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  position: relative;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Login-Btn:hover {
+  transform: scale(0.95);
+}
+.Login-Btn .Button-Loader {
+  display: none;
+  place-items: center;
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+}
+.Login-Btn .Button-Loader .lds-dual-ring {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.Login-Btn .Button-Loader .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Chain-Id-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 50px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  width: 186px;
+  background-color: var(--CallToAction);
+  color: var(--White);
+  white-space: nowrap;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Chain-Id-Btn:hover {
+  transform: scale(0.95);
+}
+@media (max-width: 690px) {
+  .Chain-Id-Btn {
+    width: 315px;
+  }
+}
+
+.Follow-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 30px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  background-color: transparent;
+  color: var(--White);
+  border: 2px solid var(--CallToAction);
+  white-space: nowrap;
+  position: relative;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Follow-Btn .Plus {
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 20px;
+}
+.Follow-Btn .Close {
+  display: none;
+}
+.Follow-Btn .Open {
+  display: initial;
+}
+.Follow-Btn .Follow {
+  display: none;
+  margin-right: 10px;
+  margin-top: 5px;
+  bottom: 20px;
+}
+.Follow-Btn .Follow img {
+  width: 20px;
+}
+.Follow-Btn:hover {
+  transform: scale(0.95);
+}
+@media (max-width: 690px) {
+  .Follow-Btn {
+    width: 315px;
+  }
+}
+
+.Delete-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  width: 90px;
+  transition: 0.3s;
+  position: absolute;
+  right: -10px;
+}
+@media (max-width: 1050px) {
+  .Delete-Btn {
+    right: -5px;
+    width: 60px;
+  }
+}
+@media (max-width: 690px) {
+  .Delete-Btn {
+    width: 50px;
+    right: -12px;
+  }
+}
+.Delete-Btn:hover {
+  transform: scale(0.95);
+}
+
+.SeeMore-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 30px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  width: 205px;
+  color: var(--White);
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid var(--CallToAction);
+  margin-bottom: 100px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.SeeMore-Btn img {
+  transform: translateX(-10px);
+}
+.SeeMore-Btn:hover {
+  transform: scale(0.95);
+}
+
+.SortByName-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  height: 60px;
+  padding: 0px 30px;
+  background-color: 12px;
+  gap: normal;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  width: 205px;
+  color: var(--White);
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid var(--CallToAction);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.SortByName-Btn img {
+  color: white;
+  width: 20px !important;
+  margin-right: 20px;
+}
+.SortByName-Btn:hover {
+  transform: scale(0.95);
+}
+
+.Subscribe-Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.Subscribe-Form > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  margin-top: 10px;
+  width: 430px;
+}
+@media (max-width: 690px) {
+  .Subscribe-Form > p {
+    margin-right: 40px;
+  }
+}
+.Subscribe-Form input {
+  width: 420px;
+  height: 28px;
+  padding: 16px 0px 16px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  border: 1px solid var(--CaptionAndLabelText);
+}
+@media (max-width: 1050px) {
+  .Subscribe-Form input {
+    width: 405px;
+    height: 28px;
+    padding: 16px 0px 16px 20px;
+    gap: 12px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 690px) {
+  .Subscribe-Form input {
+    width: 275px;
+    height: 14px;
+    padding: 16px 20px;
+    gap: 12px;
+    border-radius: 20px;
+    margin-right: 200px;
+  }
+}
+
+.Typeform {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 690px) {
+  .Typeform {
+    transform: translateX(-30px);
+  }
+}
+.Typeform img {
+  transform: translateX(30px);
+}
+.Typeform input {
+  width: 290px;
+  height: 16px;
+  padding: 16px 20px 16px 40px;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: var(--White);
+  border: 1px solid var(--CaptionAndLabelText);
+}
+@media (max-width: 1050px) {
+  .Typeform input {
+    width: 285px;
+    height: 16px;
+    padding: 16px 20px 16px 40px;
+    gap: 12px;
+    border-radius: 20px;
+  }
+}
+.Typeform input::-moz-placeholder {
+  color: black;
+}
+.Typeform input::placeholder {
+  color: black;
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 960px;
+  gap: 20px;
+  height: 60px;
+  border-radius: 20px;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  .Search {
+    margin-left: 150px;
+    width: 590px;
+  }
+}
+@media (max-width: 690px) {
+  .Search {
+    margin-left: 170px;
+    width: 230px;
+  }
+}
+.Search .LoaderIcon {
+  display: none;
+  transform: scale(0.5);
+  position: absolute;
+  right: -7px;
+}
+.Search .LoaderIcon .lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.Search .LoaderIcon .lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.Search .LoaderIcon .lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.Search .LoaderIcon .lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.Search input {
+  width: 960px;
+  height: 60px;
+  padding: 16px 20px 16px 40px;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: var(--BackGround);
+  color: var(--CaptionAndLabelText);
+  border: 2px solid var(--BackGround-Secondary);
+}
+.Search img {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.True {
+  color: green !important;
+}
+
+.False {
+  color: red !important;
+}
+
+body {
+  background-color: var(--BackGround);
+}
+
+html {
+  color: var(--White);
+}
+
+.Container {
+  width: 1050px;
+}
+@media (max-width: 1050px) {
+  .Container .Container {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  .Container .Container {
+    width: 315px;
+  }
+}
+
+#Hero_Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  padding: 80px 195px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Hero_Section {
+    margin-left: 6px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section {
+    padding: 40px 200px;
+  }
+}
+#Hero_Section .Hero_Frame {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame {
+    height: 450px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons {
+    gap: 20px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons {
+    gap: 40px;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead {
+    width: 330px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead {
+    gap: 10px;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead h1 {
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  flex-direction: normal;
+  font-family: Work Sans;
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .HeadlineAndSubhead p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  border-radius: 20px;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .TotalSale {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .TotalSale h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .TotalSale h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .TotalSale p {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .TotalSale p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Auctions {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Auctions h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Auctions h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Auctions p {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Auctions p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Artists {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Artists h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Artists h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Artists p {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .Frame_TextAndButtons .AdditionalInfo .Artists p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Hero_Section .Hero_Frame .HighlightedNFT {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 510px;
+  cursor: pointer;
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .HighlightedNFT {
+    transform: translateX(-10px);
+    height: 315px;
+  }
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .HighlightedNFT .HighlightedNFT-Img img {
+    width: 330px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .HighlightedNFT .HighlightedNFT-Img img {
+    width: 315px;
+  }
+}
+#Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 109px;
+  width: 510px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 330px;
+  }
+}
+@media (max-width: 690px) {
+  #Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame {
+    width: 315px;
+  }
+}
+#Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame .Artist-Card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#Hero_Section .Hero_Frame .HighlightedNFT .NFTFrame .Artist-Card p {
+  cursor: pointer;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+#TrendingCollection_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 0px;
+  background-color: var(--BackGround);
+}
+@media (max-width: 1050px) {
+  #TrendingCollection_Section {
+    padding: 40px 0px;
+    gap: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section {
+    transform: translateY(300px);
+  }
+}
+#TrendingCollection_Section .Section-Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #TrendingCollection_Section .Section-Headline {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section .Section-Headline {
+    width: 315px;
+  }
+}
+#TrendingCollection_Section .Section-Headline .Heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#TrendingCollection_Section .Section-Headline .Heading h1 {
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #TrendingCollection_Section .Section-Headline .Heading h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TrendingCollection_Section .Section-Headline .Subhead {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#TrendingCollection_Section .Section-Headline .Subhead p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section .Section-Headline .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TrendingCollection_Section .CardCollection-Row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 550px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #TrendingCollection_Section .CardCollection-Row {
+    width: 690px;
+  }
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard:nth-child(1) {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section .CardCollection-Row {
+    gap: 10px;
+    height: 505px;
+    width: 315px;
+  }
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard:nth-child(1) {
+    display: initial;
+  }
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard:nth-child(2) {
+    display: none;
+  }
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard:nth-child(3) {
+    display: none;
+  }
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 330px;
+  height: 525px;
+  gap: 15px;
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard {
+    width: 315px;
+    height: 505px;
+  }
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .PhotosAndAdditional {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@media (max-width: 690px) {
+  #TrendingCollection_Section .CardCollection-Row .CollectionCard .PhotosAndAdditional > img {
+    height: 315px;
+  }
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .PhotosAndAdditional img {
+  transition: 0.3s;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .PhotosAndAdditional img:hover {
+  transform: scale(0.95);
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .PhotosAndAdditional .AdditionalFrame {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .Third {
+  transform: translate(360px, -538px);
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo .Artist-Card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo .Artist-Card p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo .Artist-Card img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+#TrendingCollection_Section .CardCollection-Row .CollectionCard .CollectionInfo .Artist-Card img:hover {
+  transform: scale(0.95);
+}
+
+#TopRatedArtists_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 195px;
+  gap: 60px;
+  background-color: var(--BackGround);
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section {
+    padding: 200px 195px;
+    gap: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section {
+    display: block;
+    gap: 40px;
+    width: 315px;
+    transform: translate(-110px, 250px);
+  }
+}
+#TopRatedArtists_Section .Section_Headline_And_Button {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: initial;
+  gap: 100px;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button {
+    display: block;
+    margin-top: 100px;
+    width: 315px;
+  }
+}
+#TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 703px;
+  gap: 10px;
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    white-space: pre;
+    gap: 10px;
+  }
+}
+#TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Heading h1 {
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Heading h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Heading h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Subhead {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Subhead p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Section_Headline_And_Button .Section_Headline .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  height: 100% !important;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 690px;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(10) {
+    display: none;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(11) {
+    display: none;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(12) {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards {
+    width: 315px !important;
+    height: 110px;
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(3) {
+    display: none;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(4) {
+    display: none;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(5) {
+    display: none;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card:nth-child(6) {
+    display: none;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--BackGround-Secondary);
+  position: relative;
+  margin-top: 20px;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 330px;
+    height: 100px;
+    padding: 20px;
+    gap: 20px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 315px;
+    height: 60px;
+    padding: 20px;
+    gap: 20px;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card:hover {
+  transform: scale(0.95);
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Avatar {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 100px;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Avatar {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Avatar img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Avatar {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    transform: translateY(-10px);
+  }
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Avatar img {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info {
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 195px;
+    height: 60px;
+    gap: 5px;
+    transform: translateY(-20px);
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info h1 {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: translateY(20px);
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info {
+    gap: 5px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info .Sales-Info_Key {
+  color: var(--CaptionAndLabelText);
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info .Sales-Info_Key {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info .Sales-Info_Value {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Artist-Info .Sales-Info .Sales-Info_Value {
+    transform: translateX(125px);
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Ranking-Number {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: initial;
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+  border-radius: 20px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  background-color: var(--BackGround);
+}
+@media (max-width: 1050px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Ranking-Number {
+    left: 12px;
+    top: 13px;
+  }
+}
+@media (max-width: 690px) {
+  #TopRatedArtists_Section .Artist-Cards .Artist-Card .Ranking-Number {
+    transform: scale(0.85);
+  }
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Ranking-Number .position-left-change {
+  left: 6px !important;
+}
+#TopRatedArtists_Section .Artist-Cards .Artist-Card .Ranking-Number p {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  color: var(--CaptionAndLabelText);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#TopRatedArtists_Section .Loader {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  transform: translateY(300px);
+}
+#TopRatedArtists_Section .Loader #Loading-Info {
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#TopRatedArtists_Section .Loader .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#TopRatedArtists_Section .Loader .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+#TopRatedArtists_Section .Loader .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+#TopRatedArtists_Section .Loader .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+#TopRatedArtists_Section .Loader .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+#BrowseCategories_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 195px;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section {
+    gap: 40px;
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section {
+    height: 800px;
+    gap: 40px;
+    padding: 40px 0px;
+  }
+}
+#BrowseCategories_Section .Section-Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .Section-Headline {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .Section-Headline {
+    transform: translate(20px, 70px);
+    margin-top: 100px;
+    width: 315px;
+  }
+}
+#BrowseCategories_Section .Section-Headline h1 {
+  font-family: Work Sans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .Section-Headline h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .Section-Headline h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#BrowseCategories_Section .CategoryCards {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .CategoryCards {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 690px;
+    height: 470px;
+    gap: 50px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .CategoryCards {
+    width: 315px;
+    gap: 30px;
+    transform: scale(0.8);
+  }
+}
+#BrowseCategories_Section .CategoryCards .CategoryCards-Row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 209px;
+    gap: 30px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 315px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCards-Row:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 209px;
+    gap: 20px;
+  }
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCards-Row:nth-child(2) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 209px;
+    gap: 20px;
+  }
+}
+#BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--BackGround-Secondary);
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard {
+    width: 150px;
+    height: 209px;
+  }
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard img {
+    width: 150px;
+  }
+}
+@media (max-width: 690px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard .Collection-Name {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 30px 25px 30px;
+  gap: 25px;
+  white-space: nowrap;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard .Collection-Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    width: 150px;
+    height: 22px;
+  }
+}
+#BrowseCategories_Section .CategoryCards .CategoryCards-Row .CategoryCard:hover {
+  transform: scale(0.95);
+}
+
+#DiscoverNFTs_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 195px;
+  gap: 60px;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 195px 80px 195px;
+    gap: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #DiscoverNFTs_Section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 60px 0px;
+    gap: 40px;
+  }
+}
+#DiscoverNFTs_Section .Section-HeadlineAndButton {
+  display: flex;
+  align-items: flex-end;
+  gap: 100px;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section .Section-HeadlineAndButton {
+    display: flex;
+    width: 690px;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 690px) {
+  #DiscoverNFTs_Section .Section-HeadlineAndButton {
+    display: block;
+    align-items: flex-start;
+    width: 315px;
+    margin-left: 50px;
+  }
+}
+#DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    white-space: nowrap;
+  }
+}
+#DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline h1 {
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section .Section-HeadlineAndButton .Section-Headline p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#DiscoverNFTs_Section .NFTCards-Row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #DiscoverNFTs_Section .NFTCards-Row {
+    display: flex;
+    width: 690px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  #DiscoverNFTs_Section .NFTCards-Row .NFTCard:last-child {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  #DiscoverNFTs_Section .NFTCards-Row {
+    display: block;
+    width: 315px;
+  }
+  #DiscoverNFTs_Section .NFTCards-Row .NFTCard:last-child {
+    display: initial;
+  }
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 469px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 690px) {
+  #DiscoverNFTs_Section .NFTCards-Row .NFTCard {
+    width: 315px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard:hover {
+  transform: scale(0.95);
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFTCard:nth-child(3) {
+  margin-right: 30px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .Image {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 30px 25px 30px;
+  gap: 25px;
+  width: 330px;
+  background-color: var(--BackGround-Secondary);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Artist-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Artist-Info h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Artist-Info .Artist-AvatarAndName {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: 0.3s;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Artist-Info .Artist-AvatarAndName p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Artist-Info .Artist-AvatarAndName:hover {
+  transform: scale(0.95);
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Price {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 0px;
+  gap: 8px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Price h1 {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Price p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Highest-Bid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Highest-Bid h1 {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+}
+#DiscoverNFTs_Section .NFTCards-Row .NFTCard .NFT-Info .Additional-Info .Highest-Bid p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+#NFTHighlight_Section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+  background-position: center;
+  background-size: cover;
+}
+#NFTHighlight_Section .Background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#NFTHighlight_Section .NFT-Info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 360px 195px 60px 195px;
+}
+@media (max-width: 1050px) {
+  #NFTHighlight_Section .NFT-Info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+@media (max-width: 690px) {
+  #NFTHighlight_Section .NFT-Info {
+    display: block;
+    padding: 120px 195px 40px 195px;
+    transform: scale(0.7);
+  }
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #NFTHighlight_Section .NFT-Info .NFT-Frame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}
+@media (max-width: 690px) {
+  #NFTHighlight_Section .NFT-Info .NFT-Frame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 315px;
+  }
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 690px) {
+  #NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button {
+    width: 315px;
+  }
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button .Artist-Card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 10px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: var(--BackGround-Secondary);
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button .Artist-Card .Avatar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button .Artist-Card .Avatar img {
+  transition: 0.3s;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button .Artist-Card .Avatar img:hover {
+  transform: scale(0.95);
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button .Artist-Card p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button h1 {
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #NFTHighlight_Section .NFT-Info .NFT-Frame .NFT-Artist-Name-Button h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer h1 {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Hours {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Hours h1 {
+  font-family: Space Mono;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Hours p {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Minutes {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Minutes h1 {
+  font-family: Space Mono;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Minutes p {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Seconds {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Seconds h1 {
+  font-family: Space Mono;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer .Timer .Seconds p {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer h2 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#NFTHighlight_Section .NFT-Info .NFT-Frame .Auction-Timer h3 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+#HowItWorks_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 195px;
+  gap: 48px;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 195px;
+    gap: 40px;
+  }
+}
+#HowItWorks_Section .Section-Headline {
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Section-Headline {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #HowItWorks_Section .Section-Headline {
+    margin-left: 70px;
+    width: 315px;
+  }
+}
+#HowItWorks_Section .Section-Headline h1 {
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Section-Headline h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#HowItWorks_Section .Section-Headline p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Section-Headline p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#HowItWorks_Section .Cards-Row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: initial;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Cards-Row {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #HowItWorks_Section .Cards-Row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 315px;
+    gap: 20px;
+  }
+}
+#HowItWorks_Section .Cards-Row .Info-Card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 330px;
+  height: 440px;
+  padding: 10px 30px 30px 30px;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Cards-Row .Info-Card {
+    padding: 10px 20px 30px 20px;
+    height: 350px;
+  }
+}
+@media (max-width: 690px) {
+  #HowItWorks_Section .Cards-Row .Info-Card {
+    width: 275px;
+    justify-content: space-between;
+    padding: 20px;
+    height: 350px;
+  }
+}
+#HowItWorks_Section .Cards-Row .Info-Card .Icon {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Cards-Row .Info-Card .Icon {
+    width: 160px;
+    height: 160px;
+  }
+  #HowItWorks_Section .Cards-Row .Info-Card .Icon img {
+    width: 160px;
+    height: 160px;
+  }
+}
+#HowItWorks_Section .Cards-Row .Info-Card .Card-Details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#HowItWorks_Section .Cards-Row .Info-Card .Card-Details h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Cards-Row .Info-Card .Card-Details h1 {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#HowItWorks_Section .Cards-Row .Info-Card .Card-Details p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+@media (max-width: 1050px) {
+  #HowItWorks_Section .Cards-Row .Info-Card .Card-Details p {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+
+#SubscribeWidget_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 195px 80px 195px;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #SubscribeWidget_Section {
+    transform: scale(0.7);
+    padding: 40px 0px 80px 0px;
+  }
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section {
+    padding: 40px 0px;
+  }
+}
+#SubscribeWidget_Section .Subscribe-Widget {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 60px;
+  gap: 80px;
+  background-color: var(--BackGround-Secondary);
+  border-radius: 20px;
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section .Subscribe-Widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  #SubscribeWidget_Section .Subscribe-Widget > img {
+    width: 100%;
+    height: 310px;
+  }
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section .Subscribe-Widget > img {
+    width: 315px;
+    height: 255px;
+  }
+}
+#SubscribeWidget_Section .Widget-Frame {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section .Widget-Frame {
+    transform: translateX(100px);
+  }
+}
+#SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 1050px) {
+  #SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead {
+    gap: 10px;
+  }
+}
+#SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead h1 {
+  font-family: work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead h1 {
+    font-family: work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead p {
+  font-family: work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #SubscribeWidget_Section .Widget-Frame .HeadlineAndSubhead p {
+    width: 200px;
+    font-family: work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+
+body {
+  background-color: var(--BackGround);
+}
+
+html {
+  color: var(--White);
+}
+
+.Container {
+  width: 1050px;
+}
+@media (max-width: 1050px) {
+  .Container .Container {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  .Container .Container {
+    width: 315px;
+  }
+}
+
+#CreateAccount_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  gap: 60px;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section {
+    gap: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #CreateAccount_Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#CreateAccount_Section > img {
+  width: 700px;
+  height: 800px;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section > img {
+    width: 397px;
+    height: 100%;
+  }
+}
+@media (max-width: 690px) {
+  #CreateAccount_Section > img {
+    width: 375px;
+    height: 100%;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 50px;
+  gap: 40px;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section .CreateAccount-Form {
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 690px) {
+  #CreateAccount_Section .CreateAccount-Form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 315px;
+    padding: 30px 0px 40px 0px;
+    gap: 30px;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+#CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Headline h1 {
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Headline h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Subhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 460px;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Subhead {
+    width: 325px;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Subhead p {
+  white-space: wrap;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section .CreateAccount-Form .HeadlineAndSubhead .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form .Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 330px;
+  gap: 30px;
+  margin-left: 40px;
+}
+@media (max-width: 1050px) {
+  #CreateAccount_Section .CreateAccount-Form .Form {
+    width: 325px;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 690px) {
+  #CreateAccount_Section .CreateAccount-Form .Form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 325px;
+    margin-left: 0;
+  }
+}
+#CreateAccount_Section .CreateAccount-Form .Form .Typeforms {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#CreateAccount_Section .CreateAccount-Form .Form .Typeforms p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 20px;
+  margin-left: 30px;
+  width: 430px;
+}
+#CreateAccount_Section .CreateAccount-Form .SendToLogin {
+  display: grid;
+  place-items: center;
+}
+#CreateAccount_Section .CreateAccount-Form .SendToLogin p {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#CreateAccount_Section .CreateAccount-Form .SendToLogin a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 46px;
+  color: var(--CallToAction);
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+#CreateAccount_Section .CreateAccount-Form .SendToLogin a:hover {
+  transform: scale(0.95);
+}
+
+#Login_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  gap: 60px;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  #Login_Section {
+    gap: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #Login_Section {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#Login_Section > img {
+  width: 610px;
+  height: 691px;
+}
+@media (max-width: 1050px) {
+  #Login_Section > img {
+    width: 397px;
+    height: 100%;
+  }
+}
+@media (max-width: 690px) {
+  #Login_Section > img {
+    width: 375px;
+    height: 100%;
+  }
+}
+#Login_Section .Login-Form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 100px 0px;
+  gap: 40px;
+  margin: auto;
+}
+@media (max-width: 1050px) {
+  #Login_Section .Login-Form {
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 690px) {
+  #Login_Section .Login-Form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 315px;
+    padding: 30px 0px 40px 0px;
+    gap: 30px;
+  }
+}
+#Login_Section .Login-Form .HeadlineAndSubhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 690px) {
+  #Login_Section .Login-Form .HeadlineAndSubhead {
+    width: 315px;
+  }
+}
+#Login_Section .Login-Form .HeadlineAndSubhead .Headline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#Login_Section .Login-Form .HeadlineAndSubhead .Headline h1 {
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Login_Section .Login-Form .HeadlineAndSubhead .Headline h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Login_Section .Login-Form .HeadlineAndSubhead .Subhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 460px;
+}
+#Login_Section .Login-Form .HeadlineAndSubhead .Subhead p {
+  width: 330px;
+  white-space: wrap;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Login_Section .Login-Form .HeadlineAndSubhead .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Login_Section .Login-Form .Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 330px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Login_Section .Login-Form .Form {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 690px) {
+  #Login_Section .Login-Form .Form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+#Login_Section .Login-Form .Form .Typeforms {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+@media (max-width: 1050px) {
+  #Login_Section .Login-Form .Form .Typeforms {
+    transform: translateX(-50px);
+  }
+}
+@media (max-width: 690px) {
+  #Login_Section .Login-Form .Form .Typeforms {
+    transform: translateX(0px);
+  }
+}
+#Login_Section .Login-Form .Form .Typeforms p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 20px;
+  margin-left: 30px;
+  width: 430px;
+}
+#Login_Section .Login-Form .Form .SendToCreateAccount {
+  display: grid;
+  place-items: center;
+  padding: 30px 0px;
+}
+#Login_Section .Login-Form .Form .SendToCreateAccount p {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Login_Section .Login-Form .Form .SendToCreateAccount a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: normal;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  height: 46px;
+  color: var(--CallToAction);
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  gap: 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+#Login_Section .Login-Form .Form .SendToCreateAccount a:hover {
+  transform: scale(0.95);
+}
+
+#Artist-Detail_Section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1800px;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section {
+    width: 834px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section {
+    width: 375px;
+  }
+}
+#Artist-Detail_Section .CoverAndProfileImage {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: -70px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .CoverAndProfileImage {
+    align-items: center;
+  }
+}
+#Artist-Detail_Section .CoverAndProfileImage > img {
+  width: 140%;
+  height: 320px;
+  background: linear-gradient(180deg, rgba(151, 71, 255, 0) 21.88%, #9747ff 95.31%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .CoverAndProfileImage > img {
+    width: 140%;
+    height: 280px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .CoverAndProfileImage > img {
+    width: 240%;
+    height: 250px;
+  }
+}
+#Artist-Detail_Section .CoverAndProfileImage .Profile-Image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 599px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .CoverAndProfileImage .Profile-Image {
+    width: 690px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .CoverAndProfileImage .Profile-Image {
+    width: 375px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#Artist-Detail_Section .CoverAndProfileImage .Profile-Image .Avatar {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  gap: 10px;
+  border-radius: 20px;
+  border: 2px solid var(--BackGround);
+}
+#Artist-Detail_Section .Artist-Info-Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container {
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container {
+    padding: 30px 20px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1050px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section {
+    width: 690px;
+  }
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section {
+    width: 315px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 1600px;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton {
+    width: 690px;
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton {
+    width: 315px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 599px;
+  gap: 30px;
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info {
+    width: 315px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info > h1 {
+  width: 100%;
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info > h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info > h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 510px;
+  gap: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats {
+    width: 315px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats h1 {
+  width: 210px;
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats h1 {
+    width: 100px;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Volume {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Volume h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Volume h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Volume p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Volume p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .NFTs-Sold {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .NFTs-Sold h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .NFTs-Sold h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .NFTs-Sold p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .NFTs-Sold p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Followers {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Followers h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Followers h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Followers p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Stats .Followers p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Bio {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Bio h1 {
+  font-family: Space Mono;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Bio h1 {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Bio p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Bio p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Web-Links h1 {
+  font-family: Space Mono;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--CaptionAndLabelText);
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Web-Links h1 {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Web-Links .Icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Web-Links .Icons {
+    height: 24;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .Artist-Info .Web-Links .Icons img {
+  cursor: pointer;
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .CTAs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: normal;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .CTAs {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .CTAs {
+    flex-direction: column;
+  }
+}
+#Artist-Detail_Section .Artist-Info-Container .Artist-Info-Section .Artist-NameAndButton .CTAs button {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .Artist-Frame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#Artist-Detail_Section .Artist-Frame .Line {
+  width: 1700px;
+  height: 1px;
+  background-color: var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Frame .Line {
+    width: 690px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Frame .Line {
+    padding-left: 800px;
+    width: 375px;
+  }
+}
+#Artist-Detail_Section .Artist-Frame .Tab-Frame {
+  display: flex;
+  width: 1050px;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Frame .Tab-Frame {
+    width: 680px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Frame .Tab-Frame {
+    width: 315px;
+  }
+}
+#Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-right: 150px;
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs {
+    padding-right: 400px;
+    gap: 40px;
+  }
+}
+#Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs .Created {
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+#Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs .Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 0px 30px;
+  position: relative;
+  color: var(--CaptionAndLabelText);
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs .Tab {
+    padding: 0px 10px;
+  }
+}
+#Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs .Tab h1 {
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .Artist-Frame .Tab-Frame .Tabs .Tab h1 {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Artist-Detail_Section .NFT-Cards-Section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 80px 300px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Artist-Detail_Section .NFT-Cards-Section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 690px) {
+  #Artist-Detail_Section .NFT-Cards-Section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 80px 30px;
+  }
+}
+#Artist-Detail_Section .NFT-Cards-Section > h1 {
+  font-family: Space Mono;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 469px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card:hover {
+  transform: scale(0.95);
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .Image {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 30px 25px 30px;
+  gap: 25px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--BackGround-Secondary);
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info > h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName .Avatar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName .Avatar img {
+  width: 24px;
+  height: 24px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName h1 {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Price {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 0px;
+  gap: 8px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Price h1 {
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Price p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid h1 {
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .NFT-Cards-Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .Loader {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  transform: translate(650px, 400px);
+}
+#Artist-Detail_Section .Loader #Loading-Info {
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Artist-Detail_Section .Loader .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#Artist-Detail_Section .Loader .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+#Artist-Detail_Section .Loader .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+#Artist-Detail_Section .Loader .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+#Artist-Detail_Section .Loader .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.Not-Found-Title {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  margin-top: 200px;
+}
+.Not-Found-Title img {
+  width: 150px;
+}
+.Not-Found-Title h1 {
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Not-Found-Title h2 {
+  font-family: Work Sans;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.Not-Found-Title h2 b {
+  color: var(--CallToAction);
+}
+
+#Rankings_Section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 120px;
+  width: 1280px;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section {
+    width: 834px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section {
+    width: 375px;
+    transform: translateX(-80px);
+  }
+}
+#Rankings_Section .HeadlineAndSubhead {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  gap: 40px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .HeadlineAndSubhead {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .HeadlineAndSubhead {
+    margin-right: 0px;
+    padding: 30px 0px;
+  }
+}
+#Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead {
+    gap: 10px;
+  }
+}
+#Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Headline {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Headline h1 {
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Headline h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Headline h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Subhead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+#Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Subhead p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .HeadlineAndSubhead .Headline_And_Subhead .Subhead p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Rankings_Section .Rankings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  gap: 20px;
+  height: 100%;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings {
+    padding: 0px 0px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 0px;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header {
+    margin-right: -200px;
+    gap: 10px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header {
+    margin-right: -700px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 20px;
+  border-radius: 20px;
+  height: 60px;
+  border: 1px solid var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers {
+    width: 690px !important;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers {
+    width: 315px !important;
+    padding: 0px 10px;
+    margin-left: 10px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist {
+  display: flex;
+  width: 430px;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist {
+    width: 215px;
+    gap: 10px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist h1:nth-child(1) {
+  width: 30px;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist h1:nth-child(1) {
+    width: 24px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist h1 {
+  text-align: center;
+  cursor: pointer;
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .RankAndArtist h1 {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Change-Header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Change-Header {
+    width: 100px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Change-Header {
+    display: none;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .NFTs-Sold-Header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .NFTs-Sold-Header {
+    display: none;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Volume-Header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Volume-Header {
+    width: 100px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Rankings-Headers .Stats-Header .Volume-Header {
+    width: 70px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items {
+    padding: 20px 0px 140px 0px;
+    gap: 10px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items {
+    padding: 10px 10px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--BackGround-Secondary);
+  border-radius: 20px;
+  height: 80px;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item {
+    padding: 0px 10px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist {
+    width: 410px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist {
+    width: 300px;
+    gap: 10px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: var(--BackGround);
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: normal;
+    width: 24px !important;
+    height: 24px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number p {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  text-align: center;
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number p {
+    top: 0;
+    left: -10px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number p {
+    top: 5px;
+    left: -12px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number p {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number .position-left-change {
+  left: 6px !important;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number .position-left-change {
+    left: -13px !important;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Ranking-Number .position-left-change {
+    left: -20px !important;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card {
+    width: 320px;
+    gap: 12px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card {
+    width: 150px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Avatar {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Avatar .Avatar {
+  display: flex;
+  width: 60px;
+  align-items: flex-start;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Avatar .Avatar {
+    width: 24px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Avatar .Avatar img {
+  height: 60px;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Avatar .Avatar img {
+    height: 24px;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Info h1 {
+  width: 300px;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card .Artist-Info h1 {
+    width: 130px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Artist-Card:hover {
+  transform: scale(0.95);
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  margin-left: 40px;
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Change {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  color: var(--Green);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Change {
+    width: 100px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Change {
+    display: none;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .NFTs-Sold {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: -20px;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .NFTs-Sold {
+    display: none;
+  }
+}
+#Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Volume {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 160px;
+  gap: 10px;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Volume {
+    width: 100px;
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Rankings .Rankings-Header .Ranking-Items .Ranking-Item .RankAndArtist .Stats .Volume {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    width: 80px;
+  }
+}
+#Rankings_Section .Loader {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  transform: translate(0px, 300px);
+}
+@media (max-width: 1050px) {
+  #Rankings_Section .Loader {
+    transform: translate(-50px, 270px);
+  }
+}
+@media (max-width: 690px) {
+  #Rankings_Section .Loader {
+    transform: translate(0px, 170px);
+  }
+}
+#Rankings_Section .Loader #Loading-Info {
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#Rankings_Section .Loader .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#Rankings_Section .Loader .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+#Rankings_Section .Loader .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+#Rankings_Section .Loader .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+#Rankings_Section .Loader .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+#MarketPlace_Section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1280px;
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section {
+    transform: translateX(-100px);
+  }
+}
+#MarketPlace_Section .Headline-Subhead {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0px;
+  justify-content: center;
+  margin: auto;
+  gap: 40px;
+  margin-left: 250px;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead {
+    margin-left: 0px;
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .Headline-Subhead {
+    padding: 40px 0px;
+  }
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead {
+    width: 680px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead {
+    margin-right: 400px;
+    width: 315px;
+  }
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame h1 {
+  font-family: Work Sans;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame h1 {
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame h1 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame p {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header-Frame p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60px;
+  padding: 12px 0px;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header {
+    width: 680px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header {
+    width: 315px;
+  }
+}
+#MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header .Headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header .Headers {
+    width: 680px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .Headline-Subhead .HeadlineAndSubhead .Header .Headers {
+    width: 315px;
+  }
+}
+#MarketPlace_Section .MarketPlace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace {
+    padding-left: 110px;
+  }
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame {
+    width: 834px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame {
+    width: 375px;
+  }
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame .Line {
+  width: 1520px;
+  height: 1px;
+  background-color: var(--BackGround-Secondary);
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Line {
+    width: 1134px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Line {
+    width: 800px;
+  }
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: normal;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame {
+    align-items: center;
+    width: 680px;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame {
+    width: 315px;
+  }
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs {
+  display: flex;
+  align-items: flex-start;
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .NFTs-Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 0px 30px;
+  gap: 16px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .NFTs-Tab {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .NFTs-Tab {
+    padding: 0px 10px;
+  }
+}
+#MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .Collections-Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 0px 30px;
+  gap: 16px;
+  text-align: center;
+  color: var(--CaptionAndLabelText);
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .Collections-Tab {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .MarketPlace-Frame .Frame .Tabs .Collections-Tab {
+    padding: 0px 10px;
+  }
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 60px 0px 80px 0px;
+  gap: 30px;
+  margin: auto;
+}
+@media (max-width: 1050px) {
+  #MarketPlace_Section .MarketPlace .NFT-Cards_Section {
+    width: 690px !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 690px) {
+  #MarketPlace_Section .MarketPlace .NFT-Cards_Section {
+    width: 315px !important;
+    padding: 40px 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 469px;
+  border-radius: 20px;
+  transition: 0.3s;
+  width: 330px;
+  cursor: pointer;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card:hover {
+  transform: scale(0.95);
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .Image {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 30px 25px 30px;
+  gap: 25px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--BackGround-Secondary);
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info > h1 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName .Avatar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName .Avatar img {
+  width: 24px;
+  height: 24px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Artist-Info .Artist-AvatarAndName h1 {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Price {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 0px;
+  gap: 8px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Price h1 {
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Price p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid h1 {
+  color: var(--CaptionAndLabelText);
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NFT-Cards_Section .NFT-Card .NFT-Info .Additional-Info .Highest-Bid p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .NoMore {
+  display: none;
+  margin-bottom: 40px;
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 120%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .Loader {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  transform: translate(0px, -200px);
+}
+#MarketPlace_Section .MarketPlace .Loader #Loading-Info {
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#MarketPlace_Section .MarketPlace .Loader .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#MarketPlace_Section .MarketPlace .Loader .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+#MarketPlace_Section .MarketPlace .Loader .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+#MarketPlace_Section .MarketPlace .Loader .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+#MarketPlace_Section .MarketPlace .Loader .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */

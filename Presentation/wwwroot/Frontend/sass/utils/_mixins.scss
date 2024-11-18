@@ -1,0 +1,106 @@
+@mixin text-formatter(
+  $font-family,
+  $font-size,
+  $font-weight,
+  $line-height: normal,
+  $letter-spacing: normal,
+  $font-style: normal,
+  $text-transform: capitalize
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-style: $font-style;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}
+
+$media: (
+  "xm": 315px,
+  "sm": 690px,
+  "xl": 990px,
+  "md": 1050px,
+);
+
+@mixin for-size($size) {
+  @if $size == mini-phone {
+    @media (max-width: map-get($media, "xs")) {
+      @content;
+    }
+  } @else if $size == phone {
+    @media (max-width: map-get($media, "sm")) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: map-get($media, "md")) {
+      @content;
+    }
+  } @else if $size == mini-laptop {
+    @media (max-width: map-get($media, "xl")) {
+      @content;
+    }
+  } @else if $size == laptop {
+    @media (min-width: map-get($media, "lg")) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: map-get($media, "xl")) {
+      @content;
+    }
+  }
+}
+
+@mixin Flexed(
+  $display: flex,
+  $justify-content: normal,
+  $align-items: normal,
+  $flex-direction: normal
+) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin Button(
+  $height: normal,
+  $padding: normal,
+  $background-color: var(--CallToAction),
+  $gap: normal,
+  $border-radius: 20px,
+  $border: none,
+  $transition: 0.3s
+) {
+  height: $height;
+  padding: $padding;
+  background-color: $background-color;
+  gap: $gap;
+  border-radius: $border-radius;
+  border: $border;
+  transition: $transition;
+}
+
+@mixin Input(
+  $width: 420px,
+  $height: 28px,
+  $padding: 16px 0px 16px 20px,
+  $gap: 12px,
+  $border-radius: 20px
+) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  gap: $gap;
+  border-radius: $border-radius;
+}
+
+@mixin Flex-ItemsAndPosition(
+  $display: flex,
+  $align-items: normal,
+  $flex-direction: initial
+) {
+  display: $display;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}

@@ -1,0 +1,464 @@
+#Rankings_Section {
+  @include Flex-ItemsAndPosition(flex, center, column);
+  margin-left: 120px;
+  width: 1280px;
+  position: relative;
+
+  @include for-size(tablet) {
+    width: 834px;
+  }
+
+  @include for-size(phone) {
+    width: 375px;
+    transform: translateX(-80px);
+  }
+
+  .HeadlineAndSubhead {
+    @include Flex-ItemsAndPosition(flex, center, column);
+    padding: 40px 0px;
+    gap: 40px;
+
+    @include for-size(tablet) {
+      margin-right: 100px;
+    }
+
+    @include for-size(phone) {
+      margin-right: 0px;
+      padding: 30px 0px;
+    }
+
+    .Headline_And_Subhead {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      gap: 20px;
+
+      @include for-size(phone) {
+        gap: 10px;
+      }
+
+      .Headline {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+
+        h1 {
+          @include text-formatter(Work Sans, 51px, 600, 110%);
+
+          @include for-size(tablet) {
+            @include text-formatter(Work Sans, 38px, 600, 120%);
+          }
+
+          @include for-size(phone) {
+            @include text-formatter(Work Sans, 28px, 600, 140%);
+          }
+        }
+      }
+
+      .Subhead {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        p {
+          @include text-formatter(Work Sans, 22px, 400, 160%);
+
+          @include for-size(tablet) {
+            @include text-formatter(Work Sans, 16px, 400, 140%);
+          }
+        }
+      }
+    }
+  }
+
+  .Rankings {
+    @include Flex-ItemsAndPosition(flex, center, column);
+    padding: 40px 0px;
+    gap: 20px;
+    height: 100%;
+
+    @include for-size(phone) {
+      padding: 0px 0px;
+    }
+
+    .Rankings-Header {
+      @include Flex-ItemsAndPosition(flex, flex-start, column);
+      height: 100%;
+      padding: 12px 0px;
+      gap: 30px;
+
+      @include for-size(tablet) {
+        margin-right: -200px;
+        gap: 10px;
+      }
+
+      @include for-size(phone) {
+        margin-right: -700px;
+      }
+
+      .Rankings-Headers {
+        @include Flexed(flex, space-between, center, row);
+        padding: 0px 20px;
+        border-radius: 20px;
+        height: 60px;
+        border: 1px solid var(--BackGround-Secondary);
+
+        @include for-size(tablet) {
+          width: 690px !important;
+        }
+
+        @include for-size(phone) {
+          width: 315px !important;
+          padding: 0px 10px;
+          margin-left: 10px;
+        }
+
+        .RankAndArtist {
+          display: flex;
+          width: 430px;
+          align-items: center;
+          gap: 20px;
+
+          @include for-size(phone) {
+            width: 215px;
+            gap: 10px;
+          }
+
+          h1:nth-child(1) {
+            width: 30px;
+
+            @include for-size(phone) {
+              width: 24px;
+            }
+          }
+
+          h1 {
+            text-align: center;
+            cursor: pointer;
+            color: var(--CaptionAndLabelText);
+            @include text-formatter(Space Mono, 16px, 400, 140%);
+
+            @include for-size(phone) {
+              @include text-formatter(Space Mono, 12px, 400, 110%);
+            }
+          }
+        }
+
+        .Stats-Header {
+          @include Flexed(flex, flex-end, center, row);
+          gap: 20px;
+
+          .Change-Header {
+            @include Flex-ItemsAndPosition(flex, flex-start, column);
+            width: 160px;
+            gap: 10px;
+            cursor: pointer;
+            color: var(--CaptionAndLabelText);
+            @include text-formatter(Space Mono, 16px, 400, 140%);
+
+            @include for-size(tablet) {
+              width: 100px;
+            }
+
+            @include for-size(phone) {
+              display: none;
+            }
+          }
+
+          .NFTs-Sold-Header {
+            @include Flex-ItemsAndPosition(flex, flex-start, column);
+            width: 160px;
+            gap: 10px;
+            cursor: pointer;
+            color: var(--CaptionAndLabelText);
+            @include text-formatter(Space Mono, 16px, 400, 140%);
+
+            @include for-size(tablet) {
+              display: none;
+            }
+          }
+          .Volume-Header {
+            @include Flex-ItemsAndPosition(flex, flex-start, column);
+            width: 160px;
+            gap: 10px;
+            cursor: pointer;
+            color: var(--CaptionAndLabelText);
+            @include text-formatter(Space Mono, 16px, 400, 140%);
+
+            @include for-size(tablet) {
+              width: 100px;
+            }
+
+            @include for-size(phone) {
+              width: 70px;
+            }
+          }
+        }
+      }
+
+      .Ranking-Items {
+        @include Flexed(flex, center, center, column);
+        gap: 20px;
+
+        @include for-size(tablet) {
+          padding: 20px 0px 140px 0px;
+          gap: 10px;
+        }
+
+        @include for-size(phone) {
+          padding: 10px 10px;
+        }
+
+        .Ranking-Item {
+          @include Flexed(flex, space-between, center, row);
+          background-color: var(--BackGround-Secondary);
+          border-radius: 20px;
+          height: 80px;
+          position: relative;
+
+          @include for-size(tablet) {
+            padding: 0px 20px;
+          }
+
+          @include for-size(phone) {
+            padding: 0px 10px;
+          }
+
+          .RankAndArtist {
+            @include Flex-ItemsAndPosition(flex, center, row);
+            gap: 20px;
+
+            @include for-size(tablet) {
+              width: 410px;
+            }
+
+            @include for-size(phone) {
+              width: 300px;
+              gap: 10px;
+            }
+
+            .Ranking-Number {
+              @include Flex-ItemsAndPosition(flex, flex-start, row);
+              position: relative;
+              width: 30px;
+              height: 30px;
+              gap: 10px;
+              margin-left: 20px;
+              border-radius: 20px;
+              background-color: var(--BackGround);
+
+              @include for-size(tablet) {
+                @include Flexed(flex, center, center);
+                width: 24px !important;
+                height: 24px;
+              }
+
+              p {
+                position: absolute;
+                left: 10px;
+                top: 4px;
+                text-align: center;
+                color: var(--CaptionAndLabelText);
+
+                @include text-formatter(Space Mono, 16px, 400, 140%);
+
+                @include for-size(tablet) {
+                  top: 0;
+                  left: -10px;
+                }
+
+                @include for-size(phone) {
+                  top: 5px;
+                  left: -12px;
+                }
+
+                @include for-size(phone) {
+                  @include text-formatter(Space Mono, 12px, 400, 110%);
+                }
+              }
+
+              .position-left-change {
+                left: 6px !important;
+
+                @include for-size(tablet) {
+                  left: -13px !important;
+                }
+
+                @include for-size(phone) {
+                  left: -20px !important;
+                }
+              }
+            }
+
+            .Artist-Card {
+              @include Flexed(flex, center, center, row);
+              gap: 20px;
+              border-radius: 20px;
+              transition: 0.3s;
+              cursor: pointer;
+
+              @include for-size(tablet) {
+                width: 320px;
+                gap: 12px;
+              }
+
+              @include for-size(phone) {
+                width: 150px;
+              }
+
+              .Artist-Avatar {
+                @include Flex-ItemsAndPosition(flex, flex-end, row);
+
+                .Avatar {
+                  display: flex;
+                  width: 60px;
+                  align-items: flex-start;
+                  gap: 10px;
+
+                  @include for-size(tablet) {
+                    width: 24px;
+                  }
+
+                  img {
+                    height: 60px;
+
+                    @include for-size(tablet) {
+                      height: 24px;
+                    }
+                  }
+                }
+              }
+
+              .Artist-Info {
+                @include Flexed(flex, center, flex-start, column);
+                gap: 5px;
+
+                h1 {
+                  width: 300px;
+                  @include text-formatter(Work Sans, 22px, 600, 140%);
+
+                  @include for-size(phone) {
+                    width: 130px;
+                    @include text-formatter(Work Sans, 16px, 400, 140%);
+                  }
+                }
+              }
+
+              &:hover {
+                transform: scale(0.95);
+              }
+            }
+
+            .Stats {
+              @include Flexed(flex, flex-end, center, row);
+              gap: 20px;
+              text-align: center;
+              margin-left: 40px;
+
+              .Change {
+                @include Flex-ItemsAndPosition(flex, flex-start, column);
+                width: 160px;
+                gap: 10px;
+                color: var(--Green);
+                @include text-formatter(Space Mono, 16px, 400, 140%);
+
+                @include for-size(tablet) {
+                  width: 100px;
+                }
+
+                @include for-size(phone) {
+                  display: none;
+                }
+              }
+
+              .NFTs-Sold {
+                @include Flex-ItemsAndPosition(flex, flex-start, column);
+                width: 160px;
+                gap: 10px;
+                text-align: center;
+                margin-left: 20px;
+                margin-right: -20px;
+                @include text-formatter(Space Mono, 16px, 400, 140%);
+
+                @include for-size(tablet) {
+                  display: none;
+                }
+              }
+              .Volume {
+                @include Flex-ItemsAndPosition(flex, flex-start, column);
+                width: 160px;
+                gap: 10px;
+                @include text-formatter(Space Mono, 16px, 400, 140%);
+
+                @include for-size(tablet) {
+                  width: 100px;
+                }
+
+                @include for-size(phone) {
+                  @include text-formatter(Space Mono, 12px, 400, 110%);
+                  width: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Loader {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transform: translate(0px, 300px);
+
+    @include for-size(tablet) {
+      transform: translate(-50px, 270px);
+    }
+
+    @include for-size(phone) {
+      transform: translate(0px, 170px);
+    }
+
+    #Loading-Info {
+      @include text-formatter(Space Mono, 20px, 500, 100%);
+    }
+
+    .lds-facebook {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: #fff;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    .lds-facebook div:nth-child(1) {
+      left: 8px;
+      animation-delay: -0.24s;
+    }
+    .lds-facebook div:nth-child(2) {
+      left: 32px;
+      animation-delay: -0.12s;
+    }
+    .lds-facebook div:nth-child(3) {
+      left: 56px;
+      animation-delay: 0;
+    }
+    @keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+      50%,
+      100% {
+        top: 24px;
+        height: 32px;
+      }
+    }
+  }
+}
