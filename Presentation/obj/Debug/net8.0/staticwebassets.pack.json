@@ -28261,8 +28261,24 @@
       "PackagePath": "staticwebassets\\libs\\sweetalert2\\sweetalert2.min.js"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\4161f3c2-fe2b-4eb5-b07f-932ec38ac5b7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\4161f3c2-fe2b-4eb5-b07f-932ec38ac5b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\5c6eaa7b-8d66-4766-bad5-78b621e8c46a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\5c6eaa7b-8d66-4766-bad5-78b621e8c46a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\63eabab5-1993-4a4c-8497-bc7a4d141ae6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\63eabab5-1993-4a4c-8497-bc7a4d141ae6.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\ce98f2ca-cb08-4725-9be4-c8c59d7e44b8.png",
       "PackagePath": "staticwebassets\\uploads\\images\\ce98f2ca-cb08-4725-9be4-c8c59d7e44b8.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\e5f2a2ac-aaaa-4bc0-912b-079150d12e30.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\e5f2a2ac-aaaa-4bc0-912b-079150d12e30.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

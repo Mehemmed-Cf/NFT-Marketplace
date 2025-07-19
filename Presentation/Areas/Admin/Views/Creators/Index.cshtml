@@ -155,7 +155,7 @@
             $(element).attr('disabled', 'disable');
 
             const link = $(element).attr('href');
-            const title = $(element).data('entity-title');
+            const NickName = $(element).data('entity-title');
 
 
             const bigonSwal = Swal.mixin({
@@ -168,7 +168,7 @@
 
             bigonSwal.fire({
                 title: `Diqqət`,
-                text: `${title} - adli melumatin silmek istediyinizden eminsinizmi??`,
+                text: `${NickName} - adli melumatin silmek istediyinizden eminsinizmi??`,
                 icon: "warning",
                 showCancelButton: true,
                 confirmButtonText: "Bəli",
@@ -181,7 +181,7 @@
                         url: link,
                         type: 'POST',
                         success: function (response) {
-                            alert(`${title} silindi`);
+                            alert(`${NickName} silindi`);
 
                             window.location.reload();
                         },

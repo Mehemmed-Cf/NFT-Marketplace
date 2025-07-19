@@ -13,8 +13,8 @@ namespace Application.Modules.NFTsModule.Commands.NFTEditCommand
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public short Price { get; set; }
-        public short HighestBid { get; set; }
+        public double Price { get; set; }
+        public double HighestBid { get; set; }
         public IFormFile NFTImage { get; set; }
         public int CreatorId { get; set; }
     }

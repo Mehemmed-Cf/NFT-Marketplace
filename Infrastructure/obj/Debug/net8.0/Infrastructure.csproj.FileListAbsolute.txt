@@ -10,3 +10,4 @@ C:\Users\user\source\repos\NFT Marketplace\Infrastructure\obj\Debug\net8.0\Infra
 C:\Users\user\source\repos\NFT Marketplace\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Users\user\source\repos\NFT Marketplace\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\user\source\repos\NFT Marketplace\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\user\source\repos\NFT Marketplace\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

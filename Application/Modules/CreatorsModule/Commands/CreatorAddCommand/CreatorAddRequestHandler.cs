@@ -45,6 +45,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
             {
                 Id = entity.Id,
                 NickName = entity.NickName,
+                Email = entity.Email,
                 ImagePath = entity.ImagePath,
                 Bio = entity.Bio,
                 Followers = entity.Followers,
