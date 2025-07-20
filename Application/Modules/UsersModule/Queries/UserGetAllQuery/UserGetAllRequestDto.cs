@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Modules.UsersModule.Commands.UserAddCommand
+namespace Application.Modules.UsersModule.Queries.UserGetAllQuery
 {
-    public class UserAddRequestDto
+    public class UserGetAllRequestDto
     {
         public int Id { get; set; }
         public string Username { get; set; }

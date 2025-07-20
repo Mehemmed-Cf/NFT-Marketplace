@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Modules\UsersModule\Commands\NewFolder\" />
     <Folder Include="Modules\UsersModule\qjueries\" />
   </ItemGroup>
 
