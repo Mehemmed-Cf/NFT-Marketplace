@@ -30,6 +30,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorEditCommand
             entity.Followers = request.Followers;
             entity.Volume = request.Volume;
             entity.SoldNFts = request.SoldNFts;
+            entity.Email = request.Email;
 
             if (request.ProfileImage is not null)
                 entity.ImagePath = await fileService.ChangeFileAsync(entity.ImagePath, request.ProfileImage);

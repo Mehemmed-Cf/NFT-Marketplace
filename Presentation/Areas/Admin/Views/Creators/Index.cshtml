@@ -47,7 +47,8 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>Id</th>
+                            <th>Profile</th>
                             <th>NickName</th>
                             <th>ChainId</th>
                             <th>Email</th>
@@ -66,6 +67,10 @@
                         @foreach (var item in Model)
                         {
                             <tr>
+                                <td>
+                                    @item.Id
+                                </td>
+
                                 <td class="image-cell">
                                     <img src="@item.ImagePath" />
                                 </td>
@@ -84,7 +89,7 @@
                                 </td>
 
                                 <td>
-                                    <a target="_blank" asp-area="" asp-controller="creators" asp-action="details">
+                                    <a target="_blank" asp-area="" asp-controller="creators" asp-action="details" asp-route-id="@item.Id">
                                         @item.Email
                                     </a>
                                 </td>

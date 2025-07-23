@@ -115,8 +115,8 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar");
 
                     b.Property<int>("Followers")
                         .HasColumnType("int");
@@ -227,7 +227,7 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(254)
+                        .HasMaxLength(255)
                         .HasColumnType("nvarchar");
 
                     b.Property<bool?>("EmailConfirmed")

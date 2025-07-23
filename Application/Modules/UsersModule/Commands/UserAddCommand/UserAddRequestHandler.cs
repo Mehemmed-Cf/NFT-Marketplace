@@ -31,6 +31,7 @@ namespace Application.Modules.UsersModule.Commands.UserAddCommand
                 Username = entity.Username,
                 Email = entity.Email,
                 Password = entity.Password,
+                EmailConfirmed = entity.EmailConfirmed.GetValueOrDefault(false)
             };
 
             return dto;

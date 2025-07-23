@@ -36,6 +36,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
             {
                 Id = m.Id,
                 NickName = m.NickName,
+                Email = m.Email,
                 ChainId = m.ChainId,
                 Bio = m.Bio,
                 Followers = m.Followers,

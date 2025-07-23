@@ -13,6 +13,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorEditCommand
         public int Id { get; set; }
         public string ChainId { get; set; }
         public string NickName { get; set; }
+        public string Email { get; set; }
         public string Bio { get; set; }
         public int Followers { get; set; }
         public int Volume { get; set; }

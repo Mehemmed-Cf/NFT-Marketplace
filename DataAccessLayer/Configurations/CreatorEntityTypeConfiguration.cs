@@ -16,7 +16,7 @@ namespace DataAccessLayer.Configurations
             builder.Property(m => m.Id).HasColumnType("int").UseIdentityColumn(1, 1);
             builder.Property(m => m.NickName).HasColumnType("nvarchar").HasMaxLength(400).IsRequired();
             builder.Property(m => m.ChainId).HasColumnType("nvarchar").HasMaxLength(400).IsRequired();
-            builder.Property(m => m.Email).HasColumnType("varchar").HasMaxLength(100).IsRequired();
+            builder.Property(m => m.Email).HasColumnType("nvarchar").HasMaxLength(255).IsRequired();
             builder.Property(m => m.Bio).HasColumnType("nvarchar").HasMaxLength(400).IsRequired();
             builder.Property(m => m.Followers).HasColumnType("int").IsRequired();
             builder.Property(m => m.Volume).HasColumnType("int").IsRequired();

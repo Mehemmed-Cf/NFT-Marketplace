@@ -55,7 +55,7 @@
                 </div>
                 <div class="card-block">
                     <h4 class="sub-title">Basic Inputs</h4>
-                    <form method="post" enctype="multipart/form-data">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="col-7">
 
@@ -88,9 +88,10 @@
                                 </div>
 
                             </div>
+
                             <div class="col-5">
                                 <div class="form-group d-flex justify-content-end">
-                                    <input name="Image" id="cover-image" type="file" class="d-none" data-image="@Model.ImagePath" accept="image/png, image/gif, image/jpeg" />
+                                    <input name="NFTImage" id="cover-image" type="file" class="d-none" data-image="@Model.ImagePath" accept="image/png, image/gif, image/jpeg" />
                                 </div>
                             </div>
                         </div>

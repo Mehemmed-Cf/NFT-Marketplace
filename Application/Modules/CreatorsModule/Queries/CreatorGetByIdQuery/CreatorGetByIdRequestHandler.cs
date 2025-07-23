@@ -31,6 +31,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery
                 Id = entity.Id,
                 NickName = entity.NickName,
                 ChainId = entity.ChainId,
+                Email = entity.Email,
                 Bio = entity.Bio,
                 Followers = entity.Followers,
                 Volume = entity.Volume,

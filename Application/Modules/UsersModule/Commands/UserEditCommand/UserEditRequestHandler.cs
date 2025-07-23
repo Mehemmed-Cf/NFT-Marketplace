@@ -1,4 +1,5 @@
 ﻿using Application.Repositories;
+using Domain.Models.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace Application.Modules.UsersModule.Commands.UserEditCommand
             entity.Username = request.Username;
             entity.Email = request.Email;
             entity.Password = request.Password;
+            entity.EmailConfirmed = request.EmailConfirmed.GetValueOrDefault(false);
 
             await userRepository.SaveAsync(cancellationToken);
         }

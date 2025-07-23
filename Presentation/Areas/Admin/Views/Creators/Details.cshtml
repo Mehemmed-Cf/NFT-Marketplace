@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-5">
                                 <div class="form-group d-flex justify-content-end">
-                                    <img src="@Model.ImagePath" />
+                                    <img src="@Model.ImagePath" style="max-width: 100%; height: auto; block;" />
                                 </div>
                             </div>
                         </div>
@@ -77,13 +77,19 @@
 
                         <div class="form-group">
                             <label class="control-label" asp-for="Email"></label>
-                            <p class="form-control">@Model.Email</p>
+@*                             <p class="form-control">@Model.Email</p> *@
+                            <div class="form-control">
+                                @Html.Raw(Model.Email)
+                            </div>
                         </div>
 
 
                         <div class="form-group">
                             <label class="control-label" asp-for="Bio"></label>
-                            <p class="form-control">@Html.Raw(Model.Bio)</p>
+@*                             <p class="form-control">@Html.Raw(Model.Bio)</p> *@
+                            <div class="form-control">
+                                @Html.Raw(Model.Bio)
+                            </div>
                         </div>
 
 
