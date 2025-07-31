@@ -81,10 +81,21 @@
                                     <span asp-validation-for="HighestBid" class="text-danger"></span>
                                 </div>
 
-                                <div class="form-group">
+                                @* <div class="form-group">
                                     <label class="control-label" asp-for="CreatorId"></label>
                                     <input type="datetime" class="form-control" asp-for="CreatorId" />
                                     <span asp-validation-for="CreatorId" class="text-danger"></span>
+                                </div> *@
+
+                                <div class="form-group">
+                                    <label class="control-label">Creator</label>
+                                    <select class="form-control" asp-for="CreatorId">
+                                        <option selected disabled value="">--- Choose ---</option>
+                                        @foreach(var creator in ViewBag.Creators)
+                                        {
+                                            <option value="@creator.Id">@creator.NickName</option>
+                                        }
+                                    </select>
                                 </div>
 
                             </div>

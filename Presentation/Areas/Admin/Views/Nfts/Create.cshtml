@@ -85,9 +85,21 @@
                             <input type="number" step="any" class="form-control" asp-for="HighestBid"></input>
                         </div>
 
-                        <div class="form-group">
+                        @* <div class="form-group">
                             <label class="control-label" asp-for="CreatorId"></label>
                             <input type="number" class="form-control" asp-for="CreatorId"></input>
+                        </div> *@
+
+                        <div class="form-group">
+                            <label class="control-label">Creator</label>
+                            <select class="form-control" asp-for="CreatorId">
+                                <option selected disabled value="">--- Choose ---</option>
+                                @foreach(var creator in ViewBag.Creators)
+                                {
+                                    <option value="@creator.Id">@creator.NickName</option>
+                                }
+                            </select>
+                            <span class="text-danger" asp-validation-for="CreatorId"></span>
                         </div>
 
                         <div class="form-group text-right m-0">
