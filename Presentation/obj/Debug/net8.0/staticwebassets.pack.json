@@ -249,8 +249,16 @@
       "PackagePath": "staticwebassets\\Frontend\\assets\\images\\StartEarning.png"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\ArtistDetail.js",
+      "PackagePath": "staticwebassets\\Frontend\\js\\ArtistDetail.js"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Home.js",
       "PackagePath": "staticwebassets\\Frontend\\js\\Home.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
+      "PackagePath": "staticwebassets\\Frontend\\js\\Rankings.js"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\sass\\base\\_reset.scss",

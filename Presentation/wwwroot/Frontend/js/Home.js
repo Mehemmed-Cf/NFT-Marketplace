@@ -1,6 +1,4 @@
-﻿console.log("✅ Console log from Home.js");
-
-const Rankings = document.querySelector("#Rankings");
+﻿const Rankings = document.querySelector("#Rankings");
 const ConnectAWallet = document.querySelector("#ConnectAWallet");
 const loaderElement = document.querySelector(".Loader");
 
@@ -106,7 +104,6 @@ SeeNFT_Btn.addEventListener("click", () => {
 }*/
 
 function getDataFromServer() {
-    console.log("function prevails")
     showLoader(true);
 
     fetch("/Home/GetCreators")
@@ -115,7 +112,6 @@ function getDataFromServer() {
             return res.json();
         })
         .then(data => {
-            console.log(data)
             fillArtistContainer(data);
             showLoader(false);
         })
@@ -211,6 +207,7 @@ function addCreator(data, index) {
     const AvatarIcon = document.createElement("img");
     //AvatarIcon.src = "~/Frontend/../" + data.profileImgPath;
     AvatarIcon.src = data.imagePath;
+    console.log("Working image path:", data.imagePath);
     Artist_Avatar.append(AvatarIcon);
 
     const CreatorName = document.createElement("h1");
