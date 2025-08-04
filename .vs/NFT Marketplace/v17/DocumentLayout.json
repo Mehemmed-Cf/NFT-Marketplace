@@ -382,60 +382,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1348,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Views\\Rankings\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Rankings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Views\\Rankings\\Index.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Rankings\\Index.cshtml",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAABMAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-04T19:12:03.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RankingsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\RankingsController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\RankingsController.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\RankingsController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\RankingsController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAwAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T19:08:24.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rankings.js",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
-              "RelativeDocumentMoniker": "Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
-              "RelativeToolTip": "Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
-              "ViewState": "AQIAALcAAAAAAAAAAAAYwMMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-04T19:08:18.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Artist-DetailController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\Artist-DetailController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\Artist-DetailController.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\Artist-DetailController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\Artist-DetailController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:10:43.697Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -454,6 +402,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Views\\Rankings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Rankings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Views\\Rankings\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Rankings\\Index.cshtml",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAABMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T19:12:03.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RankingsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\RankingsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\RankingsController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\RankingsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\RankingsController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T19:08:24.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rankings.js",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
+              "RelativeDocumentMoniker": "Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
+              "RelativeToolTip": "Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAYwMMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-04T19:08:18.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Artist-DetailController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\Artist-DetailController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\Artist-DetailController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\Controllers\\Artist-DetailController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\Artist-DetailController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:10:43.697Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ArtistDetail.js",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\ArtistDetail.js",
@@ -462,8 +459,7 @@
               "RelativeToolTip": "Presentation\\wwwroot\\Frontend\\js\\ArtistDetail.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-04T17:09:02.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T17:09:02.509Z"
             },
             {
               "$type": "Document",
@@ -475,8 +471,7 @@
               "RelativeToolTip": "Presentation\\wwwroot\\Frontend\\js\\Home.js",
               "ViewState": "AQIAAH0AAAAAAAAAAAAAwNEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-03T15:32:14.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T15:32:14.736Z"
             },
             {
               "$type": "Document",
@@ -488,8 +483,7 @@
               "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T15:00:15.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T15:00:15.895Z"
             },
             {
               "$type": "Document",
@@ -501,8 +495,7 @@
               "RelativeToolTip": "Presentation\\Program.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAQwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:23:31.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:23:31.105Z"
             },
             {
               "$type": "Document",
@@ -514,8 +507,7 @@
               "RelativeToolTip": "Presentation\\Views\\Artist_Detail\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-04T17:09:17.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T17:09:17.588Z"
             },
             {
               "$type": "Document",
@@ -527,8 +519,7 @@
               "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T14:32:19.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T14:32:19.54Z"
             },
             {
               "$type": "Document",
@@ -540,8 +531,7 @@
               "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\CreatorsController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T14:40:36.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T14:40:36.97Z"
             },
             {
               "$type": "Document",
@@ -553,8 +543,7 @@
               "RelativeToolTip": "Presentation\\Views\\Home\\index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAKkCAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T14:50:55.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T14:50:55.429Z"
             },
             {
               "$type": "Document",
@@ -614,8 +603,7 @@
               "RelativeToolTip": "Presentation\\Views\\Home\\index.js",
               "ViewState": "AQIAAHAAAAAAAAAAAAAAwKoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-03T15:10:01.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T15:10:01.729Z"
             },
             {
               "$type": "Document",
