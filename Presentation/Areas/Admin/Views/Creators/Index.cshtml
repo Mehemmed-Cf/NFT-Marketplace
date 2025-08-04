@@ -56,6 +56,7 @@
                             <th>Followers</th>
                             <th>Volume</th>
                             <th>SoldNFTs</th>
+                            <th>TotalSales</th>
                             <th class="operation">
                                 <a class="btn btn-sm btn-success" asp-action="create">
                                     <i class="fa fa-plus"></i>
@@ -105,11 +106,15 @@
                                 </td>
 
                                 <td>
-                                    @item.Volume
+                                    @($"{item.Volume}K")
                                 </td>
+
 
                                 <td>
                                     @item.SoldNFts
+                                </td>
+                                <td>
+                                    @(item.TotalSales.ToString("0.##") + " ETH")
                                 </td>
 
                                 <td class="operation">

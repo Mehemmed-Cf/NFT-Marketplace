@@ -1,4 +1,4 @@
-const Rankings = document.querySelector("#Rankings");
+﻿const Rankings = document.querySelector("#Rankings");
 const ConnectAWallet = document.querySelector("#ConnectAWallet");
 const loaderElement = document.querySelector(".Loader");
 
@@ -93,7 +93,7 @@ SeeNFT_Btn.addEventListener("click", () => {
 
 getDataFromServer();
 
-function getDataFromServer() {
+/*function getDataFromServer() {
   showLoader(true);
   fetch("http://localhost:3000/api/creators", {
     method: "GET",
@@ -102,6 +102,18 @@ function getDataFromServer() {
     .then((data) => fillArtistContainer(data));
 
   showLoader(false);
+}*/
+
+function getDataFromServer() {
+    showLoader(true);
+
+    fetch("/Home/GetCreators")
+        .then((res) => res.json())
+        .then((data) => {
+            fillArtistContainer(data);
+        });
+
+    showLoader(false);
 }
 
 function fillArtistContainer(data) {

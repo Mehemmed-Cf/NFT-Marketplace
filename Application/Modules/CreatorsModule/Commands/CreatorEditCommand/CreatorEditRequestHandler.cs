@@ -30,6 +30,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorEditCommand
             entity.Followers = request.Followers;
             entity.Volume = request.Volume;
             entity.SoldNFts = request.SoldNFts;
+            entity.TotalSales = request.TotalSales;
             entity.Email = request.Email;
 
             if (request.ProfileImage is not null)

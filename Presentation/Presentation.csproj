@@ -37,7 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Frontend\" />
     <Folder Include="wwwroot\uploads\images\" />
   </ItemGroup>
 

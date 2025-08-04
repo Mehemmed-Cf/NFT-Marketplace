@@ -2,11 +2,6 @@
 using Domain.Models.Entities;
 using Infrastructure.Abstracts;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
 {
@@ -32,6 +27,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
                 Volume = request.Volume,
                 SoldNFts = request.SoldNFts,
                 Followers = request.Followers,
+                TotalSales = request.TotalSales,
                 CreatedBy = 1,
                 CreatedAt = DateTime.UtcNow,
             };
@@ -50,6 +46,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
                 Bio = entity.Bio,
                 Followers = entity.Followers,
                 Volume = entity.Volume,
+                TotalSales = entity.TotalSales,
                 SoldNFts = entity.SoldNFts,
             };
 

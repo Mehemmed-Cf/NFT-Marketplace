@@ -30,6 +30,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery
                 Bio = entity.Bio,
                 Followers = entity.Followers,
                 Volume = entity.Volume,
+                TotalSales = entity.TotalSales,
                 SoldNFts = entity.SoldNFts,
                 ImagePath = $"{host}/uploads/images/{entity.ImagePath}",
             };

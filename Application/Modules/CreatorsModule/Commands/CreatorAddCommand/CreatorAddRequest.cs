@@ -17,6 +17,7 @@ namespace Application.Modules.CreatorsModule.Commands.CreatorAddCommand
         public string Bio { get; set; }
         public int Followers { get; set; }
         public int Volume { get; set; }
+        public decimal TotalSales { get; set; }
         public int SoldNFts { get; set; }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
 {
     public class CreatorGetAllRequestDto
@@ -16,6 +11,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
         public int Followers { get; set; }
         public int Volume { get; set; }
         public int SoldNFts { get; set; }
+        public decimal TotalSales { get; set; }
         public string ImagePath { get; set; }
     }
 }

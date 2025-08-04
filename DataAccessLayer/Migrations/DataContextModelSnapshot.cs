@@ -140,6 +140,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("SoldNFts")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("TotalSales")
+                        .HasColumnType("decimal(18, 8)");
+
                     b.Property<int>("Volume")
                         .HasColumnType("int");
 

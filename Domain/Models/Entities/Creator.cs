@@ -17,6 +17,7 @@ namespace Domain.Models.Entities
         public int Followers { get; set; }
         public int Volume { get; set; }
         public int SoldNFts { get; set; }
+        public decimal TotalSales { get; set; }
         public string ImagePath { get; set; }
     }
 }

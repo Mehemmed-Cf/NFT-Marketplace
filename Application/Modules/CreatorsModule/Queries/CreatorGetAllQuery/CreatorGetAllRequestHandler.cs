@@ -2,11 +2,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
 {
@@ -42,6 +37,7 @@ namespace Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery
                 Followers = m.Followers,
                 Volume = m.Volume,
                 SoldNFts = m.SoldNFts,
+                TotalSales = m.TotalSales,
                 ImagePath = $"{host}/uploads/images/{m.ImagePath}",
             }).ToListAsync(cancellationToken);
 

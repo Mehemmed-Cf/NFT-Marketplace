@@ -21,6 +21,7 @@ namespace DataAccessLayer.Configurations
             builder.Property(m => m.Followers).HasColumnType("int").IsRequired();
             builder.Property(m => m.Volume).HasColumnType("int").IsRequired();
             builder.Property(m => m.SoldNFts).HasColumnType("int").IsRequired();
+            builder.Property(m => m.TotalSales).HasColumnType("decimal(18, 8)").IsRequired();
             builder.Property(m => m.ImagePath).HasColumnType("varchar").HasMaxLength(100).IsRequired();
 
             builder.ConfigureAuditable();
