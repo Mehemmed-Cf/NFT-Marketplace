@@ -3,14 +3,12 @@ let paramsCreatorId = searchParams.get("id");
 const loaderElement = document.querySelector(".Loader");
 const ChainId_Btn = document.querySelector(".Chain-Id-Btn");
 
-console.log("ScriptStarted")
-
 getDataForCreators();
 
 function getDataForCreators() {
     showLoader(true);
 
-    fetch(`/Artist-Detail/GetCreator?Id=${paramsCreatorId}`)
+    fetch(`/Artist_Detail/GetCreator?Id=${paramsCreatorId}`)
         .then(res => {
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             return res.json();
@@ -19,7 +17,7 @@ function getDataForCreators() {
             showLoader(false);
 
             if (creator.error) {
-                window.open("../Not-Found/index.html", "_self");
+                //window.open("../Not-Found/index.html", "_self");
                 return;
             }
 
@@ -31,7 +29,7 @@ function getDataForCreators() {
         .catch(error => {
             console.error('Fetch error:', error);
             showLoader(false);
-            window.open("../Not-Found/index.html", "_self");
+            //window.open("../Not-Found/index.html", "_self");
         });
 }
 
@@ -100,12 +98,14 @@ function fillArtistNFTs(creator) {
         Artist_Avatar.className = "Avatar";
 
         const Avatar_Image = document.createElement("img");
-        Avatar_Image.src = "~/Frontend/../" + creator.profileImgPath;
+        //Avatar_Image.src = "~/Frontend/../" + creator.profileImgPath;
+        Avatar_Image.src = creator.profileImgPath;
 
         Artist_Avatar.append(Avatar_Image);
 
         const Artist_Name = document.createElement("h1");
-        Artist_Name.textContent = creator.name;
+        //Artist_Name.textContent = creator.name;
+        Artist_Name.textContent = creator.nickName;
 
         Artist_Avatar_And_Name.append(Artist_Avatar, Artist_Name);
 
@@ -154,7 +154,8 @@ function fillArtistAvatar(creator) {
     const Avatar = document.querySelector(".Avatar");
     const ProfileIcon = document.createElement("img");
 
-    ProfileIcon.src = "~/Frontend/../" + creator.profileImgPath;
+    //ProfileIcon.src = "~/Frontend/../" + creator.profileImgPath;
+    ProfileIcon.src = creator.imagePath;
     Avatar.appendChild(ProfileIcon);
 }
 
@@ -237,7 +238,8 @@ function fillArtistChainIdAndFollow(creator) {
 
 function fillArtistName(creator) {
     const Artist_Name = document.createElement("h1");
-    Artist_Name.textContent = creator.name;
+    //Artist_Name.textContent = creator.name    
+    Artist_Name.textContent = creator.nickName;
     Artist_Info.append(Artist_Name);
 }
 
@@ -262,7 +264,8 @@ function fillArtistStats(creator) {
     NFTs_Sold.className = "NFTs-Sold";
 
     const NFTs_Key = document.createElement("h1");
-    NFTs_Key.textContent = creator.nftSold;
+    //NFTs_Key.textContent = creator.nftSold;
+    NFTs_Key.textContent = creator.soldNFts;
 
     const NFTs_Value = document.createElement("p");
     NFTs_Value.textContent = "NFTs Sold";
@@ -291,7 +294,8 @@ function fillArtistBio(creator) {
     Bio_Key.textContent = "Bio";
 
     const Bio_Value = document.createElement("p");
-    Bio_Value.textContent = creator.bio;
+    //Bio_Value.textContent = creator.bio;
+    Bio_Value.textContent = creator.bio.replace(/<\/?[^>]+(>|$)/g, "");
 
     Artist_Bio.append(Bio_Key, Bio_Value);
 
@@ -309,7 +313,8 @@ function fillArtistLinks() {
     Icons.className = "Icons";
 
     const IconElements = document.createElement("img");
-    IconElements.src = "~/Frontend/assets/icons/Icons-SocialMedia.svg";
+    //IconElements.src = "~/Frontend/assets/icons/Icons-SocialMedia.svg";
+    IconElements.src = "/Frontend/assets/icons/Icons-SocialMedia.svg"
     Icons.append(IconElements);
 
     Web_Links.append(Links_Key, Icons);

@@ -27,15 +27,15 @@ CollectionCards.forEach((CollectionCard) => {
 const MrFox = document.querySelector("#MrFox");
 const BeKind2Robots = document.querySelector("#BeKind2Robots");
 
-MrFox.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.open("../Artist-Detail/index.html?id=6", "_self");
-});
+//MrFox.addEventListener("click", (e) => {
+//    e.stopPropagation();
+//    window.open("../Artist-Detail/index.html?id=6", "_self");
+//});
 
-BeKind2Robots.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.open("../Artist-Detail/index.html?id=8", "_self");
-});
+//BeKind2Robots.addEventListener("click", (e) => {
+//    e.stopPropagation();
+//    window.open("../Artist-Detail/index.html?id=8", "_self");
+//});
 
 const ViewRankings_Btn = document.querySelector(".ViewRankings-Btn");
 ViewRankings_Btn.addEventListener("click", () => {
@@ -59,31 +59,31 @@ NFTCards.forEach((NFTCard) => {
     });
 });
 
-const MoonDancer = document.querySelector("#MoonDancer");
-MoonDancer.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.open("../Artist-Detail/index.html?id=10", "_self");
-});
+//const MoonDancer = document.querySelector("#MoonDancer");
+//MoonDancer.addEventListener("click", (e) => {
+//    e.stopPropagation();
+//    window.open("../Artist-Detail/index.html?id=10", "_self");
+//});
 
-const NebulaKid = document.querySelector("#NebulaKid");
-NebulaKid.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.open("../Artist-Detail/index.html?id=10", "_self");
-});
+//const NebulaKid = document.querySelector("#NebulaKid");
+//NebulaKid.addEventListener("click", (e) => {
+//    e.stopPropagation();
+//    window.open("../Artist-Detail/index.html?id=10", "_self");
+//});
 
-const Spaceone = document.querySelector("#Spaceone");
-Spaceone.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.open("../Artist-Detail/index.html?id=10", "_self");
-});
+//const Spaceone = document.querySelector("#Spaceone");
+//Spaceone.addEventListener("click", (e) => {
+//    e.stopPropagation();
+//    window.open("../Artist-Detail/index.html?id=10", "_self");
+//});
 
-const Shroomies = document.querySelectorAll("#Shroomie");
-Shroomies.forEach((Shroomie) => {
-    Shroomie.addEventListener("click", (e) => {
-        e.stopPropagation();
-        window.open(`../Artist-Detail/index.html?id=7`, "_self");
-    });
-});
+//const Shroomies = document.querySelectorAll("#Shroomie");
+//Shroomies.forEach((Shroomie) => {
+//    Shroomie.addEventListener("click", (e) => {
+//        e.stopPropagation();
+//        window.open(`../Artist-Detail/index.html?id=7`, "_self");
+//    });
+//});
 
 const SeeNFT_Btn = document.querySelector(".SeeNFT-Btn");
 SeeNFT_Btn.addEventListener("click", () => {
@@ -120,12 +120,6 @@ function getDataFromServer() {
             showLoader(false);
         });
 }
-
-//function fillArtistContainer(data) {
-//    if (!data) return;
-
-//    data.forEach((creator) => addCreator(creator));
-//}
 
 function fillArtistContainer(data) {
     if (!data) return;
@@ -205,14 +199,11 @@ function addCreator(data, index) {
     Artist_Ranking.className = "Ranking-Number";
 
     const AvatarIcon = document.createElement("img");
-    //AvatarIcon.src = "~/Frontend/../" + data.profileImgPath;
     AvatarIcon.src = data.imagePath;
-    console.log("Working image path:", data.imagePath);
     Artist_Avatar.append(AvatarIcon);
 
     const CreatorName = document.createElement("h1");
     CreatorName.textContent = data.nickName;
-    //CreatorName.textContent = data.name;
 
     const Sales_Info = document.createElement("div");
     Sales_Info.className = "Sales-Info";
@@ -221,7 +212,6 @@ function addCreator(data, index) {
     Sales_Info_Key.textContent = "Total Sales:";
     const Sales_Info_Value = document.createElement("p");
     Sales_Info_Value.className = "Sales-Info_Value";
-    //Sales_Info_Value.textContent = `${data.totalSale.value} ${data.totalSale.currency}`;
     Sales_Info_Value.textContent = `${data.totalSales} ETH`;
     Sales_Info.append(Sales_Info_Key, Sales_Info_Value);
 
@@ -242,7 +232,8 @@ function addCreator(data, index) {
     Artist_Cards.append(ArtistCard);
 
     ArtistCard.addEventListener("click", () => {
-        window.open(`../Artist-Detail/index.html?id=${data.id}`, "_self");
+        //window.open(`../Artist_Detail/index.html?id=${data.id}`, "_self");
+        window.open(`../Artist_Detail?id=${data.id}`, "_self");
     });
 }
 

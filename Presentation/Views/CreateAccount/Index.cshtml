@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Application.Modules.UsersModule.Commands.UserAddCommand;
+@model UserAddRequest
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -19,6 +22,7 @@
     <script defer src="~/Frontend/Common/functions/index.js"></script>
 </head>
 <body>
+
     <nav class="Navigation">
         <div class="Logo">
             <img src="~/Frontend/assets/icons/MarketPlace-Logo.svg" />
@@ -54,7 +58,84 @@
                     </p>
                 </div>
             </div>
+
             <div class="Form">
+
+                <form method="post" asp-controller="CreateAccount" asp-action="Create" enctype="multipart/form-data">
+
+                    <div class="Typeforms">
+
+                        <div class="Typeform">
+                            <img src="~/Frontend/assets/icons/UserInput.svg" />
+                            <label asp-for="Username"></label>
+                            <input class="UserName-Input"
+                                   type="text"
+                                   placeholder="Username"
+                                   name="Username"
+                                   asp-for="Username"
+ />
+                        </div>
+                        <p class="User-Error-Message"></p>
+
+                        <div class="Typeform">
+                            <img src="~/Frontend/assets/icons/EmailInput.svg" />
+                            <label asp-for="Email"></label>
+                            <input class="Email-Input"
+                                   type="email"
+                                   placeholder="Email Address" 
+                                   name="Email"
+                                   asp-for="Email" />
+                        </div>
+                        <p class="Email-Error-Message"></p>
+
+                        <div class="Typeform">
+                            <img src="~/Frontend/assets/icons/Password.svg" />
+                            <label asp-for="Password"></label>
+                            <input class="Password-Input"
+                                   type="password"
+                                   placeholder="Password"
+                                   name="Password"
+                                   asp-for="Password" />
+                        </div>
+                        <p class="Password-Error-Message"></p>
+
+@*                         <div class="Typeform">
+                            <img src="~/Frontend/assets/icons/Password.svg" />
+                            <label asp-for="Password"></label>
+                            <input class="Confirm_Password-Input"
+                                   type="password"
+                                   placeholder="Confirm Password"
+                                   name="Password"
+                                   asp-for="Password"
+                                   />
+                        </div>
+                        <p class="ConfirmPassword-Error-Message"></p> *@
+
+                    </div>
+
+                    <button type="submit" class="CreateAccount-Btn">
+                        Create Account
+                        <div class="Button-Loader">
+                            <div class="lds-dual-ring"></div>
+                        </div>
+                    </button>
+
+@*                     <div class="form-group text-right m-0">
+                        <a class="btn btn-sm btn-primary" asp-action="index">Cancel</a>
+                        <button class="btn btn-sm btn-success">Save</button>
+                    </div> *@
+
+                </form>
+
+            </div>
+
+@*             <div class="Form">
+
+                <form method="post" enctype="multipart/form-data">
+                    
+                
+                </form>
+
                 <div class="Typeforms">
                     <form class="Typeform">
                         <img src="~/Frontend/assets/icons/UserInput.svg" />
@@ -85,16 +166,19 @@
                     </form>
                     <p class="ConfirmPassword-Error-Message"></p>
                 </div>
+
                 <button class="CreateAccount-Btn">
                     Create Account
                     <div class="Button-Loader">
                         <div class="lds-dual-ring"></div>
                     </div>
                 </button>
-            </div>
+
+            </div> *@
+
             <div class="SendToLogin">
                 <p>Already Have an Account?</p>
-                <a href="../Login/index.html">Go To Login</a>
+                <a href="https://localhost:7145/Login">Go To Login</a>
             </div>
         </div>
     </section>
@@ -151,5 +235,6 @@
             </p>
         </div>
     </footer>
+
 </body>
 </html>

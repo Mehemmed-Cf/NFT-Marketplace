@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
 {
+    [Route("Artist_Detail")]
     public class Artist_DetailController : Controller
     {
         private readonly ICreatorRepository creatorRepository;
@@ -21,9 +22,10 @@ namespace Presentation.Controllers
             return View();
         }
 
-        [HttpGet]
-        public async Task<JsonResult> GetCreator([FromQuery] CreatorGetByIdRequest request)
+        [HttpGet("GetCreator")]
+        public async Task<JsonResult> GetCreator([FromQuery] CreatorGetByIdRequest request, CancellationToken cancellationToken)
         {
+            Console.WriteLine(request.Id);
             var creator = await mediator.Send(request);
             return Json(creator);
         }
