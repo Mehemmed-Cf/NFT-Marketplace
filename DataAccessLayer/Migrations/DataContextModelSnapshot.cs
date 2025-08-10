@@ -151,6 +151,53 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Creators", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Models.Entities.Follow", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("DeletedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FollowedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("LastModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("LastModifiedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserId1")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatorId");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Follow");
+                });
+
             modelBuilder.Entity("Domain.Models.Entities.NFT", b =>
                 {
                     b.Property<int>("Id")
@@ -177,7 +224,7 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(400)
+                        .HasMaxLength(1500)
                         .HasColumnType("nvarchar");
 
                     b.Property<double>("HighestBid")
@@ -255,6 +302,33 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users", (string)null);
+                });
+
+            modelBuilder.Entity("Domain.Models.Entities.Follow", b =>
+                {
+                    b.HasOne("Domain.Models.Entities.Creator", "Creator")
+                        .WithMany("Follows")
+                        .HasForeignKey("CreatorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.Entities.User", "User")
+                        .WithMany("Follows")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("Creator");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Domain.Models.Entities.Creator", b =>
+                {
+                    b.Navigation("Follows");
+                });
+
+            modelBuilder.Entity("Domain.Models.Entities.User", b =>
+                {
+                    b.Navigation("Follows");
                 });
 #pragma warning restore 612, 618
         }

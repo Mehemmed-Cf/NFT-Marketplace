@@ -1,11 +1,6 @@
 ﻿using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Modules.NFTsModule.Queries.NFTGetByIdQuery
 {

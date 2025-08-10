@@ -11,7 +11,7 @@ namespace DataAccessLayer.Configurations
             builder.Property(m => m.Id).HasColumnType("int").UseIdentityColumn(1, 1);
             builder.Property(m => m.CreatorId).HasColumnType("int");
             builder.Property(m => m.Title).HasColumnType("nvarchar").HasMaxLength(400).IsRequired();
-            builder.Property(m => m.Description).HasColumnType("nvarchar").HasMaxLength(400).IsRequired();
+            builder.Property(m => m.Description).HasColumnType("nvarchar").HasMaxLength(1500).IsRequired();
             builder.Property(m => m.Price).HasColumnType("float").IsRequired();
             builder.Property(m => m.HighestBid).HasColumnType("float").IsRequired();
             builder.Property(m => m.ImagePath).HasColumnType("varchar").HasMaxLength(100).IsRequired();

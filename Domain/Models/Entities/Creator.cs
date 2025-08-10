@@ -19,5 +19,7 @@ namespace Domain.Models.Entities
         public int SoldNFts { get; set; }
         public decimal TotalSales { get; set; }
         public string ImagePath { get; set; }
+
+        public ICollection<Follow> Follows { get; set; } = new List<Follow>();
     }
 }

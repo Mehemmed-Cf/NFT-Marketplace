@@ -249,6 +249,78 @@
       "PackagePath": "staticwebassets\\Frontend\\assets\\images\\StartEarning.png"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\1.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\10.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\11.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\12.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\13.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\13.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\14.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\14.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\15.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\15.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\16.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\16.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\17.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\17.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\18.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\18.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\2.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\3.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\4.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\5.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\6.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\7.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\8.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\assets\\nfts\\9.png",
+      "PackagePath": "staticwebassets\\Frontend\\assets\\nfts\\9.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\ArtistDetail.js",
       "PackagePath": "staticwebassets\\Frontend\\js\\ArtistDetail.js"
     },
@@ -28285,6 +28357,10 @@
       "PackagePath": "staticwebassets\\uploads\\images\\1783b870-d067-4b31-ae1a-3a2cd0f32acb.svg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\221c2e68-d11e-44c6-9b61-4be879d7036b.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\221c2e68-d11e-44c6-9b61-4be879d7036b.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\231aff39-4f66-40b6-a5a3-c63f131ec7c6.jpg",
       "PackagePath": "staticwebassets\\uploads\\images\\231aff39-4f66-40b6-a5a3-c63f131ec7c6.jpg"
     },
@@ -28333,6 +28409,14 @@
       "PackagePath": "staticwebassets\\uploads\\images\\669af902-68c2-4f47-b131-6765011d09dd.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\78e0d82c-14e4-4dfe-aaa2-878182c1ec41.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\78e0d82c-14e4-4dfe-aaa2-878182c1ec41.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\815595fb-58af-4fb8-9180-a9c6eb3f4bc1.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\815595fb-58af-4fb8-9180-a9c6eb3f4bc1.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\827b72e0-ae4c-4674-a1a1-a1a590b22350.svg",
       "PackagePath": "staticwebassets\\uploads\\images\\827b72e0-ae4c-4674-a1a1-a1a590b22350.svg"
     },
@@ -28371,6 +28455,10 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\c0ae2df9-4580-49b1-b4a0-80cfb42d2350.svg",
       "PackagePath": "staticwebassets\\uploads\\images\\c0ae2df9-4580-49b1-b4a0-80cfb42d2350.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\c8935888-7313-41af-aecb-1c5c264cb223.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\c8935888-7313-41af-aecb-1c5c264cb223.png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\uploads\\images\\ce98f2ca-cb08-4725-9be4-c8c59d7e44b8.png",

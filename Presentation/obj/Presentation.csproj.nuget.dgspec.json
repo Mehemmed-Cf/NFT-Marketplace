@@ -125,6 +125,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Application\\Application.csproj"
+              },
               "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Domain\\Domain.csproj"
               },
@@ -153,6 +156,10 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -172,6 +179,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
             }
           },
           "imports": [

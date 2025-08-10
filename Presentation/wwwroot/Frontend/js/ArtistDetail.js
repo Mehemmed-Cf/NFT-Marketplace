@@ -10,49 +10,43 @@ function getDataForCreators() {
 
     fetch(`/Artist_Detail/GetCreator?Id=${paramsCreatorId}`)
         .then(res => {
-            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            if (!res.ok) {
+                console.error(`HTTP error! status: ${res.status}`);
+                if (res.status >= 400 && res.status < 600) {
+                    window.location.href = "/NotFound";
+                    return;
+                }
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
             return res.json();
         })
         .then(creator => {
             showLoader(false);
 
-            if (creator.error) {
-                //window.open("../Not-Found/index.html", "_self");
+            console.log('Fetched creator:', creator);
+
+            if (creator.redirectUrl) {
+                console.log('Redirecting because of redirectUrl:', creator.redirectUrl);
+                window.location.href = creator.redirectUrl;
                 return;
             }
 
-            console.log(creator)
+            if (creator.error) {
+                console.log('Redirecting because of error:', creator.error);
+                window.location.href = "/NotFound";
+                return;
+            }
 
+            console.log('Filling artist info and NFTs...');
             fillArtistInfo(creator);
             fillArtistNFTs(creator);
         })
         .catch(error => {
             console.error('Fetch error:', error);
             showLoader(false);
-            //window.open("../Not-Found/index.html", "_self");
+            window.location.href = "/NotFound";
         });
 }
-
-//async function getDataForCreators() {
-//    showLoader(true);
-//    const response = await fetch(
-//        `http://localhost:3000/api/creators/${paramsCreatorId}`,
-//        {
-//            method: "GET",
-//        }
-//    )
-//        .then((res) => res.json())
-//        .then((creator) => {
-//            showLoader(false);
-
-//            if (creator.error) {
-//                window.open("../Not-Found/index.html", "_self");
-//            }
-
-//            fillArtistInfo(creator);
-//            fillArtistNFTs(creator);
-//        });
-//}
 
 const Artist_Info = document.querySelector(".Artist-Info");
 const NFT_Cards_Section = document.querySelector(".NFT-Cards-Section");
@@ -79,7 +73,7 @@ function fillArtistNFTs(creator) {
         Image.className = "Image";
 
         const ImageElement = document.createElement("img");
-        ImageElement.src = "~/Frontend/../" + nft.imgPath;
+        ImageElement.src = nft.imagePath;
         Image.append(ImageElement);
 
         const NFT_Info = document.createElement("div");
@@ -89,7 +83,7 @@ function fillArtistNFTs(creator) {
         Artist_Info.className = "Artist-Info";
 
         const NFT_Name = document.createElement("h1");
-        NFT_Name.textContent = nft.name;
+        NFT_Name.textContent = nft.title;
 
         const Artist_Avatar_And_Name = document.createElement("div");
         Artist_Avatar_And_Name.className = "Artist-AvatarAndName";
@@ -98,13 +92,11 @@ function fillArtistNFTs(creator) {
         Artist_Avatar.className = "Avatar";
 
         const Avatar_Image = document.createElement("img");
-        //Avatar_Image.src = "~/Frontend/../" + creator.profileImgPath;
-        Avatar_Image.src = creator.profileImgPath;
+        Avatar_Image.src = creator.imagePath;
 
         Artist_Avatar.append(Avatar_Image);
 
         const Artist_Name = document.createElement("h1");
-        //Artist_Name.textContent = creator.name;
         Artist_Name.textContent = creator.nickName;
 
         Artist_Avatar_And_Name.append(Artist_Avatar, Artist_Name);
@@ -121,7 +113,7 @@ function fillArtistNFTs(creator) {
         Price_Key.textContent = "Price";
 
         const Price_Value = document.createElement("p");
-        Price_Value.textContent = nft.price.value + "" + nft.price.currency;
+        Price_Value.textContent = `${nft.price} ETH`;
 
         Price.append(Price_Key, Price_Value);
 
@@ -132,7 +124,7 @@ function fillArtistNFTs(creator) {
         Bid_Key.textContent = "Highest Bid";
 
         const Bid_Value = document.createElement("p");
-        Bid_Value.textContent = nft.highestBid.value + "" + nft.highestBid.currency;
+        Bid_Value.textContent = `${nft.highestBid} wETH`;
 
         HighestBid.append(Bid_Key, Bid_Value);
 
@@ -154,7 +146,6 @@ function fillArtistAvatar(creator) {
     const Avatar = document.querySelector(".Avatar");
     const ProfileIcon = document.createElement("img");
 
-    //ProfileIcon.src = "~/Frontend/../" + creator.profileImgPath;
     ProfileIcon.src = creator.imagePath;
     Avatar.appendChild(ProfileIcon);
 }
@@ -238,7 +229,6 @@ function fillArtistChainIdAndFollow(creator) {
 
 function fillArtistName(creator) {
     const Artist_Name = document.createElement("h1");
-    //Artist_Name.textContent = creator.name    
     Artist_Name.textContent = creator.nickName;
     Artist_Info.append(Artist_Name);
 }
@@ -264,7 +254,6 @@ function fillArtistStats(creator) {
     NFTs_Sold.className = "NFTs-Sold";
 
     const NFTs_Key = document.createElement("h1");
-    //NFTs_Key.textContent = creator.nftSold;
     NFTs_Key.textContent = creator.soldNFts;
 
     const NFTs_Value = document.createElement("p");
@@ -294,7 +283,6 @@ function fillArtistBio(creator) {
     Bio_Key.textContent = "Bio";
 
     const Bio_Value = document.createElement("p");
-    //Bio_Value.textContent = creator.bio;
     Bio_Value.textContent = creator.bio.replace(/<\/?[^>]+(>|$)/g, "");
 
     Artist_Bio.append(Bio_Key, Bio_Value);
@@ -313,7 +301,6 @@ function fillArtistLinks() {
     Icons.className = "Icons";
 
     const IconElements = document.createElement("img");
-    //IconElements.src = "~/Frontend/assets/icons/Icons-SocialMedia.svg";
     IconElements.src = "/Frontend/assets/icons/Icons-SocialMedia.svg"
     Icons.append(IconElements);
 

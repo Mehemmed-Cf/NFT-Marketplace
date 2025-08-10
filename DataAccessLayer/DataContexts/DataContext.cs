@@ -1,5 +1,10 @@
-﻿using Infrastructure.Abstracts;
+﻿using Application.Services;
+using DataAccessLayer.DataContexts;
+using Domain.Models.Entities;
+using Infrastructure.Abstracts;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +20,14 @@ namespace DataAccessLayer.DataContexts
         public DataContext(DbContextOptions options, IIdentityService identityService)
             : base(options)
         {
+            if (identityService == null)
+                throw new ArgumentNullException(nameof(identityService), "IdentityService cannot be null");
+
+
             this.identityService = identityService;
         }
+
+        //public DbSet<Follow> Follows { get; set; }  // <-- Add this line
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

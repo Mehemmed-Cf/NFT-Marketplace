@@ -37,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Frontend\assets\nfts\" />
     <Folder Include="wwwroot\uploads\images\" />
   </ItemGroup>
 

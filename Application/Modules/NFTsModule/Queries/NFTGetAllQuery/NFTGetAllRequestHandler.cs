@@ -1,13 +1,7 @@
 ﻿using Application.Repositories;
-using Infrastructure.Abstracts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Modules.NFTsModule.Queries.NFTGetAllQuery
 {

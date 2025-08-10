@@ -9,6 +9,7 @@ namespace Infrastructure.Abstracts
         Task<T> GetAsync(Expression<Func<T, bool>> expression = null, CancellationToken cancellationToken = default);
         Task<T> AddAsync(T entity, CancellationToken cancellationToken = default);
         Task<T> EditAsync(T entity);
+
         void Remove(T entity);
 
         Task<int> SaveAsync(CancellationToken cancellationToken = default);
