@@ -37,9 +37,14 @@ function getDataForCreators() {
                 return;
             }
 
-            console.log('Filling artist info and NFTs...');
             fillArtistInfo(creator);
-            fillArtistNFTs(creator);
+
+            if (Array.isArray(creator.nfts) && creator.nfts.length > 0) {
+                fillArtistNFTs(creator);
+            } else {
+                console.log('No NFTs found for this creator.');
+            }
+
         })
         .catch(error => {
             console.error('Fetch error:', error);
@@ -50,6 +55,7 @@ function getDataForCreators() {
 
 const Artist_Info = document.querySelector(".Artist-Info");
 const NFT_Cards_Section = document.querySelector(".NFT-Cards-Section");
+const NoNftMessage = document.getElementById("NoNFT_Message");
 
 function fillArtistInfo(creator) {
     fillArtistAvatar(creator);
@@ -61,85 +67,103 @@ function fillArtistInfo(creator) {
 }
 
 function fillArtistNFTs(creator) {
-    creator.nfts.forEach((nft) => {
-        const NoNFT_Message = document.createElement("p");
-        NoNFT_Message.style.display = "none";
-        NoNFT_Message.textContent = "This user has no NFTs";
 
-        const NFT_Card = document.createElement("div");
-        NFT_Card.className = "NFT-Card";
+    console.log('Fetched nfts from the creator:', creator.nfts);
 
-        const Image = document.createElement("div");
-        Image.className = "Image";
+    if (!creator.nfts || creator.nfts.length === 0) {
+        NoNftMessage.style.display = "block";
+    }
+    else
+    {
+        NoNftMessage.style.display = "none";
+        creator.nfts.forEach((nft) => {
 
-        const ImageElement = document.createElement("img");
-        ImageElement.src = nft.imagePath;
-        Image.append(ImageElement);
+            //if (nft == null)
+            //{
+            //    const NoNFT_Message = document.createElement("p");
+            //    NoNFT_Message.style.display = "flex";
+            //    NoNFT_Message.textContent = "This user has no NFTs";
+            //}
 
-        const NFT_Info = document.createElement("div");
-        NFT_Info.className = "NFT-Info ";
+            //const NoNFT_Message = document.createElement("p");
+            //NoNFT_Message.style.display = "none";
+            //NoNFT_Message.textContent = "This user has no NFTs";
 
-        const Artist_Info = document.createElement("div");
-        Artist_Info.className = "Artist-Info";
+            const NFT_Card = document.createElement("div");
+            NFT_Card.className = "NFT-Card";
 
-        const NFT_Name = document.createElement("h1");
-        NFT_Name.textContent = nft.title;
+            const Image = document.createElement("div");
+            Image.className = "Image";
 
-        const Artist_Avatar_And_Name = document.createElement("div");
-        Artist_Avatar_And_Name.className = "Artist-AvatarAndName";
+            const ImageElement = document.createElement("img");
+            ImageElement.src = nft.imagePath;
+            Image.append(ImageElement);
 
-        const Artist_Avatar = document.createElement("div");
-        Artist_Avatar.className = "Avatar";
+            const NFT_Info = document.createElement("div");
+            NFT_Info.className = "NFT-Info ";
 
-        const Avatar_Image = document.createElement("img");
-        Avatar_Image.src = creator.imagePath;
+            const Artist_Info = document.createElement("div");
+            Artist_Info.className = "Artist-Info";
 
-        Artist_Avatar.append(Avatar_Image);
+            const NFT_Name = document.createElement("h1");
+            NFT_Name.textContent = nft.title;
 
-        const Artist_Name = document.createElement("h1");
-        Artist_Name.textContent = creator.nickName;
+            const Artist_Avatar_And_Name = document.createElement("div");
+            Artist_Avatar_And_Name.className = "Artist-AvatarAndName";
 
-        Artist_Avatar_And_Name.append(Artist_Avatar, Artist_Name);
+            const Artist_Avatar = document.createElement("div");
+            Artist_Avatar.className = "Avatar";
 
-        Artist_Info.append(NFT_Name, Artist_Avatar_And_Name);
+            const Avatar_Image = document.createElement("img");
+            Avatar_Image.src = creator.imagePath;
 
-        const Additional_Info = document.createElement("div");
-        Additional_Info.className = "Additional-Info";
+            Artist_Avatar.append(Avatar_Image);
 
-        const Price = document.createElement("div");
-        Price.className = "Price";
+            const Artist_Name = document.createElement("h1");
+            Artist_Name.textContent = creator.nickName;
 
-        const Price_Key = document.createElement("h1");
-        Price_Key.textContent = "Price";
+            Artist_Avatar_And_Name.append(Artist_Avatar, Artist_Name);
 
-        const Price_Value = document.createElement("p");
-        Price_Value.textContent = `${nft.price} ETH`;
+            Artist_Info.append(NFT_Name, Artist_Avatar_And_Name);
 
-        Price.append(Price_Key, Price_Value);
+            const Additional_Info = document.createElement("div");
+            Additional_Info.className = "Additional-Info";
 
-        const HighestBid = document.createElement("div");
-        HighestBid.className = "Highest-Bid";
+            const Price = document.createElement("div");
+            Price.className = "Price";
 
-        const Bid_Key = document.createElement("h1");
-        Bid_Key.textContent = "Highest Bid";
+            const Price_Key = document.createElement("h1");
+            Price_Key.textContent = "Price";
 
-        const Bid_Value = document.createElement("p");
-        Bid_Value.textContent = `${nft.highestBid} wETH`;
+            const Price_Value = document.createElement("p");
+            Price_Value.textContent = `${nft.price} ETH`;
 
-        HighestBid.append(Bid_Key, Bid_Value);
+            Price.append(Price_Key, Price_Value);
 
-        Additional_Info.append(Price, HighestBid);
+            const HighestBid = document.createElement("div");
+            HighestBid.className = "Highest-Bid";
 
-        NFT_Info.append(Artist_Info, Additional_Info);
+            const Bid_Key = document.createElement("h1");
+            Bid_Key.textContent = "Highest Bid";
 
-        NFT_Card.append(Image, NFT_Info);
+            const Bid_Value = document.createElement("p");
+            Bid_Value.textContent = `${nft.highestBid} wETH`;
 
-        NFT_Cards_Section.append(NFT_Card, NoNFT_Message);
+            HighestBid.append(Bid_Key, Bid_Value);
 
-        NFT_Card.addEventListener("click", () => {
-            window.open("../Marketplace/index.html", "_self");
+            Additional_Info.append(Price, HighestBid);
+
+            NFT_Info.append(Artist_Info, Additional_Info);
+
+            NFT_Card.append(Image, NFT_Info);
+
+            NFT_Cards_Section.append(NFT_Card); //NoNFT_Message
+
+            NFT_Card.addEventListener("click", () => {
+                window.open("https://localhost:7145/Marketplace", "_self");
+            });
         });
-    });
+    }
 }
 
 function fillArtistAvatar(creator) {

@@ -1,6 +1,6 @@
 ﻿using Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery;
 using Application.Modules.NFTsModule.Queries.FilterNftByCreatorIdQuery;
-using Application.Repositories;
+using Domain.Models.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,12 +9,10 @@ namespace Presentation.Controllers
     [Route("Artist_Detail")]
     public class Artist_DetailController : Controller
     {
-        private readonly ICreatorRepository creatorRepository;
         private readonly IMediator mediator;
 
-        public Artist_DetailController(ICreatorRepository creatorRepository, IMediator mediator)
+        public Artist_DetailController(IMediator mediator)
         {
-            this.creatorRepository = creatorRepository;
             this.mediator = mediator;
         }
 
@@ -22,13 +20,6 @@ namespace Presentation.Controllers
         {
             return View();
         }
-
-        //[HttpGet("GetCreator")]
-        //public async Task<JsonResult> GetCreator([FromQuery] CreatorGetByIdRequest request)
-        //{
-        //    var creator = await mediator.Send(request);
-        //    return Json(creator);
-        //}
 
         [HttpGet("GetCreator")]
         public async Task<JsonResult> GetCreator([FromQuery] CreatorGetByIdRequest request)
@@ -56,7 +47,10 @@ namespace Presentation.Controllers
                 creator.TotalSales,
                 creator.ImagePath,
 
-                Nfts = nfts
+                nfts = nfts
+
+
+                //Nfts = nfts
             };
 
             return Json(result);

@@ -23,7 +23,8 @@ namespace Application.Modules.NFTsModule.Queries.FilterNftByCreatorIdQuery
 
             if(nftSet == null || !nftSet.Any())
             {
-                throw new NotFoundException($"No NFTs found for creator with ID {request.CreatorId}.");
+                //throw new NotFoundException($"No NFTs found for creator with ID {request.CreatorId}.");
+                return new List<FilterNftByCreatorIdRequestDto>();
             }
 
             string host = $"{ctx.ActionContext.HttpContext.Request.Scheme}://{ctx.ActionContext.HttpContext.Request.Host}";
@@ -42,7 +43,8 @@ namespace Application.Modules.NFTsModule.Queries.FilterNftByCreatorIdQuery
 
             if (joinedQuery == null || !joinedQuery.Any())
             {
-                return null;
+                //return null;
+                return new List<FilterNftByCreatorIdRequestDto>();
             }
 
             return joinedQuery;
