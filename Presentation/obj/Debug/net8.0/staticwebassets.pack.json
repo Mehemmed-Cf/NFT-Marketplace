@@ -329,6 +329,10 @@
       "PackagePath": "staticwebassets\\Frontend\\js\\Home.js"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Marketplace.js",
+      "PackagePath": "staticwebassets\\Frontend\\js\\Marketplace.js"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\NFT Marketplace\\Presentation\\wwwroot\\Frontend\\js\\Rankings.js",
       "PackagePath": "staticwebassets\\Frontend\\js\\Rankings.js"
     },

@@ -1,4 +1,3 @@
-using DataAccessLayer.DataContexts;
 using MediatR;
 using Application;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -10,6 +9,7 @@ using Presentation.AppCode.Pipeline;
 using Application.Services;
 using Infrastructure.Abstracts;
 using Infrastructure.Configurations;
+using DataAccessLayer.Migrations;
 
 internal class Program
 {
@@ -33,14 +33,14 @@ internal class Program
 
         });
 
-        //builder.Services.AddControllers(cfg =>
-        //{
-        //    var policy = new AuthorizationPolicyBuilder()
-        //                      .RequireAuthenticatedUser()
-        //                      .Build();
+        builder.Services.AddControllers(cfg =>
+        {
+            var policy = new AuthorizationPolicyBuilder()
+                              .RequireAuthenticatedUser()
+                              .Build();
 
-        //    cfg.Filters.Add(new AuthorizeFilter(policy));
-        //});
+            cfg.Filters.Add(new AuthorizeFilter(policy));
+        });
 
         builder.Services.AddDbContext<DbContext, DataContext>(cfg =>
         {
@@ -52,11 +52,11 @@ internal class Program
             });
         });
 
-        //builder.Services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(HeaderBinderBehaviour<,>));
+        builder.Services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(HeaderBinderBehaviour<,>));
 
         builder.Services.Configure<CryptoServiceOptions>(cfg => builder.Configuration.Bind(nameof(CryptoServiceOptions), cfg));
 
-        //builder.Services.AddCustomIdentity(builder.Configuration);
+        builder.Services.AddCustomIdentity(builder.Configuration);
 
         builder.Services.AddScoped<IIdentityService, FakeIdentityService>();
 
@@ -89,9 +89,9 @@ internal class Program
 
         app.UseCors("allowAll");
 
-        //app.UseAuthorization();
+        app.UseAuthorization();
 
-        //app.UseAuthentication();
+        app.UseAuthentication();
 
         app.MapRazorPages();
 

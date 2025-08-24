@@ -1,7 +1,7 @@
 ﻿using Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery;
 using Application.Modules.NFTsModule.Queries.FilterNftByCreatorIdQuery;
-using Domain.Models.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
@@ -16,12 +16,14 @@ namespace Presentation.Controllers
             this.mediator = mediator;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
         [HttpGet("GetCreator")]
+        [AllowAnonymous]
         public async Task<JsonResult> GetCreator([FromQuery] CreatorGetByIdRequest request)
         {
             var creator = await mediator.Send(request);

@@ -1,39 +1,94 @@
-﻿using Application.Modules.UsersModule.Commands.UserAddCommand;
+﻿using Application.Modules.AccountsModule.Commands.SignUpCommand;
+using Application.Modules.AccountsModule.Commands.TokenRefreshCommand;
+using Application.Modules.UsersModule.Commands.UserAddCommand;
 using Application.Repositories;
+using Infrastructure.Abstracts;
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Shopping.Domain.Models.Entities.Membership;
 
 namespace Presentation.Controllers
 {
     public class CreateAccountController : Controller
     {
-        private readonly IUserRepository userRepository;
         private readonly IMediator mediator;
+        private readonly IConfiguration configuration;
+        private readonly IJwtService jwtService;
+        private readonly DbContext db;
+        private readonly Microsoft.AspNetCore.Identity.UserManager<AppUser> userManager;
+        private readonly SignInManager<AppUser> signinManager;
+        private readonly IAuthenticationSchemeProvider schemeProvider;
+        private readonly IUserRepository userRepository;
 
-        public CreateAccountController(IUserRepository userRepository, IMediator mediator)
+        public CreateAccountController(IMediator mediator, IConfiguration configuration, IJwtService jwtService, DbContext db, Microsoft.AspNetCore.Identity.UserManager<AppUser> userManager, SignInManager<AppUser> signinManager, IAuthenticationSchemeProvider schemeProvider, IUserRepository userRepository)
         {
-            this.userRepository = userRepository;
             this.mediator = mediator;
+            this.configuration = configuration;
+            this.jwtService = jwtService;
+            this.db = db;
+            this.userManager = userManager;
+            this.signinManager = signinManager;
+            this.schemeProvider = schemeProvider;
+            this.userRepository = userRepository;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View(new UserAddRequest());
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] UserAddRequest request) //[FromRoute]
+        //[Route("account/signup")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Signup(SignUpRequest request)
         {
-            Console.WriteLine("POST Create hit!");
-            Console.WriteLine($"Username: {request.Username}, Email: {request.Email}");
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var principal = await mediator.Send(request);
+                    return RedirectToAction(nameof(HomeController.Index), "Home");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
+            }
 
-            await mediator.Send(request);
             return RedirectToAction(nameof(Index));
+
+            //return RedirectToAction(nameof(SignupController.Index), "SignUp");
+
+            //return View(request);
         }
+
+        [HttpPost("refresh-token")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RefreshToken([FromRoute] TokenRefreshRequest request)
+        {
+            var response = await mediator.Send(request);
+            return Ok(response);
+        }
+
+        //[HttpPost]
+        //public async Task<IActionResult> Create([FromForm] UserAddRequest request) //[FromRoute]
+        //{
+        //    Console.WriteLine("POST Create hit!");
+        //    Console.WriteLine($"Username: {request.Username}, Email: {request.Email}");
+
+        //    await mediator.Send(request);
+        //    return RedirectToAction(nameof(Index));
+        //}
     }
 }

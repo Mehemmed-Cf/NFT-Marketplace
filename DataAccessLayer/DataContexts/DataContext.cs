@@ -1,19 +1,11 @@
-﻿using Application.Services;
-using DataAccessLayer.DataContexts;
-using Domain.Models.Entities;
-using Infrastructure.Abstracts;
-using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Infrastructure.Abstracts;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Shopping.Domain.Models.Entities.Membership;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace DataAccessLayer.DataContexts
+namespace DataAccessLayer.Migrations
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser, AppRole, int, AppUserClaim, AppUserRole, AppUserLogin, AppRoleClaim, AppUserToken> //DbContext
     {
         private readonly IIdentityService identityService;
 
@@ -37,7 +29,7 @@ namespace DataAccessLayer.DataContexts
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            var changes = this.ChangeTracker.Entries<IAuditableEntity>();
+            var changes = ChangeTracker.Entries<IAuditableEntity>();
 
             if (changes != null)
             {

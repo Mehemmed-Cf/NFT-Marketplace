@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Microsoft.EntityFrameworkCore;
-using DataAccessLayer.DataContexts;
+using DataAccessLayer.Migrations;
 
 namespace DataAccessLayer
 {
