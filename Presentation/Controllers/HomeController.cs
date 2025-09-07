@@ -1,4 +1,6 @@
 ﻿using Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery;
+using Application.Modules.NFTsModule.Queries.NFTGetAllQuery;
+using Application.Modules.SubscribersModule.Commands.SubscriberAddCommand;
 using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -31,6 +33,44 @@ namespace Presentation.Controllers
                 OnlyAvailable = OnlyAvailable
             });
             return Json(creators);
+        }
+
+        [AllowAnonymous]
+        public async Task<JsonResult> GetNfts(bool OnlyAvailable = true)
+        {
+            var nfts = await mediator.Send(new NFTGetAllRequest
+            {
+                OnlyAvailable = OnlyAvailable
+            });
+            return Json(nfts);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> AddSubscriber([FromForm] SubscriberAddRequest request)
+        {
+
+            if (string.IsNullOrWhiteSpace(request.Email))
+            {
+                return Json(new { succes = false, message = "Email is Required." });
+            }
+
+            await mediator.Send(request);
+
+            Console.WriteLine(request.Email);
+
+            return Json(new { success = true, email = request.Email });
+
+            //if (request == null || string.IsNullOrWhiteSpace(request.Email))
+            //{
+            //    return Json(new { success = false, message = "No email received" });
+            //}
+
+            //return Json(new
+            //{
+            //    success = true,
+            //    emailReceived = request.Email
+            //});
         }
     }
 }

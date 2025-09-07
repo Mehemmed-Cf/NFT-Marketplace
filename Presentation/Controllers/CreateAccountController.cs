@@ -48,29 +48,60 @@ namespace Presentation.Controllers
             return View(new UserAddRequest());
         }
 
+        //[HttpPost]
+        //Route("account/signup")]
+        //[AllowAnonymous]
+        //public async Task<IActionResult> Signup(SignUpRequest request)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            var principal = await mediator.Send(request);
+        //            return RedirectToAction(nameof(HomeController.Index), "Home");
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            ModelState.AddModelError(string.Empty, ex.Message);
+        //        }
+        //    }
+
+        //    return RedirectToAction(nameof(Index));
+
+        //    //return RedirectToAction(nameof(SignupController.Index), "SignUp");
+
+        //    //return View(request);
+        //}
+
         [HttpPost]
-        //[Route("account/signup")]
         [AllowAnonymous]
-        public async Task<IActionResult> Signup(SignUpRequest request)
+        public async Task<IActionResult> Signup([FromForm] SignUpRequest request)
         {
-            if (ModelState.IsValid)
+            Console.WriteLine($"Username: '{request.Username}'");
+            Console.WriteLine($"Email: '{request.Email}'");
+            Console.WriteLine($"Password: '{request.Password}'");
+
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    var principal = await mediator.Send(request);
-                    return RedirectToAction(nameof(HomeController.Index), "Home");
-                }
-                catch (Exception ex)
-                {
-                    ModelState.AddModelError(string.Empty, ex.Message);
-                }
+                var errors = string.Join(", ", ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage));
+
+                return Json(new { success = false, message = "Invalid input." });
             }
 
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                var principal = await mediator.Send(request);
 
-            //return RedirectToAction(nameof(SignupController.Index), "SignUp");
+                // Return JSON instead of redirect
+                return Json(new { success = true, emailReceived = request.Email, message = "Signup successful" });
 
-            //return View(request);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
 
         [HttpPost("refresh-token")]
@@ -81,14 +112,21 @@ namespace Presentation.Controllers
             return Ok(response);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create([FromForm] UserAddRequest request) //[FromRoute]
-        //{
-        //    Console.WriteLine("POST Create hit!");
-        //    Console.WriteLine($"Username: {request.Username}, Email: {request.Email}");
+        [HttpPost]
+        public async Task<IActionResult> CreateUser([FromForm] UserAddRequest request) //[FromRoute]
+        {
+            if (string.IsNullOrWhiteSpace(request.Email) ||
+                string.IsNullOrWhiteSpace(request.Username) ||
+                string.IsNullOrWhiteSpace(request.Password))
+            {
+                return Json(new { succes = false, message = "Email is Required." });
+            }
 
-        //    await mediator.Send(request);
-        //    return RedirectToAction(nameof(Index));
-        //}
+            await mediator.Send(request);
+
+            return Json(new { success = true, emailReceived = request.Email, message = "User created successfully." });
+
+            //return RedirectToAction(nameof(Index));
+        }
     }
 }

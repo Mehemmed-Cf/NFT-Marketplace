@@ -19,6 +19,8 @@
 @*     <script defer src="../Views/Home/index.js"></script> *@
     <script defer src="~/Frontend/Common/functions/index.js"></script>
     <script defer src="~/Frontend/js/Home.js"></script>
+    <script defer src="~/Frontend/js/Subscriber.js"></script>
+
 </head>
     
   <body>
@@ -398,14 +400,50 @@ NFT Marketplace</p>
             <h1>Join our weekly digest</h1>
             <p>Get exclusive promotions & updates straight to your inbox.</p>
           </div>
-          <form class="Subscribe-Form">
+
+            <form method="post" enctype="multipart/form-data" class="Subscribe-Form" asp-action="AddSubscriber" asp-controller="Home">
+                <div class="form-group">
+                    <label class="control-label" asp-for="Email"></label>
+                    <input name="Email" asp-for="Email" class="form-control Subscribe-Input" type="email" placeholder="Enter your email here" autocapitalize="off" spellcheck="false" style="text-transform: none;" />
+                    <p class="Error-Message"></p>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success Subscribe-Btn">
+                        <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
+                        <p>Subscribe</p>
+                    </button>
+                </div>
+            </form>
+
+
+@*            <form method="post" enctype="multipart/form-data" class="Subscribe-Form">
             <input class="Subscribe-Input" type="email" placeholder="Enter your email here" />
             <p class="Error-Message"></p>
             <button type="button" class="Subscribe-Btn">
               <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
               <p>Subscribe</p>
             </button>
-          </form>
+          </form> *@
+
+@*             <form method="post" enctype="multipart/form-data">
+                <div class="form-row">
+
+                    <div class="col-7">
+                        <div class="form-group">
+                            <label class="control-label" asp-for="Email"></label>
+                            <input type="text" class="form-control" asp-for="Email">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group text-right m-0">
+                    <a class="btn btn-sm btn-primary" asp-action="index">Cancel</a>
+                    <button class="btn btn-sm btn-success">Save</button>
+                </div>
+            </form> *@
+
         </div>
       </div>
     </section>
@@ -437,14 +475,16 @@ NFT Marketplace</p>
           <h1>Join our weekly digest</h1>
           <div class="Subscribe-FormAndInfo">
             <p>Get exclusive promotions & updates <br/> straight to your inbox.</p>
-            <form class="Subscribe-Form">
-              <input class="Subscribe-Input" type="email" placeholder="Enter your email here" />
+
+            <form method="post" asp-action="AddSubscriber" asp-controller="Home" class="Subscribe-Form">
+              <input class="Subscribe-Input" type="email" name="Email" placeholder="Enter your email here" autocapitalize="off" spellcheck="false" style="text-transform: none;" />
               <p class="Error-Message"></p>
-              <button type="button" class="Subscribe-Btn">
+               <button type="submit" class="Subscribe-Btn">
                 <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
                 <p>Subscribe</p>
               </button>
             </form>
+
           </div>
         </div>
       </div>

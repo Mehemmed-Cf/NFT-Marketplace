@@ -6,6 +6,7 @@ using Application.Modules.UsersModule.Queries.UserGetAllQuery;
 using Application.Modules.UsersModule.Queries.UserGetByIdQuery;
 using Application.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Areas.Admin.Controllers
@@ -22,7 +23,7 @@ namespace Presentation.Areas.Admin.Controllers
             this.mediator = mediator;
         }
 
-
+        [AllowAnonymous]
         public async Task<IActionResult> Index(bool OnlyAvailable = true) // 
         {
             var response = await mediator.Send(new UserGetAllRequest
@@ -33,24 +34,28 @@ namespace Presentation.Areas.Admin.Controllers
             return View(response);
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Details([FromRoute] UserGetByIdRequest request)
         {
             var response = await mediator.Send(request);
             return View(response);
         }
 
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([FromForm] UserAddRequest request) //[FromRoute]
         {
             await mediator.Send(request);
             return RedirectToAction(nameof(Index));
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Edit([FromRoute] UserGetByIdRequest request)
         {
             var response = await mediator.Send(request);
@@ -58,6 +63,7 @@ namespace Presentation.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Edit([FromForm] UserEditRequest request)
         {
             await mediator.Send(request);
@@ -65,6 +71,7 @@ namespace Presentation.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Remove([FromRoute] UserRemoveRequest request)
         {
             await mediator.Send(request);

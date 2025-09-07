@@ -160,7 +160,8 @@ function fillArtistNFTs(creator) {
             NFT_Cards_Section.append(NFT_Card); //NoNFT_Message
 
             NFT_Card.addEventListener("click", () => {
-                window.open("https://localhost:7145/Marketplace", "_self");
+                window.open(`../Nft_Detail?id=${nft.id}`, "_self");
+                //window.open("https://localhost:7145/Marketplace", "_self");
             });
         });
     }

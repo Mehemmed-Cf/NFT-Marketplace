@@ -10,6 +10,10 @@ using Application.Services;
 using Infrastructure.Abstracts;
 using Infrastructure.Configurations;
 using DataAccessLayer.Migrations;
+using Autofac.Core;
+using Shopping.Domain.Models.Entities.Membership;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Domain.Models.Entities;
 
 internal class Program
 {
@@ -58,7 +62,14 @@ internal class Program
 
         builder.Services.AddCustomIdentity(builder.Configuration);
 
-        builder.Services.AddScoped<IIdentityService, FakeIdentityService>();
+        builder.Services.AddIdentity<User, IdentityRole>(options =>
+        {
+            options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            options.Password.RequiredLength = 6;
+            options.Password.RequireNonAlphanumeric = true;
+        });      
+
+            builder.Services.AddScoped<IIdentityService, FakeIdentityService>();
 
         builder.Services.AddSingleton<IFileService, FileService>();
 

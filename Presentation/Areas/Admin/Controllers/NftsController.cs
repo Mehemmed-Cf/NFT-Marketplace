@@ -5,6 +5,7 @@ using Application.Modules.NFTsModule.Queries.NFTGetAllQuery;
 using Application.Modules.NFTsModule.Queries.NFTGetByIdQuery;
 using Application.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Areas.Admin.Controllers
@@ -28,6 +29,7 @@ namespace Presentation.Areas.Admin.Controllers
             ViewBag.Creators = creatorRepository.GetAll(m => m.DeletedAt == null);
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index(bool OnlyAvailable = true) //
         {
             var response = await mediator.Send(new NFTGetAllRequest { 
@@ -62,6 +64,7 @@ namespace Presentation.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Edit([FromRoute] NFTGetByIdRequest request)
         {
             GetCreators();
@@ -71,6 +74,7 @@ namespace Presentation.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Edit([FromForm]  NFTEditRequest request)
         {
             if (!ModelState.IsValid)

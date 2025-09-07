@@ -7,6 +7,11 @@ GetStarted_Btn.addEventListener("click", () => {
     window.open("https://localhost:7145/CreateAccount", "_self");
 });
 
+const HighlightedNFT = document.querySelector(".HighlightedNFT");
+HighlightedNFT.addEventListener("click", () => {
+    window.open(`../Nft_Detail?id=7`, "_self");
+});
+
 const HomeNFT = document.querySelector(".HighlightedNFT-Img");
 HomeNFT.addEventListener("click", () => {
     window.open("Marketplace", "_self");
@@ -40,6 +45,25 @@ const SeeNFT_Btn = document.querySelector(".SeeNFT-Btn");
 SeeNFT_Btn.addEventListener("click", () => {
     window.open("https://localhost:7145/Marketplace", "_self");
 });
+
+function getDataForNfts() {
+    showLoader(true);
+
+    fetch("/Home/GetNfts")
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            return res.json();
+        })
+        .then(NftsData => {
+            console.log(NftsData)
+            showLoader(false);
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            showLoader(false);
+        });
+}
+
 
 function getDataFromServer() {
     showLoader(true);
@@ -116,6 +140,8 @@ function addCreator(data, index) {
     ArtistCard.addEventListener("click", () => {
         window.open(`../Artist_Detail?id=${data.id}`, "_self");
     });
+
+
 }
 
 function showLoader(show) {
@@ -137,4 +163,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+//document.querySelector('.Subscribe-Form').addEventListener('submit', async function (e) {
+//    e.preventDefault();
+
+//    const email = document.querySelector('input[name="Email"]').value;
+
+//    const formData = new FormData();
+//    formData.append('Email', email);
+
+//    const response = await fetch('/Home/AddSubscriber', {
+//        method: 'POST',
+//        body: formData
+//    });
+
+//    const result = await response.json();
+
+//    console.log(result);
+
+//    if (result.success) {
+//        console.log('Email received:', result.emailReceived);
+//    } else {
+//        alert('Failed: ' + result.message);
+//    }
+//});
+
 window.addEventListener("DOMContentLoaded", getDataFromServer);
+window.addEventListener("DOMContentLoaded", getDataForNfts);

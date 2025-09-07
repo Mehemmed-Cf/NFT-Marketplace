@@ -18,6 +18,7 @@
 @*     <script defer src="./index.js"></script> *@
     <script defer src="~/Frontend/Common/functions/index.js"></script>
     <script defer src="~/Frontend/js/Rankings.js"></script>
+    <script defer src="~/Frontend/js/Subscriber.js"></script>
 </head>
 <body>
     <nav class="Navigation">
@@ -116,12 +117,13 @@
                         Get exclusive promotions & updates <br />
                         straight to your inbox.
                     </p>
-                    <form class="Subscribe-Form">
+                    <form method="post" asp-action="AddSubscriber" asp-controller="Home" class="Subscribe-Form">
                         <input class="Subscribe-Input"
                                type="email"
-                               placeholder="Enter your email here" />
+                               name="Email"
+                               placeholder="Enter your email here" autocapitalize="off" spellcheck="false" style="text-transform: none;" />
                         <p class="Error-Message"></p>
-                        <button type="button" class="Subscribe-Btn">
+                        <button type="submit" class="Subscribe-Btn">
                             <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
                             <p>Subscribe</p>
                         </button>

@@ -9,5 +9,6 @@
         public double Price { get; set; }
         public double HighestBid { get; set; }
         public string ImagePath { get; set; }
+        public DateTime MintedAt { get; set; }
     }
 }

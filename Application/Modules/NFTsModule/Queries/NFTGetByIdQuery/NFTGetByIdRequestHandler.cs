@@ -29,9 +29,9 @@ namespace Application.Modules.NFTsModule.Queries.NFTGetByIdQuery
                 Description = entity.Description,
                 Price = entity.Price,
                 HighestBid = entity.HighestBid,
+                MintedAt = entity.CreatedAt,
                 ImagePath = $"{host}/uploads/images/{entity.ImagePath}",
             };
-
         }
     }
 }

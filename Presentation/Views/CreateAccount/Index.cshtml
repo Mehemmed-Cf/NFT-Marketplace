@@ -1,5 +1,5 @@
-﻿@using Application.Modules.UsersModule.Commands.UserAddCommand;
-@model UserAddRequest
+﻿@* @using Application.Modules.UsersModule.Commands.UserAddCommand;
+@model UserAddRequest *@
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,8 +18,9 @@
     <script defer
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script defer src="./index.js"></script>
     <script defer src="~/Frontend/Common/functions/index.js"></script>
+    <script defer src="~/Frontend/js/CreateAccount.js"></script>
+    <script defer src="~/Frontend/js/Subscriber.js"></script>
 </head>
 <body>
 
@@ -61,7 +62,7 @@
 
             <div class="Form">
 
-                <form method="post" asp-controller="CreateAccount" asp-action="Create" enctype="multipart/form-data">
+                <form id="CreateUserForm" method="post" asp-controller="CreateAccount" asp-action="Signup" enctype="multipart/form-data">
 
                     <div class="Typeforms">
 
@@ -72,8 +73,7 @@
                                    type="text"
                                    placeholder="Username"
                                    name="Username"
-                                   asp-for="Username"
- />
+                                   asp-for="Username" />
                         </div>
                         <p class="User-Error-Message"></p>
 
@@ -214,12 +214,14 @@
                         Get exclusive promotions & updates <br />
                         straight to your inbox.
                     </p>
-                    <form class="Subscribe-Form">
+                    <form method="post" class="Subscribe-Form">
                         <input class="Subscribe-Input"
                                type="email"
-                               placeholder="Enter your email here" />
+                               name="Email"
+                               placeholder="Enter your email here" 
+                               autocapitalize="off" spellcheck="false" style="text-transform: none;" />
                         <p class="Error-Message"></p>
-                        <button type="button" class="Subscribe-Btn">
+                        <button type="submit" class="Subscribe-Btn">
                             <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
                             <p>Subscribe</p>
                         </button>

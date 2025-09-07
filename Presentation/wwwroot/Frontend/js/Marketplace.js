@@ -4,6 +4,9 @@ const LoaderIcon = document.querySelector(".LoaderIcon");
 const SeeMore_Btn = document.querySelector(".SeeMore-Btn");
 const NoMore_Message = document.querySelector(".NoMore");
 let skipCount = 0;
+let allNFTs = [];     // Store all NFTs
+let displayedCount = 0; // How many are currently shown
+const PAGE_SIZE = 6;
 
 document.addEventListener("DOMContentLoaded", function () {
     const Search_Input = document.querySelector(".Search-Input");
@@ -30,6 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 getDataForNFTs();
 
+document.addEventListener("DOMContentLoaded", () => {
+    SeeMore_Btn.addEventListener("click", renderNfts);
+});
+
 async function getDataForNFTs() {
     showLoader(true);
 
@@ -38,9 +45,9 @@ async function getDataForNFTs() {
         headers: {
             "CONTENT-TYPE": "application/json",
         },
-        body: JSON.stringify({
+/*        body: JSON.stringify({
             pageSize: 6,
-        }),
+        }),*/
     });
 
     if (!response.ok) {
@@ -49,17 +56,43 @@ async function getDataForNFTs() {
 
     data = await response.json();
 
-    console.log(data);
+    allNFTs = data.nfts || [];
 
-    fillNFTMarketplace(data);
+    displayedCount = 0;
+
+    const limitedData = (data.nfts || []).slice(0, 6);
+
+    //console.log(data);
+    //console.log(limitedData);
+
+    emptyMarketplace();
+    renderNfts();
+
+    //fillNFTMarketplace(data);
 
     showLoader(false);
 }
 
+function renderNfts() {
+    const nextBatch = allNFTs.slice(displayedCount, displayedCount + PAGE_SIZE);
+
+    fillNFTMarketplace({ nfts: nextBatch });
+
+    displayedCount += PAGE_SIZE;
+
+    if (displayedCount >= allNFTs.length) {
+
+        SeeMore_Btn.style.display = "none";
+        NoMore_Message.style.display = "initial";
+    }
+}
+
 function fillNFTMarketplace(data) {
-    emptyMarketplace();
+    //emptyMarketplace();
 
     data.nfts.forEach((nft) => {
+
+        console.log(nft);
 
         const NFT_Card = document.createElement("div");
         NFT_Card.className = "NFT-Card";
@@ -130,6 +163,10 @@ function fillNFTMarketplace(data) {
         NFT_Card.append(Image, NFT_Info);
 
         NFT_Cards_Section.append(NFT_Card);
+
+        NFT_Card.addEventListener("click", () => {
+            window.open(`../Nft_Detail?id=${nft.Id}`, "_self");
+        });
     });
 }
 

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT-Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="~/Frontend/sass/main.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <script defer
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="~/Frontend/Common/functions/index.js"></script>
+    <script defer src="~/Frontend/js/NftDetail.js"></script>
+    <script defer src="~/Frontend/js/Subscriber.js"></script>
+</head>
+<body>
+
+    <nav class="Navigation">
+        <div class="Logo">
+            <img src="~/Frontend/assets/icons/MarketPlace-Logo.svg" />
+            <img id="MarketPlace-Name" src="~/Frontend/assets/icons/MarketPlace.svg" />
+        </div>
+        <div class="Navigation_Menu">
+            <div class="NavigationLinksAndButton">
+                <a id="MarketPlaceLink" href="#">Marketplace</a>
+                <a id="Rankings" href="#">Rankings</a>
+                <a id="ConnectAWallet" href="#">Connect a wallet</a>
+                <button class="SignUp-Btn">
+                    <img src="~/Frontend/assets/icons/User.svg" />
+                    <p>Sign Up</p>
+                </button>
+            </div>
+            <button class="Bars_Btn">
+                <img src="~/Frontend/assets/icons/Bars.svg" />
+            </button>
+        </div>
+    </nav>
+
+    <section id="NFT-Detail_Section">
+        @* <img id="NFT_Image" src="~/Frontend/assets/images/The Orbitians.jpg" /> *@
+
+        <div class="Nft-Info Container">
+            <div class="Nft-Info_Section">
+                <div class="Info-Placeholder">
+                    <div class="Information_Area">
+
+                        <div class="Nft-HeadlineAndSubhead">
+@*                             <p class="Nft-Name">The Orbitians</p>
+                            <p class="Nft-Minted">Minted on Sep 30, 2022</p> *@
+                        </div>
+
+                        <div class="Additional-Info">
+
+                            <div id="CreatedBy">
+                                <p>Created By</p>
+
+                                <div class="Artist-Card">
+                                    @* <img src="~/Frontend/assets/icons/OrbitianAvatar.svg"> *@
+                                    @* <p>Orbitian</p> *@
+                                </div>
+
+                            </div>
+
+                            <div id="Description">
+                                <p>Description</p>
+
+@*                                 <p>
+                                    The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,
+                                </p>
+                                <p>
+                                    There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.
+                                </p>
+                                <p>
+                                    They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.
+                                </p> *@
+
+                            </div>
+
+                            <div id="Details">
+                                <p>Details</p>
+
+                                <div id="Website_Link">
+                                    <img src="~/Frontend/assets/icons/Globe.svg" />
+                                    <p>View on Etherscan</p>
+                                </div>
+
+                                <div id="Website_Link">
+                                    <img src="~/Frontend/assets/icons/Globe.svg" />
+                                    <p>View Original</p>
+                                </div>
+
+                            </div>
+
+                            <div id="Tags">
+                                <p>Tags</p>
+                                <div class="Tag_Frame">
+                                    <button id="Tag">Animation</button>
+                                    <button id="Tag">illustration</button>
+                                    <button id="Tag">Moon</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="MoreNfts_FromArtist Container">
+            <div class="Section-Headline">
+                <p>More From The Artist</p>
+                <button id="GoToArtist"> <img src="~/Frontend/assets/icons/arrow-right-solid.svg" /> Go To Artist Page</button>
+            </div>
+
+            <div class="NFT-Cards_Section Container">
+
+@*                 <div class="NFTCard">
+
+                    <div class="Image">
+                        <img src="~/Frontend/assets/images/NftCard-DistantGalaxy.png" />
+                    </div>
+
+                    <div class="NFT-Info">
+                        <div class="Artist-Info">
+                            <h1>Distant Galaxy</h1>
+                            <div id="MoonDancer" class="Artist-AvatarAndName">
+                                <img src="~/Frontend/assets/images/AvatarMoonDancer.svg" />
+                                <p>MoonDancer</p>
+                            </div>
+                        </div>
+
+                        <div class="Additional-Info">
+                            <div class="Price">
+                                <h1>Price</h1>
+                                <p>1.63 ETH</p>
+                            </div>
+
+                            <div class="Highest-Bid">
+                                <h1>Highest Bid</h1>
+                                <p>0.33 wETH</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> *@
+
+                <div id="NoNFT_Message" style="display:inline;
+                 font-family: 'Space Mono'; font-size: 16px; font-weight: 400; text-align: right;
+                 line-height: 140%; text-transform: capitalize; color: #a259ff; width: 550px; ">
+                    <p> The creator does not have any other NFTs </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: none;" class="Loader">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p id="Loading-Info">Loading Artist Page</p>
+        </div>
+    </section>
+
+    <footer class="Footer">
+        <div class="Footer-Info Container">
+            <div class="NFT-Marketplace-Info">
+                <div class="Logo">
+                    <img src="~/Frontend/assets/icons/MarketPlace-Logo.svg" />
+                    <img id="MarketPlace-Name"
+                         src="~/Frontend/assets/icons/MarketPlace.svg" />
+                </div>
+                <div class="Additional-Info">
+                    <p>NFT marketplace UI created with Anima for Figma.</p>
+                    <div class="Community-Info">
+                        <p>Join our community</p>
+                        <img src="~/Frontend/assets/icons/Icons-SocialMedia.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="Explore">
+                <h1>Explore</h1>
+                <div class="Pages">
+                    <a href="#">Marketplace</a>
+                    <a href="#">Rankings</a>
+                    <a href="#">Connect a wallet</a>
+                </div>
+            </div>
+            <div class="Subscribe">
+                <h1>Join our weekly digest</h1>
+                <div class="Subscribe-FormAndInfo">
+                    <p>
+                        Get exclusive promotions & updates <br />
+                        straight to your inbox.
+                    </p>
+                    <form method="post" asp-action="AddSubscriber" asp-controller="Home" class="Subscribe-Form">
+                        <input class="Subscribe-Input"
+                               type="email"
+                               name="Email"
+                               placeholder="Enter your email here" style="text-transform: none;" />
+                        <p class="Error-Message"></p>
+                        <button type="submit" class="Subscribe-Btn">
+                            <img class="EmailIcon" src="~/Frontend/assets/icons/Email.svg" />
+                            <p>Subscribe</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-Frame Container">
+            <div class="Divider Container"></div>
+            <p>
+                Ⓒ NFT Market. You cant freely use this template , I made it myself ,
+                if you want to use it then PAY!!!.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

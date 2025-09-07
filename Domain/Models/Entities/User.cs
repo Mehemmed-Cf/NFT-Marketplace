@@ -15,6 +15,6 @@ namespace Domain.Models.Entities
         public string Password { get; set; }
         public bool? EmailConfirmed { get; set; }
 
-        public ICollection<Follow> Follows { get; set; } = new List<Follow>();
+        //public ICollection<Follow> Follows { get; set; } = new List<Follow>();
     }
 }

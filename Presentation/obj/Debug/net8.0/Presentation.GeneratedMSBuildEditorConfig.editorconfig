@@ -66,6 +66,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/source/repos/NFT Marketplace/Presentation/Areas/Admin/Views/Subscribers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/NFT Marketplace/Presentation/Areas/Admin/Views/Subscribers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/NFT Marketplace/Presentation/Areas/Admin/Views/Subscribers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/NFT Marketplace/Presentation/Areas/Admin/Views/Subscribers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/source/repos/NFT Marketplace/Presentation/Areas/Admin/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,6 +148,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/user/source/repos/NFT Marketplace/Presentation/Views/Marketplace/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/NFT Marketplace/Presentation/Views/Nft_Detail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0X0RldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/source/repos/NFT Marketplace/Presentation/Views/NotFound/Index.cshtml]
