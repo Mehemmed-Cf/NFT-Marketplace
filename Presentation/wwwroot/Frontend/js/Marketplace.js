@@ -4,8 +4,8 @@ const LoaderIcon = document.querySelector(".LoaderIcon");
 const SeeMore_Btn = document.querySelector(".SeeMore-Btn");
 const NoMore_Message = document.querySelector(".NoMore");
 let skipCount = 0;
-let allNFTs = [];     // Store all NFTs
-let displayedCount = 0; // How many are currently shown
+let allNFTs = [];
+let displayedCount = 0;
 const PAGE_SIZE = 6;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,9 +45,6 @@ async function getDataForNFTs() {
         headers: {
             "CONTENT-TYPE": "application/json",
         },
-/*        body: JSON.stringify({
-            pageSize: 6,
-        }),*/
     });
 
     if (!response.ok) {
@@ -62,13 +59,8 @@ async function getDataForNFTs() {
 
     const limitedData = (data.nfts || []).slice(0, 6);
 
-    //console.log(data);
-    //console.log(limitedData);
-
     emptyMarketplace();
     renderNfts();
-
-    //fillNFTMarketplace(data);
 
     showLoader(false);
 }
@@ -88,7 +80,7 @@ function renderNfts() {
 }
 
 function fillNFTMarketplace(data) {
-    //emptyMarketplace();
+    //emptyMarketplace();   
 
     data.nfts.forEach((nft) => {
 
@@ -165,7 +157,7 @@ function fillNFTMarketplace(data) {
         NFT_Cards_Section.append(NFT_Card);
 
         NFT_Card.addEventListener("click", () => {
-            window.open(`../Nft_Detail?id=${nft.Id}`, "_self");
+            window.open(`../Nft_Detail?id=${nft.id}`, "_self");
         });
     });
 }

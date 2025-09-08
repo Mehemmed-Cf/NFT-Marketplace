@@ -31,15 +31,15 @@ ViewRankings_Btn.addEventListener("click", () => {
 
 const SeeAll_Btn = document.querySelector(".SeeAll-Btn");
 SeeAll_Btn.addEventListener("click", () => {
-    window.open("../Marketplace/index.html", "_self");
+    window.open("https://localhost:7145/Marketplace", "_self");
 });
 
-const NFTCards = document.querySelectorAll(".NFTCard");
-NFTCards.forEach((NFTCard) => {
-    NFTCard.addEventListener("click", () => {
-        window.open("https://localhost:7145/Marketplace", "_self");
-    });
-});
+//const NFTCards = document.querySelectorAll(".NFTCard");
+//NFTCards.forEach((NFTCard) => {
+//    NFTCard.addEventListener("click", () => {
+//        window.open("https://localhost:7145/Marketplace", "_self");
+//    });
+//});
 
 const SeeNFT_Btn = document.querySelector(".SeeNFT-Btn");
 SeeNFT_Btn.addEventListener("click", () => {
@@ -49,13 +49,14 @@ SeeNFT_Btn.addEventListener("click", () => {
 function getDataForNfts() {
     showLoader(true);
 
-    fetch("/Home/GetNfts")
+    fetch("/Home/GetRandomNfts")
         .then(res => {
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             return res.json();
         })
-        .then(NftsData => {
-            console.log(NftsData)
+        .then(data => {
+            console.log(data);
+            fillRandomNfts(data);
             showLoader(false);
         })
         .catch(error => {
@@ -63,7 +64,6 @@ function getDataForNfts() {
             showLoader(false);
         });
 }
-
 
 function getDataFromServer() {
     showLoader(true);
@@ -144,6 +144,92 @@ function addCreator(data, index) {
 
 }
 
+function fillRandomNfts(data) {
+    const NFTCards_Row = document.querySelector(".NFTCards-Row");
+
+    data.nfts.forEach((nft) => {
+
+        console.log(nft);
+
+        const NFT_Card = document.createElement("div");
+        NFT_Card.className = "NFTCard";
+
+        const Image = document.createElement("div");
+        Image.className = "Image";
+
+        const ImageElement = document.createElement("img");
+        ImageElement.src = nft.imagePath;
+        Image.append(ImageElement);
+
+        const NFT_Info = document.createElement("div");
+        NFT_Info.className = "NFT-Info ";
+
+        const Artist_Info = document.createElement("div");
+        Artist_Info.className = "Artist-Info";
+
+        const NFT_Name = document.createElement("h1");
+        NFT_Name.textContent = nft.title;
+
+        const Artist_Avatar_And_Name = document.createElement("div");
+        Artist_Avatar_And_Name.className = "Artist-AvatarAndName";
+        Artist_Avatar_And_Name.id = nft.creator.nickName;
+
+        const Avatar_Image = document.createElement("img");
+        Avatar_Image.src = nft.creator.imagePath;
+        Avatar_Image.style.width = "25px";
+        Avatar_Image.style.objectFit = "cover";
+
+        const Artist_Name = document.createElement("p");
+        Artist_Name.textContent = nft.creator.nickName;
+
+        Artist_Avatar_And_Name.addEventListener("click", (event) => {
+            event.stopPropagation();
+            window.open(`../Artist_Detail?id=${nft.creatorId}`, "_self");
+        });
+
+        Artist_Avatar_And_Name.append(Avatar_Image, Artist_Name);
+
+        Artist_Info.append(NFT_Name, Artist_Avatar_And_Name);
+
+        const Additional_Info = document.createElement("div");
+        Additional_Info.className = "Additional-Info";
+
+        const Price = document.createElement("div");
+        Price.className = "Price";
+
+        const Price_Key = document.createElement("h1");
+        Price_Key.textContent = "Price";
+
+        const Price_Value = document.createElement("p");
+        Price_Value.textContent = nft.price
+
+        Price.append(Price_Key, Price_Value);
+
+        const HighestBid = document.createElement("div");
+        HighestBid.className = "Highest-Bid";
+
+        const Bid_Key = document.createElement("h1");
+        Bid_Key.textContent = "Highest Bid";
+
+        const Bid_Value = document.createElement("p");
+        Bid_Value.textContent = nft.highestBid
+
+        HighestBid.append(Bid_Key, Bid_Value);
+
+        Additional_Info.append(Price, HighestBid);
+
+        NFT_Info.append(Artist_Info, Additional_Info);
+
+        NFT_Card.append(Image, NFT_Info);
+
+        NFTCards_Row.append(NFT_Card);
+
+        NFT_Card.addEventListener("click", () => {
+            window.open(`../Nft_Detail?id=${nft.id}`, "_self");
+        });
+    });
+}
+
 function showLoader(show) {
     loaderElement.style.display = show ? "grid" : "none";
 }
@@ -163,30 +249,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
-//document.querySelector('.Subscribe-Form').addEventListener('submit', async function (e) {
-//    e.preventDefault();
-
-//    const email = document.querySelector('input[name="Email"]').value;
-
-//    const formData = new FormData();
-//    formData.append('Email', email);
-
-//    const response = await fetch('/Home/AddSubscriber', {
-//        method: 'POST',
-//        body: formData
-//    });
-
-//    const result = await response.json();
-
-//    console.log(result);
-
-//    if (result.success) {
-//        console.log('Email received:', result.emailReceived);
-//    } else {
-//        alert('Failed: ' + result.message);
-//    }
-//});
 
 window.addEventListener("DOMContentLoaded", getDataFromServer);
 window.addEventListener("DOMContentLoaded", getDataForNfts);
