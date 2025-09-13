@@ -126,7 +126,7 @@ function PasswordValidationAndConfirm() {
                     passwordErrorMessage.classList.add("False");
                     passwordErrorMessage.textContent =
                         "Password should contain at least one special character.";
-                } else if (password.length < 8 || password.length > 10) {
+                } else if (password.length < 8) {
                     passwordErrorMessage.classList.remove("True");
                     passwordErrorMessage.classList.add("False");
                     passwordErrorMessage.textContent =
@@ -303,9 +303,9 @@ document.getElementById("CreateUserForm").addEventListener('submit', async funct
         if (result.success) {
             console.log('Email received:', result.emailReceived);
             localStorage.setItem('subscribedEmail', result.emailReceived);
-            alert(result.message);
+            alert(result.message || "Signed in successfully!");
         } else {
-            alert('Failed: ' + result.message);
+            alert('Failed: ' + result.message || "Unknown error");
         }
     } catch (err) {
         console.error('Signup error:', err);

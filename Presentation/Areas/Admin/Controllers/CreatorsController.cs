@@ -5,12 +5,14 @@ using Application.Modules.CreatorsModule.Queries.CreatorGetAllQuery;
 using Application.Modules.CreatorsModule.Queries.CreatorGetByIdQuery;
 using Application.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Authorize(Roles = "SUPERADMIN" , AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+    [Area("admin")]
     public class CreatorsController : Controller
     {
         private readonly ICreatorRepository creatorRepository;

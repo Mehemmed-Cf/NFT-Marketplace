@@ -588,7 +588,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.HasOne("Domain.Models.Entities.User", "User")
-                        .WithMany("Follows")
+                        .WithMany()
                         .HasForeignKey("UserId1");
 
                     b.Navigation("Creator");
@@ -648,11 +648,6 @@ namespace DataAccessLayer.Migrations
                 });
 
             modelBuilder.Entity("Domain.Models.Entities.Creator", b =>
-                {
-                    b.Navigation("Follows");
-                });
-
-            modelBuilder.Entity("Domain.Models.Entities.User", b =>
                 {
                     b.Navigation("Follows");
                 });

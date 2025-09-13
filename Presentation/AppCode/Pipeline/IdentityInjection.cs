@@ -2,7 +2,10 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Shopping.Domain.Models.Entities.Membership;
+using DataAccessLayer.Migrations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Presentation.AppCode.Pipeline
 {
@@ -10,16 +13,11 @@ namespace Presentation.AppCode.Pipeline
     {
         internal static IServiceCollection AddCustomIdentity(this IServiceCollection services, IConfiguration configuration)
         {
+
             services.AddIdentityCore<AppUser>()
              .AddRoles<AppRole>()
              .AddDefaultTokenProviders()
-             .AddEntityFrameworkStores<DbContext>();
-
-            services.AddScoped<SignInManager<AppUser>>();
-            services.AddScoped<UserManager<AppUser>>();
-            services.AddScoped<RoleManager<AppRole>>();
-            services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddScoped<IClaimsTransformation, AppClaimsTransformation>();
+             .AddEntityFrameworkStores<DataContext>();
 
             services.Configure<IdentityOptions>(cfg =>
             {
@@ -44,7 +42,7 @@ namespace Presentation.AppCode.Pipeline
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
                 //options.LoginPath = "/Account/Login";
                 options.LoginPath = "/Login";
-                options.AccessDeniedPath = "/NotAllowed";
+                //options.AccessDeniedPath = "/NotAllowed";
                 options.SlidingExpiration = true;
             });
 
@@ -56,6 +54,13 @@ namespace Presentation.AppCode.Pipeline
                     options.AccessDeniedPath = "/NotAllowed";
                 });
 
+            services.AddScoped<SignInManager<AppUser>>();
+            services.AddScoped<UserManager<AppUser>>();
+            services.AddScoped<RoleManager<AppRole>>();
+            services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IClaimsTransformation, AppClaimsTransformation>();
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, UserClaimsPrincipalFactory<AppUser, AppRole>>(); //
+
             services.AddAuthorization(cfg =>
             {
                 cfg.AddPolicy("RequireSuperAdminRole", policy => policy.RequireRole("SUPERADMIN"));
@@ -64,10 +69,11 @@ namespace Presentation.AppCode.Pipeline
                 {
                     cfg.AddPolicy(item, p =>
                     {
-                        // p.RequireClaim(item, "1");
+                        p.RequireClaim(item, "1"); //
 
                         p.RequireAssertion(handler => handler.User.IsInRole("SUPERADMIN") || handler.User.HasClaim(item, "1"));
-                        // p.RequireAssertion(handler => handler.User.HasClaim(item, "1"));
+
+                        p.RequireAssertion(handler => handler.User.HasClaim(item, "1")); //
                     });
                 }
             });

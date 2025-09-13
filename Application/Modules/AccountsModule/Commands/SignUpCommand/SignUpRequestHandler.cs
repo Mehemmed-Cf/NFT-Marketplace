@@ -24,7 +24,8 @@ namespace Application.Modules.AccountsModule.Commands.SignUpCommand
             var user = new AppUser
             {
                 Email = request.Email,
-                Name = request.Username,
+                Name = request.Username, //
+                UserName = request.Username,
             };
 
             var result = await userManager.CreateAsync(user, request.Password);

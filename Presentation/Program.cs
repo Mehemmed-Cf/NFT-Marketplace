@@ -10,10 +10,8 @@ using Application.Services;
 using Infrastructure.Abstracts;
 using Infrastructure.Configurations;
 using DataAccessLayer.Migrations;
-using Autofac.Core;
-using Shopping.Domain.Models.Entities.Membership;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Domain.Models.Entities;
+using Shopping.Domain.Models.Entities.Membership;
 
 internal class Program
 {
@@ -46,7 +44,7 @@ internal class Program
             cfg.Filters.Add(new AuthorizeFilter(policy));
         });
 
-        builder.Services.AddDbContext<DbContext, DataContext>(cfg =>
+        builder.Services.AddDbContext<DataContext>(cfg => //DbContext, 
         {
             string cs = builder.Configuration.GetConnectionString("cString");
 
@@ -56,20 +54,20 @@ internal class Program
             });
         });
 
+        builder.Services.AddCustomIdentity(builder.Configuration);
+
         builder.Services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(HeaderBinderBehaviour<,>));
 
         builder.Services.Configure<CryptoServiceOptions>(cfg => builder.Configuration.Bind(nameof(CryptoServiceOptions), cfg));
 
-        builder.Services.AddCustomIdentity(builder.Configuration);
-
-        builder.Services.AddIdentity<User, IdentityRole>(options =>
+        builder.Services.AddIdentity<AppUser, Microsoft.AspNetCore.Identity.IdentityRole>(options => //User
         {
             options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             options.Password.RequiredLength = 6;
             options.Password.RequireNonAlphanumeric = true;
-        });      
+        });
 
-            builder.Services.AddScoped<IIdentityService, FakeIdentityService>();
+        builder.Services.AddScoped<IIdentityService, FakeIdentityService>();
 
         builder.Services.AddSingleton<IFileService, FileService>();
 
@@ -78,6 +76,9 @@ internal class Program
         builder.Services.AddControllersWithViews();
 
         builder.Services.AddRouting(cfg => cfg.LowercaseUrls = true);
+
+        builder.Services.Configure<EmailServiceOptions>(builder.Configuration.GetSection("EmailServiceOptions"));
+        builder.Services.AddTransient<EmailService>();
 
         /*builder.Services.AddFluentValidationAutoValidation(cfg => cfg.DisableDataAnnotationsValidation = false);*/
 
@@ -91,18 +92,20 @@ internal class Program
         {
             app.UseExceptionHandler("/Error");
             app.UseHsts();
+            app.UseDeveloperExceptionPage(); //
         }
 
         app.UseHttpsRedirection();
+
         app.UseStaticFiles();
 
         app.UseRouting();
 
         app.UseCors("allowAll");
 
-        app.UseAuthorization();
-
         app.UseAuthentication();
+
+        app.UseAuthorization();
 
         app.MapRazorPages();
 

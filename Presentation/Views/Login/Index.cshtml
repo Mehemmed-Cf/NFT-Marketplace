@@ -15,9 +15,9 @@
     <script defer
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script defer src="./index.js"></script>
     <script defer src="~/Frontend/Common/functions/index.js"></script>
     <script defer src="~/Frontend/js/Subscriber.js"></script>
+    <script defer src="~/Frontend/js/Login.js"></script>
 </head>
 <body>
     <nav class="Navigation">
@@ -55,7 +55,42 @@
                     </p>
                 </div>
             </div>
+
             <div class="Form">
+                <form id="LoginForm" class="Typeforms">
+                    <div class="Typeform">
+                        <img src="~/Frontend/assets/icons/UserInput.svg" />
+                        <input class="UserName-Input"
+                               type="Email" @*Text*@
+                               name="Email" @*Username*@
+                               placeholder="Email" /> @*Username*@
+                    </div>
+                    <p class="User-Error-Message"></p>
+
+                    <div class="Typeform">
+                        <img src="~/Frontend/assets/icons/Password.svg" />
+                        <input class="Password-Input"
+                               type="password"
+                               name="Password"
+                               placeholder="Password" />
+                    </div>
+                    <p class="Password-Error-Message"></p>
+
+                    <button type="submit" class="Login-Btn">
+                        Login
+                        <div class="Button-Loader">
+                            <div class="lds-dual-ring"></div>
+                        </div>
+                    </button>
+                </form>
+
+                <div class="SendToCreateAccount">
+                    <p>You Don't Have an account?</p>
+                    <a href="https://localhost:7145/CreateAccount">Go To Create Account</a>
+                </div>
+            </div>
+
+            @* <div class="Form">
                 <div class="Typeforms">
                     <form class="Typeform">
                         <img src="~/Frontend/assets/icons/UserInput.svg" />
@@ -83,7 +118,8 @@
                     <p>You Don't Have an account?</p>
                     <a href="https://localhost:7145/CreateAccount">Go To Create Account</a>
                 </div>
-            </div>
+            </div> *@
+
         </div>
     </section>
 

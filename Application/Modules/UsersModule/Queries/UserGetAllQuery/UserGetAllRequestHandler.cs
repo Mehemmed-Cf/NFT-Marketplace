@@ -1,21 +1,18 @@
 ﻿using Application.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Modules.UsersModule.Queries.UserGetAllQuery
 {
     public class UserGetAllRequestHandler : IRequestHandler<UserGetAllRequest, IEnumerable<UserGetAllRequestDto>>
     {
         private readonly IUserRepository userRepository;
+        private readonly DbContext db;
 
-        public UserGetAllRequestHandler(IUserRepository userRepository)
+        public UserGetAllRequestHandler(IUserRepository userRepository, DbContext db)
         {
             this.userRepository = userRepository;
+            this.db = db;
         }
 
         public async Task<IEnumerable<UserGetAllRequestDto>> Handle(UserGetAllRequest request, CancellationToken cancellationToken)
@@ -37,6 +34,19 @@ namespace Application.Modules.UsersModule.Queries.UserGetAllQuery
             }).ToListAsync(cancellationToken);
 
             return queryResponse;
+
+            //var users = await db.LegacyUsers
+            //    .Select(u => new UserGetAllRequestDto
+            //    {
+            //        Id = u.UserId,
+            //        Username = u.UserName,
+            //        Email = u.Email,
+            //        Password = null, // Legacy hashed or encrypted
+            //        EmailConfirmed = u.IsApproved // or other mapping
+            //    })
+            //    .ToListAsync();
+            //return users;
+
         }
     }
 }

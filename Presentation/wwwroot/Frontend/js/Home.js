@@ -249,6 +249,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
 window.addEventListener("DOMContentLoaded", getDataFromServer);
 window.addEventListener("DOMContentLoaded", getDataForNfts);

@@ -9,8 +9,8 @@ namespace DataAccessLayer.Migrations
     {
         private readonly IIdentityService identityService;
 
-        public DataContext(DbContextOptions options, IIdentityService identityService)
-            : base(options)
+        public DataContext(DbContextOptions<DataContext> options, IIdentityService? identityService = null)
+            :base(options)
         {
             if (identityService == null)
                 throw new ArgumentNullException(nameof(identityService), "IdentityService cannot be null");
@@ -18,6 +18,16 @@ namespace DataAccessLayer.Migrations
 
             this.identityService = identityService;
         }
+
+        //public DataContext(DbContextOptions options, IIdentityService identityService)
+        //    : base(options)
+        //{
+        //    if (identityService == null)
+        //        throw new ArgumentNullException(nameof(identityService), "IdentityService cannot be null");
+
+
+        //    this.identityService = identityService;
+        //}
 
         //public DbSet<Follow> Follows { get; set; }  // <-- Add this line
 
@@ -30,6 +40,8 @@ namespace DataAccessLayer.Migrations
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var changes = ChangeTracker.Entries<IAuditableEntity>();
+
+            var userId = identityService?.GetPrincipialId(); //
 
             if (changes != null)
             {
@@ -55,7 +67,8 @@ namespace DataAccessLayer.Migrations
                             entry.Property(m => m.CreatedAt).IsModified = false;
                             entry.Property(m => m.LastModifiedBy).IsModified = false;
                             entry.Property(m => m.LastModifiedAt).IsModified = false;
-                            entry.Entity.DeletedBy = identityService.GetPrincipialId();
+                            //entry.Entity.DeletedBy = identityService.GetPrincipialId();
+                            entry.Entity.DeletedBy = userId; //
                             entry.Entity.DeletedAt = DateTime.UtcNow;
                             break;
                         default:

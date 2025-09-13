@@ -11,7 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin")]
+    [Area("admin")]
     public class UsersController : Controller
     {
         private readonly IUserRepository userRepository;

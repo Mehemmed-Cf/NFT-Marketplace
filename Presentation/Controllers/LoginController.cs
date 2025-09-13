@@ -3,11 +3,13 @@ using Application.Repositories;
 using Infrastructure.Abstracts;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shopping.Domain.Models.Entities.Membership;
+using System.Security.Claims;
 
 namespace Presentation.Controllers
 {
@@ -40,18 +42,70 @@ namespace Presentation.Controllers
             return View();
         }
 
+        [Authorize]
+        [HttpGet("Login/DebugUser")]
+        public IActionResult DebugUser()
+        {
+            var claims = User.Claims.Select(c => new { c.Type, c.Value });
+            return Json(claims);
+        }
+
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Signin(SignInRequest request)
+        public async Task<IActionResult> Signin([FromForm] SignInRequest request)
         {
-            if (ModelState.IsValid)
+
+            Console.WriteLine($"Signin attempt: {request.Email}");
+
+            var user = await userManager.FindByEmailAsync(request.Email);
+            if (user == null)
             {
-                var principal = await mediator.Send(request);
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                Console.WriteLine("User not found");
+                return Json(new { success = false, message = "Invalid credentials" });
             }
 
-            TempData["LogInError"] = System.Web.HttpUtility.JavaScriptStringEncode("You are not Mentally Ill enaugh to Log");
-            return RedirectToAction(nameof(LoginController.Index), "Login");
+            var passwordValid = await userManager.CheckPasswordAsync(user, request.Password);
+            Console.WriteLine($"Password valid: {passwordValid}");
+
+            var roles = await userManager.GetRolesAsync(user);
+            var claims = await userManager.GetClaimsAsync(user);
+            Console.WriteLine($"Roles count: {roles.Count}, Claims count: {claims.Count}");
+
+            var claimsList = new List<Claim>
+            {
+               new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+               new Claim(ClaimTypes.Name, user.UserName),
+               new Claim(ClaimTypes.Email, user.Email ?? "")
+            };
+
+            foreach (var role in roles)
+            {
+                claimsList.Add(new Claim(ClaimTypes.Role, role));
+            }
+
+            var identity = new ClaimsIdentity(claimsList, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+            if (!passwordValid)
+                return Json(new { success = false, message = "Invalid credentials" });
+
+            try
+            {
+                Console.WriteLine("Attempting SignInAsync...");
+                await signinManager.SignInAsync(user, isPersistent: true);
+                Console.WriteLine("Signin successful");
+                return Json(new { success = true, message = "Signed in successfully" });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Login error: " + ex.ToString());
+                Console.WriteLine("SigninAsync exception type: " + ex.GetType().FullName);
+                Console.WriteLine("Message: " + ex.Message);
+                Console.WriteLine("StackTrace: " + ex.StackTrace);
+                return Json(new { success = false, message = "Unexpected server error" });
+            }
         }
     }
 }
