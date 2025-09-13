@@ -48,31 +48,6 @@ namespace Presentation.Controllers
             return View(new UserAddRequest());
         }
 
-        //[HttpPost]
-        //Route("account/signup")]
-        //[AllowAnonymous]
-        //public async Task<IActionResult> Signup(SignUpRequest request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        try
-        //        {
-        //            var principal = await mediator.Send(request);
-        //            return RedirectToAction(nameof(HomeController.Index), "Home");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            ModelState.AddModelError(string.Empty, ex.Message);
-        //        }
-        //    }
-
-        //    return RedirectToAction(nameof(Index));
-
-        //    //return RedirectToAction(nameof(SignupController.Index), "SignUp");
-
-        //    //return View(request);
-        //}
-
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Signup([FromForm] SignUpRequest request)
@@ -94,7 +69,6 @@ namespace Presentation.Controllers
             {
                 var principal = await mediator.Send(request);
 
-                // Return JSON instead of redirect
                 return Json(new { success = true, emailReceived = request.Email, message = "Signup successful" });
 
             }
@@ -125,8 +99,6 @@ namespace Presentation.Controllers
             await mediator.Send(request);
 
             return Json(new { success = true, emailReceived = request.Email, message = "User created successfully." });
-
-            //return RedirectToAction(nameof(Index));
         }
     }
 }

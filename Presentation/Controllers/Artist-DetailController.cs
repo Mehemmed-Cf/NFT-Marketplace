@@ -50,9 +50,6 @@ namespace Presentation.Controllers
                 creator.ImagePath,
 
                 nfts = nfts
-
-
-                //Nfts = nfts
             };
 
             return Json(result);

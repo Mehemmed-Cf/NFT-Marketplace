@@ -38,18 +38,17 @@ namespace Presentation.AppCode.Pipeline
 
             services.ConfigureApplicationCookie(options =>
             {
+                options.Cookie.Name = "MyAppAuthCookie";
                 options.Cookie.HttpOnly = true;
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
-                //options.LoginPath = "/Account/Login";
                 options.LoginPath = "/Login";
-                //options.AccessDeniedPath = "/NotAllowed";
+                options.AccessDeniedPath = "/NotAllowed";
                 options.SlidingExpiration = true;
             });
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    //options.LoginPath = "/Account/Login";
                     options.LoginPath = "/Login";
                     options.AccessDeniedPath = "/NotAllowed";
                 });

@@ -107,5 +107,21 @@ namespace Presentation.Controllers
                 return Json(new { success = false, message = "Unexpected server error" });
             }
         }
+
+        [HttpPost]
+        [Authorize]
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Signout()
+        {
+            Console.WriteLine("Signout action triggered for user: " + User.Identity.Name);
+
+            //await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
+            Response.Cookies.Delete(".AspNetCore.Cookies");
+
+            Console.WriteLine("Signout complete, returning JSON");
+
+            return Json(new { signedOut = true });
+        }
     }
 }

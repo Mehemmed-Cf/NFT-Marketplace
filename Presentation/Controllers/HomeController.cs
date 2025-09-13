@@ -21,6 +21,16 @@ namespace Presentation.Controllers
             this.mediator = mediator;
         }
 
+        [HttpGet]
+        public IActionResult IsSignedIn()
+        {
+
+            if (User.Identity.IsAuthenticated)
+                return Json(new { signedIn = true, username = User.Identity.Name });
+
+            return Json(new { signedIn = false });
+        }
+
         [AllowAnonymous]
         public IActionResult Index()
         {

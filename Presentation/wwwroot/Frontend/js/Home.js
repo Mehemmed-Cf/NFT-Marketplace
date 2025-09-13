@@ -34,13 +34,6 @@ SeeAll_Btn.addEventListener("click", () => {
     window.open("https://localhost:7145/Marketplace", "_self");
 });
 
-//const NFTCards = document.querySelectorAll(".NFTCard");
-//NFTCards.forEach((NFTCard) => {
-//    NFTCard.addEventListener("click", () => {
-//        window.open("https://localhost:7145/Marketplace", "_self");
-//    });
-//});
-
 const SeeNFT_Btn = document.querySelector(".SeeNFT-Btn");
 SeeNFT_Btn.addEventListener("click", () => {
     window.open("https://localhost:7145/Marketplace", "_self");
@@ -247,6 +240,78 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("https://localhost:7145/CreateAccount", "_self");
     });
 
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const SignUp_Btn = document.querySelector(".SignUp-Btn");
+    const pTag = SignUp_Btn.querySelector("p");
+
+    if (!SignUp_Btn || !pTag) return; // safety check
+    console.log("SignUp button found:", SignUp_Btn);
+
+    // Function to check login status and update button
+    const updateButton = async () => {
+        try {
+            const response = await fetch("/Home/IsSignedIn");
+            const data = await response.json();
+
+            if (data.signedIn) {
+                pTag.textContent = "Sign Out (" + data.username + ")";
+
+                const newBtn = SignUp_Btn.cloneNode(true);
+                SignUp_Btn.replaceWith(newBtn);
+
+                newBtn.addEventListener("click", async () => {
+                    if (!confirm("Are you sure you want to sign out?")) return;
+
+                    try {
+                        const logoutResponse = await fetch("/Login/Signout", { method: "POST" });
+                        const logoutData = await logoutResponse.json();
+
+                        if (logoutData.signedOut) {
+                            console.log("Signed out successfully");
+
+                            Toastify({
+                                text: "Signed out successfully",
+                                duration: 3000,
+                                destination: "https://github.com/apvarun/toastify-js",
+                                newWindow: true,
+                                close: true,
+                                gravity: "top",
+                                position: "right",
+                                stopOnFocus: true,
+                                style: {
+                                    background: "green",
+                                },
+                            }).showToast();
+
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 1000);
+
+                            await updateButton();
+                        }
+                    } catch (err) {
+                        console.error("Logout failed:", err);
+                    }
+                });
+
+            } else {
+                pTag.textContent = "Sign Up";
+
+                const newBtn = SignUp_Btn.cloneNode(true);
+                SignUp_Btn.replaceWith(newBtn);
+
+                newBtn.addEventListener("click", () => {
+                    window.location.href = "/CreateAccount";
+                });
+            }
+        } catch (err) {
+            console.error("Error checking sign-in status:", err);
+        }
+    };
+
+    await updateButton();
 });
 
 window.addEventListener("DOMContentLoaded", getDataFromServer);
